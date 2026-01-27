@@ -34,7 +34,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "New action",
+                    "name": "Interact",
                     "type": "Button",
                     "id": "f0619f56-e08b-4ba1-bb80-7c0ca0376c41",
                     "expectedControlType": "",
@@ -124,11 +124,11 @@
                 {
                     "name": "",
                     "id": "09131a4d-d5a5-447c-bf18-017e88320d8f",
-                    "path": "",
+                    "path": "<Keyboard>/e",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "New action",
+                    "action": "Interact",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

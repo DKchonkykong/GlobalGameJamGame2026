@@ -1,12 +1,14 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.InputSystem;
+
+//uses new unity input system instead of old version
 
 public class Interactor : MonoBehaviour
 {
     public Camera cam;
     public float range = 3f;
     public LayerMask interactMask;
-
     public TMP_Text promptText;
 
     private IInteractable current;
@@ -14,22 +16,35 @@ public class Interactor : MonoBehaviour
     void Update()
     {
         current = null;
-        promptText.gameObject.SetActive(false);
+        if (promptText != null) promptText.gameObject.SetActive(false);
+
+        if (cam == null) return;
 
         Ray ray = new Ray(cam.transform.position, cam.transform.forward);
         if (Physics.Raycast(ray, out RaycastHit hit, range, interactMask))
         {
             current = hit.collider.GetComponentInParent<IInteractable>();
-            if (current != null && !DialogueManager.Instance.IsOpen)
-            {
-                promptText.text = current.PromptText;
-                promptText.gameObject.SetActive(true);
 
-                if (Input.GetKeyDown(KeyCode.E))
+            // Don't show prompt while dialogue is open
+            if (current != null && (DialogueManager.Instance == null || !DialogueManager.Instance.IsOpen))
+            {
+                if (promptText != null)
                 {
-                    current.Interact();
+                    promptText.text = current.PromptText;
+                    promptText.gameObject.SetActive(true);
                 }
             }
+        }
+    }
+
+    // PlayerInput (Send Messages) will call this when the "Interact" action fires
+    public void OnInteract(InputValue value)
+    {
+        if (value == null || !value.isPressed) return;
+
+        if (current != null && (DialogueManager.Instance == null || !DialogueManager.Instance.IsOpen))
+        {
+            current.Interact();
         }
     }
 }
