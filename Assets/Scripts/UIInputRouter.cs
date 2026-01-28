@@ -13,6 +13,7 @@ public class UIInputRouter : MonoBehaviour
         if (DialogueManager.Instance != null && DialogueManager.Instance.IsOpen)
             return;
 
-        evidenceUI.Toggle();
+        if (evidenceUI != null)
+            evidenceUI.Toggle();
     }
 }

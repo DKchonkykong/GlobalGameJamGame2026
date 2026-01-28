@@ -1,6 +1,5 @@
 using TMPro;
 using UnityEngine;
-using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
 public class EvidenceUI : MonoBehaviour
@@ -51,24 +50,8 @@ public class EvidenceUI : MonoBehaviour
         Refresh();
     }
 
-    void Update()
-    {
-        if (!IsOpen) return;
+    
 
-        // Keyboard navigation (only while open)
-        var kb = Keyboard.current;
-        if (kb == null) return;
-
-        if (kb.leftArrowKey.wasPressedThisFrame || kb.aKey.wasPressedThisFrame)
-            Prev();
-
-        if (kb.rightArrowKey.wasPressedThisFrame || kb.dKey.wasPressedThisFrame)
-            Next();
-
-        // Close on Esc or Tab (Tab toggling feels nice)
-        if (kb.escapeKey.wasPressedThisFrame || kb.tabKey.wasPressedThisFrame)
-            Close();
-    }
 
     public void Toggle()
     {

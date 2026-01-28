@@ -1,0 +1,583 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+Built from '6000.3/respin/6000.3.5f1-a1ec4b2f2d19' branch; Version is '6000.3.5f2 (3fa8bc678cb0) revision 4171964'; Using compiler version '194234433'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26100) Core' Language: 'en' Physical Memory: 32654 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-ady" at "2026-01-28T19:58:36.5676376Z"
+System  architecture: x64
+Process architecture: x64
+Date: 2026-01-28T19:58:36Z
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.3.5f2\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker24
+-projectPath
+C:/Users/ady/Documents/GitHub/GlobalGameJamGame2026
+-logFile
+Logs/AssetImportWorker24.log
+-srvPort
+58448
+-job-worker-count
+7
+-background-job-worker-count
+8
+-gc-helper-count
+1
+-name
+AssetImport
+Successfully changed project path to: C:/Users/ady/Documents/GitHub/GlobalGameJamGame2026
+C:/Users/ady/Documents/GitHub/GlobalGameJamGame2026
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+Player connection [28516]  Target information:
+
+Player connection [28516]  * "[IP] 192.168.1.207 [Port] 0 [Flags] 2 [Guid] 492940622 [EditorId] 492940622 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-IAST724) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [28516] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [28516] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 7
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Refreshing native plugins compatible for Editor in 4.05 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.3.5f2 (3fa8bc678cb0)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.3.5f2/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/ady/Documents/GitHub/GlobalGameJamGame2026/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 4070 (ID=0x2786)
+    Vendor:   NVIDIA
+    VRAM:     12010 MB
+    Driver:   32.0.15.9174
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.3.5f2/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.3.5f2/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.3.5f2/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56592
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.5f2/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003469 seconds.
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.17.4+4293ba1
+  Session Id:              be4415fea1e44fe5bc8d989cf948f00c
+  Correlation Id:          5deea81f421e7221185a8b536ced2ffa
+  External correlation Id: 838820144606528673
+  Machine Id:              w74mvXlGn566yFKgA+XQ5jLQxKI=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-ady" (connect: 0.00s, validation: 0.00s, handshake: 1.49s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-ady-notifications" at "2026-01-28T19:58:38.0589177Z"
+[Licensing::Module] Licensing Background thread has ended after 1.49s
+- Loaded All Assemblies, in  0.758 seconds
+Native extension for WindowsStandalone target not found
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.611 seconds
+Domain Reload Profiling: 1363ms
+	BeginReloadAssembly (239ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (76ms)
+	RebuildNativeTypeToScriptingClass (27ms)
+	initialDomainReloadingComplete (95ms)
+	LoadAllAssembliesAndSetupDomain (315ms)
+		LoadAssemblies (230ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (311ms)
+			TypeCache.Refresh (309ms)
+				TypeCache.ScanAssembly (260ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (612ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (530ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (69ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (132ms)
+			ProcessInitializeOnLoadAttributes (214ms)
+			ProcessInitializeOnLoadMethodAttributes (109ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 5773840413360-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+- Loaded All Assemblies, in  1.351 seconds
+Refreshing native plugins compatible for Editor in 1.43 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Package Manager log level set to [2]
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.198 seconds
+Domain Reload Profiling: 2538ms
+	BeginReloadAssembly (275ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (9ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (50ms)
+	RebuildCommonClasses (64ms)
+	RebuildNativeTypeToScriptingClass (21ms)
+	initialDomainReloadingComplete (66ms)
+	LoadAllAssembliesAndSetupDomain (914ms)
+		LoadAssemblies (561ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (502ms)
+			TypeCache.Refresh (355ms)
+				TypeCache.ScanAssembly (290ms)
+			BuildScriptInfoCaches (123ms)
+			ResolveRequiredComponents (18ms)
+	FinalizeReload (1198ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (900ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (239ms)
+			ProcessInitializeOnLoadAttributes (545ms)
+			ProcessInitializeOnLoadMethodAttributes (92ms)
+			AfterProcessingInitializeOnLoad (14ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Refreshing native plugins compatible for Editor in 1.49 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6262 unused Assets / (4.6 MB). Loaded Objects now: 7080.
+Memory consumption went from 149.6 MB to 145.0 MB.
+Total: 17.209000 ms (FindLiveObjects: 1.611400 ms CreateObjectMapping: 0.752500 ms MarkObjects: 10.993000 ms  DeleteObjects: 3.851100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 35539.171688 seconds.
+  path: Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_Classic.mat
+  artifactKey: Guid(e0e3bbdfdcd5e59408d5533e7648ac49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_Classic.mat using Guid(e0e3bbdfdcd5e59408d5533e7648ac49) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd4f66f68e3fb00838ddf2fbfc2b71d4b') in 0.8437617 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_Ripple1.mat
+  artifactKey: Guid(d82088724e5e8014bacc71430bc6c771) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_Ripple1.mat using Guid(d82088724e5e8014bacc71430bc6c771) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c5e5ae72a2e56bf9163ee6842a5bb390') in 0.0185515 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_OX2.mat
+  artifactKey: Guid(faa5759c251e8a2498973e72b2178226) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_OX2.mat using Guid(faa5759c251e8a2498973e72b2178226) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a9399478450279c56ebbadfe9a85c88a') in 0.0157937 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_Ripple3b.mat
+  artifactKey: Guid(1265a178e39dc354b808e7072dc89a13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_Ripple3b.mat using Guid(1265a178e39dc354b808e7072dc89a13) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c3b9a273787a7b5453ed788624fb6d13') in 0.0171075 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_Xlvl3.mat
+  artifactKey: Guid(c72fdeb706ce4ab46a6e047c6ce1566a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_Xlvl3.mat using Guid(c72fdeb706ce4ab46a6e047c6ce1566a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6b983b9e99419fde8499d847148c9250') in 0.0162059 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_Panels.mat
+  artifactKey: Guid(45224b9160593ac4eaa8961f5584dbe7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_Panels.mat using Guid(45224b9160593ac4eaa8961f5584dbe7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '139d72ff8193c156f3ba06cdd985387f') in 0.0143528 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_SquarerRoot.mat
+  artifactKey: Guid(448065ae1486b194980792a7749912f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_SquarerRoot.mat using Guid(448065ae1486b194980792a7749912f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1a46f77dbb667b61042f4a68c217b246') in 0.0176118 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_Ripple2b.mat
+  artifactKey: Guid(5cc4b5b500047d84fb30a52330455824) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_Ripple2b.mat using Guid(5cc4b5b500047d84fb30a52330455824) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f40b6c86150a70682a1a46f4ae4fc18c') in 0.0139957 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_FauxTin02.mat
+  artifactKey: Guid(b82727eb257fde3419559b557797a55c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_FauxTin02.mat using Guid(b82727eb257fde3419559b557797a55c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'be1cd54034805fa2422d7444fbce00ea') in 0.0143485 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_OX1.mat
+  artifactKey: Guid(993f61b603682f141b90539d9b260104) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_OX1.mat using Guid(993f61b603682f141b90539d9b260104) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '888c62d0f93876026e16fcc4b23a2e08') in 0.0144703 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_RippleLvl3_n.mat
+  artifactKey: Guid(ef4a0545251a1c442af6c0f4ee989a37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_RippleLvl3_n.mat using Guid(ef4a0545251a1c442af6c0f4ee989a37) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '15ebc9f6c47dbe31f17e3c627f38e548') in 0.0139879 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_CornerHexa.mat
+  artifactKey: Guid(a84970925e3b5d54dbfd56fbdf608064) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_CornerHexa.mat using Guid(a84970925e3b5d54dbfd56fbdf608064) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4c685c80ed23f41b9da4a7399e2fc361') in 0.0165712 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_CornerCross.mat
+  artifactKey: Guid(f4e57fc076aeca54fb02401c022be49f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_CornerCross.mat using Guid(f4e57fc076aeca54fb02401c022be49f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5846d965554ea1eaeb494170b9aa8eb3') in 0.0131522 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_Xlvl2b.mat
+  artifactKey: Guid(5c952f8034f9ae94fbe252685f204108) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_Xlvl2b.mat using Guid(5c952f8034f9ae94fbe252685f204108) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ca42bf759cc26953d03abe68a9fa9d81') in 0.0134775 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_Flowers_n.mat
+  artifactKey: Guid(a733fa7771242714fba350a8a4b0f2d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_Flowers_n.mat using Guid(a733fa7771242714fba350a8a4b0f2d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '34331daa5e31c2ce9e7d71806c07b9ef') in 0.0131193 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_FractalDiamond.mat
+  artifactKey: Guid(3eff2e8a8d9b99046ab1b03085f61a63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_FractalDiamond.mat using Guid(3eff2e8a8d9b99046ab1b03085f61a63) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c080aa38c4e1ac8bde93e23df6470b7c') in 0.0136935 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_Xlvl1.mat
+  artifactKey: Guid(012b140c8c1e3c4489ccdcc134202f70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_Xlvl1.mat using Guid(012b140c8c1e3c4489ccdcc134202f70) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '04c5e2d748e22d6b94dc51f88df2f281') in 0.0136795 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_Xlvl2.mat
+  artifactKey: Guid(7e26ae110ceb4ad44bfd2b394a906f22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_Xlvl2.mat using Guid(7e26ae110ceb4ad44bfd2b394a906f22) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd663ad4f6b55a7ff40044dfe3ae02f16') in 0.0139337 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_Diamonds.mat
+  artifactKey: Guid(1577a8c6541480849a70f5e8c3147b6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_Diamonds.mat using Guid(1577a8c6541480849a70f5e8c3147b6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ac12aacb5529a0722df6937ef09fc774') in 0.0138357 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_XLvl3bis_n.mat
+  artifactKey: Guid(82b00b1bf9462d442b76fb7b849bd97f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_XLvl3bis_n.mat using Guid(82b00b1bf9462d442b76fb7b849bd97f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '81c13a6fd726a131b258d28c0a2d7455') in 0.0133317 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_OX3.mat
+  artifactKey: Guid(10b748ccd515a724e8f89b3056c08fb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_OX3.mat using Guid(10b748ccd515a724e8f89b3056c08fb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '61b6f907c738f1e671cb66fb1b3b7ea5') in 0.0135727 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_Honeycomb.mat
+  artifactKey: Guid(37a6406dc4666ba4e815c0e66184abb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_Honeycomb.mat using Guid(37a6406dc4666ba4e815c0e66184abb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a4fa2f84416d0d2416e6e351daa1328a') in 0.0141123 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_X#.mat
+  artifactKey: Guid(926bbbe08061dcc42a06c27bb9974f30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_X#.mat using Guid(926bbbe08061dcc42a06c27bb9974f30) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cdbac35c1fff664e51fa6dc68dba2235') in 0.014371 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_Diamonds_n.mat
+  artifactKey: Guid(947de24c8022f3341983736ff1f8482c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_Diamonds_n.mat using Guid(947de24c8022f3341983736ff1f8482c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9d999c637af0940f7f775de3fca7335b') in 0.0150433 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_FauxTin02_n.mat
+  artifactKey: Guid(22dc03477fdc52c408996dd224745670) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_FauxTin02_n.mat using Guid(22dc03477fdc52c408996dd224745670) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a9993b0ac304c63036581dc15fbaf959') in 0.0134994 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_Hexa3.mat
+  artifactKey: Guid(2fce52f887bd46d448eef929ddf4375c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_Hexa3.mat using Guid(2fce52f887bd46d448eef929ddf4375c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1090d1db297b7d72cac8ef9440b47ebf') in 0.0139625 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_FauxTin01_n.mat
+  artifactKey: Guid(16f255a3da277ba4f866ef0ba7519ee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_FauxTin01_n.mat using Guid(16f255a3da277ba4f866ef0ba7519ee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1e676646fd874467517f0c4bd33f7071') in 0.012921 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_CornerRound.mat
+  artifactKey: Guid(2d7c840b2ccb2fd44a8e526cdc6d4fdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_CornerRound.mat using Guid(2d7c840b2ccb2fd44a8e526cdc6d4fdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'eff5fb19b6009c36e29835ca1ccdbad0') in 0.0128119 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_Ripple2.mat
+  artifactKey: Guid(5a0384d8bfbbb334299afe8f04b3e7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_Ripple2.mat using Guid(5a0384d8bfbbb334299afe8f04b3e7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd25c42b159feb560278bb4d918248c00') in 0.013323 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_Flowers.mat
+  artifactKey: Guid(dae6c63a41c3a094d9bc675e4fd668fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_Flowers.mat using Guid(dae6c63a41c3a094d9bc675e4fd668fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3dc436d9e7cc005e2c23892e2932f99e') in 0.014837 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_FauxTin04.mat
+  artifactKey: Guid(0393dcdaf747b9749b083ad3ec9bda84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_FauxTin04.mat using Guid(0393dcdaf747b9749b083ad3ec9bda84) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b49f3f090c80a8c80020ce32300e2d1c') in 0.0137357 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_FauxTin01.mat
+  artifactKey: Guid(50707c76b62c7914f9678be0b6c5ccfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_FauxTin01.mat using Guid(50707c76b62c7914f9678be0b6c5ccfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ae860f56f30276d6e6ae09dba17b7ffb') in 0.0133763 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 219.452300 seconds.
+  path: Assets/MainAssets/bar.fbm/counter_albedo.png
+  artifactKey: Guid(080dbc8991b7a9142b91d30f157c6974) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/bar.fbm/counter_albedo.png using Guid(080dbc8991b7a9142b91d30f157c6974) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '01244d3115f3716da21f31a7335e6413') in 0.0551146 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/MainAssets/bar.fbm/grid.png
+  artifactKey: Guid(fb2a3546863b3c14482c2decf105f899) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/bar.fbm/grid.png using Guid(fb2a3546863b3c14482c2decf105f899) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0b9dde32b925c9284c98582233f7eef1') in 0.0131883 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/MainAssets/bar.fbm/wood_table_001_rough_2k.jpg
+  artifactKey: Guid(4235ef78379b6c440b55c1766fec07ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/bar.fbm/wood_table_001_rough_2k.jpg using Guid(4235ef78379b6c440b55c1766fec07ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7bc8a978e29641659b9ee2d2f671da79') in 0.0194207 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/MainAssets/bar.fbm/Metal007_2K_Roughness.jpg
+  artifactKey: Guid(704b0e5fab648d942960958a0d041c1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/bar.fbm/Metal007_2K_Roughness.jpg using Guid(704b0e5fab648d942960958a0d041c1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e72f98efd1b7f716732509f67eaa52a0') in 0.0114043 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/MainAssets/bar.fbm/Metal007_2K_Color.jpg
+  artifactKey: Guid(32aa6676310a8f548bae783cedf39744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/bar.fbm/Metal007_2K_Color.jpg using Guid(32aa6676310a8f548bae783cedf39744) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '919b6a014beefe6156d64cfd8d63fb44') in 0.0114728 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.504252 seconds.
+  path: Assets/MainAssets/Materials/counter_albedo.mat
+  artifactKey: Guid(af92cbe008a064e4991a0f5d6a4cfa23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Materials/counter_albedo.mat using Guid(af92cbe008a064e4991a0f5d6a4cfa23) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6d4c578eb37c390c720a6298d265919e') in 0.0256819 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/MainAssets/Materials/grid.mat
+  artifactKey: Guid(ca77316f12b805241aa9df2ae30349d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Materials/grid.mat using Guid(ca77316f12b805241aa9df2ae30349d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '068b3900be261f24bccd729fdd777591') in 0.010981 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/MainAssets/Materials/Wood.mat
+  artifactKey: Guid(b4b97c07fb8181a47a083e64a48b3fc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Materials/Wood.mat using Guid(b4b97c07fb8181a47a083e64a48b3fc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5f9e6fc2fb3c9d4a2e7dfa512c44b18f') in 0.0132396 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/MainAssets/Materials/No Name.mat
+  artifactKey: Guid(51fcd49aeefb88c4faab8e5bb91242d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Materials/No Name.mat using Guid(51fcd49aeefb88c4faab8e5bb91242d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '19d5ff911a46b7cd025daa4832e46c3d') in 0.0109277 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.881492 seconds.
+  path: Assets/MainAssets/Pegasus Studios/Elegant Interior Decor 3D Models Pack/Resources/Prefabs/Chandelier.prefab
+  artifactKey: Guid(f617fb3cae341ad42965381ad6fda9e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Pegasus Studios/Elegant Interior Decor 3D Models Pack/Resources/Prefabs/Chandelier.prefab using Guid(f617fb3cae341ad42965381ad6fda9e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bb504613ca4eb7a601ac3d7c76bf2f53') in 0.0893505 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 27
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/MainAssets/Pegasus Studios/Elegant Interior Decor 3D Models Pack/Resources/Prefabs/Painting.prefab
+  artifactKey: Guid(df9cc6f7891ca444e95653bb5ada6ea7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Pegasus Studios/Elegant Interior Decor 3D Models Pack/Resources/Prefabs/Painting.prefab using Guid(df9cc6f7891ca444e95653bb5ada6ea7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7f9ffc7833e6c5ab6a44f0b5a31c570a') in 0.0230197 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 21
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/MainAssets/Pegasus Studios/Elegant Interior Decor 3D Models Pack/Resources/Prefabs/Vase.prefab
+  artifactKey: Guid(5a04330dda25c9947bdabeab13ca9b4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Pegasus Studios/Elegant Interior Decor 3D Models Pack/Resources/Prefabs/Vase.prefab using Guid(5a04330dda25c9947bdabeab13ca9b4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1d5e83a67a1807c5424c49fb97990fd8') in 0.013665 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/MainAssets/Pegasus Studios/Elegant Interior Decor 3D Models Pack/Resources/Prefabs/Old Wall Sconce.prefab
+  artifactKey: Guid(8cd839d133b5ed34c9d85f01d99ac7fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Pegasus Studios/Elegant Interior Decor 3D Models Pack/Resources/Prefabs/Old Wall Sconce.prefab using Guid(8cd839d133b5ed34c9d85f01d99ac7fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6f1a9d37fb425d1754ec7efc118dbc5a') in 0.0138539 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/MainAssets/Pegasus Studios/Elegant Interior Decor 3D Models Pack/Resources/Prefabs/Wine Glass.prefab
+  artifactKey: Guid(136fc2f87f3fd45458180985fde9d0ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Pegasus Studios/Elegant Interior Decor 3D Models Pack/Resources/Prefabs/Wine Glass.prefab using Guid(136fc2f87f3fd45458180985fde9d0ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2b908a433d10b4198c38a22438dc9e6a') in 0.0106299 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

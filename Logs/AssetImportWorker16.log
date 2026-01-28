@@ -1468,3 +1468,6 @@ Start importing Assets/MainAssets/Materials/wood_table_001_diff_2k.mat using Gui
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

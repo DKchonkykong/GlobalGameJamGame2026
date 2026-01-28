@@ -1325,3 +1325,7 @@ Received Import Request.
 Start importing Assets/MainAssets/Materials/Metal007_2K_Color.mat using Guid(cde7803f442b5be41b6659fd4dce23ed) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7fe8365481c65f8b36f79fc638f80de0') in 0.0278347 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
