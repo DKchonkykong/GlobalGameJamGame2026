@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
 public class EvidenceUI : MonoBehaviour
@@ -15,20 +16,58 @@ public class EvidenceUI : MonoBehaviour
     public Button closeButton;
 
     [Header("Player Control")]
-    public MonoBehaviour fpsController;   // drag FPSController
-    public MonoBehaviour interactor;      // drag Interactor (optional)
+    public MonoBehaviour fpsController;   // FPSController
+    public MonoBehaviour interactor;      // Interactor (optional)
 
     private int index = 0;
 
-    public bool IsOpen => panel.activeSelf;
+    public bool IsOpen => panel != null && panel.activeSelf;
+
+    void Awake()
+    {
+        // Safe default: keep closed in editor + play
+        if (panel != null)
+            panel.SetActive(false);
+    }
+
+    void OnEnable()
+    {
+        if (EvidenceManager.Instance != null)
+            EvidenceManager.Instance.EvidenceChanged += OnEvidenceChanged;
+    }
+
+    void OnDisable()
+    {
+        if (EvidenceManager.Instance != null)
+            EvidenceManager.Instance.EvidenceChanged -= OnEvidenceChanged;
+    }
 
     void Start()
     {
-        panel.SetActive(false);
+        if (prevButton != null) prevButton.onClick.AddListener(Prev);
+        if (nextButton != null) nextButton.onClick.AddListener(Next);
+        if (closeButton != null) closeButton.onClick.AddListener(Close);
 
-        prevButton.onClick.AddListener(Prev);
-        nextButton.onClick.AddListener(Next);
-        closeButton.onClick.AddListener(Close);
+        Refresh();
+    }
+
+    void Update()
+    {
+        if (!IsOpen) return;
+
+        // Keyboard navigation (only while open)
+        var kb = Keyboard.current;
+        if (kb == null) return;
+
+        if (kb.leftArrowKey.wasPressedThisFrame || kb.aKey.wasPressedThisFrame)
+            Prev();
+
+        if (kb.rightArrowKey.wasPressedThisFrame || kb.dKey.wasPressedThisFrame)
+            Next();
+
+        // Close on Esc or Tab (Tab toggling feels nice)
+        if (kb.escapeKey.wasPressedThisFrame || kb.tabKey.wasPressedThisFrame)
+            Close();
     }
 
     public void Toggle()
@@ -39,22 +78,36 @@ public class EvidenceUI : MonoBehaviour
 
     public void Open()
     {
+        if (panel == null) return;
+
         panel.SetActive(true);
         LockPlayer();
-        index = 0;
+
+        // Clamp index in case list changed since last open
+        index = Mathf.Clamp(index, 0, Mathf.Max(0, EvidenceManager.Instance.Collected.Count - 1));
         Refresh();
     }
 
     public void Close()
     {
+        if (panel == null) return;
+
         panel.SetActive(false);
         UnlockPlayer();
     }
 
+    void OnEvidenceChanged()
+    {
+        // If panel is open, update immediately.
+        // If panel is closed, no need to do anything (but Refresh is cheap anyway).
+        if (IsOpen)
+            Refresh();
+    }
+
     void Prev()
     {
-        var list = EvidenceManager.Instance.Collected;
-        if (list.Count == 0) return;
+        var list = EvidenceManager.Instance?.Collected;
+        if (list == null || list.Count == 0) return;
 
         index = (index - 1 + list.Count) % list.Count;
         Refresh();
@@ -62,8 +115,8 @@ public class EvidenceUI : MonoBehaviour
 
     void Next()
     {
-        var list = EvidenceManager.Instance.Collected;
-        if (list.Count == 0) return;
+        var list = EvidenceManager.Instance?.Collected;
+        if (list == null || list.Count == 0) return;
 
         index = (index + 1) % list.Count;
         Refresh();
@@ -71,24 +124,31 @@ public class EvidenceUI : MonoBehaviour
 
     void Refresh()
     {
-        var list = EvidenceManager.Instance.Collected;
+        var list = EvidenceManager.Instance?.Collected;
 
-        if (list.Count == 0)
+        if (list == null || list.Count == 0)
         {
-            iconImage.enabled = false;
-            titleText.text = "No evidence";
-            descriptionText.text = "You haven't collected any evidence yet.";
-            counterText.text = "0/0";
+            if (iconImage != null) iconImage.enabled = false;
+            if (titleText != null) titleText.text = "No evidence";
+            if (descriptionText != null) descriptionText.text = "You haven't collected any evidence yet.";
+            if (counterText != null) counterText.text = "0/0";
             return;
         }
 
-        iconImage.enabled = true;
+        // Ensure index valid
+        index = Mathf.Clamp(index, 0, list.Count - 1);
 
         EvidenceItem item = list[index];
-        iconImage.sprite = item.icon;
-        titleText.text = item.displayName;
-        descriptionText.text = item.description;
-        counterText.text = $"{index + 1}/{list.Count}";
+
+        if (iconImage != null)
+        {
+            iconImage.enabled = item.icon != null;
+            iconImage.sprite = item.icon;
+        }
+
+        if (titleText != null) titleText.text = item.displayName;
+        if (descriptionText != null) descriptionText.text = item.description;
+        if (counterText != null) counterText.text = $"{index + 1}/{list.Count}";
     }
 
     void LockPlayer()

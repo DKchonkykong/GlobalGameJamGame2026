@@ -1,0 +1,559 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-ady" at "2026-01-28T15:15:29.9430663Z"
+Built from '6000.3/respin/6000.3.5f1-a1ec4b2f2d19' branch; Version is '6000.3.5f2 (3fa8bc678cb0) revision 4171964'; Using compiler version '194234433'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26100) Core' Language: 'en' Physical Memory: 32654 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-01-28T15:15:29Z
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.3.5f2\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker18
+-projectPath
+C:/Users/ady/Documents/GitHub/GlobalGameJamGame2026
+-logFile
+Logs/AssetImportWorker18.log
+-srvPort
+58448
+-job-worker-count
+7
+-background-job-worker-count
+8
+-gc-helper-count
+1
+-name
+AssetImport
+Successfully changed project path to: C:/Users/ady/Documents/GitHub/GlobalGameJamGame2026
+C:/Users/ady/Documents/GitHub/GlobalGameJamGame2026
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+Player connection [32856]  Target information:
+
+Player connection [32856]  * "[IP] 192.168.1.207 [Port] 0 [Flags] 2 [Guid] 3022359330 [EditorId] 3022359330 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-IAST724) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [32856] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [32856] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 7
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Refreshing native plugins compatible for Editor in 3.85 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.3.5f2 (3fa8bc678cb0)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.3.5f2/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/ady/Documents/GitHub/GlobalGameJamGame2026/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 4070 (ID=0x2786)
+    Vendor:   NVIDIA
+    VRAM:     12010 MB
+    Driver:   32.0.15.9174
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.3.5f2/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.3.5f2/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.3.5f2/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56596
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.5f2/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003831 seconds.
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.17.4+4293ba1
+  Session Id:              01cfa98f30614a21b124bf4c8efef9c2
+  Correlation Id:          5deea81f421e7221185a8b536ced2ffa
+  External correlation Id: 7530255744229934651
+  Machine Id:              w74mvXlGn566yFKgA+XQ5jLQxKI=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-ady" (connect: 0.00s, validation: 0.00s, handshake: 1.72s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-ady-notifications" at "2026-01-28T15:15:31.6675845Z"
+[Licensing::Module] Licensing Background thread has ended after 1.72s
+- Loaded All Assemblies, in  0.767 seconds
+Native extension for WindowsStandalone target not found
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.628 seconds
+Domain Reload Profiling: 1388ms
+	BeginReloadAssembly (280ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (70ms)
+	RebuildNativeTypeToScriptingClass (20ms)
+	initialDomainReloadingComplete (84ms)
+	LoadAllAssembliesAndSetupDomain (306ms)
+		LoadAssemblies (273ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (301ms)
+			TypeCache.Refresh (298ms)
+				TypeCache.ScanAssembly (254ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (629ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (547ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (71ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (135ms)
+			ProcessInitializeOnLoadAttributes (220ms)
+			ProcessInitializeOnLoadMethodAttributes (115ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 5773840413360-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+- Loaded All Assemblies, in  1.393 seconds
+Refreshing native plugins compatible for Editor in 1.46 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Package Manager log level set to [2]
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.344 seconds
+Domain Reload Profiling: 2723ms
+	BeginReloadAssembly (310ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (9ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (57ms)
+	RebuildCommonClasses (66ms)
+	RebuildNativeTypeToScriptingClass (22ms)
+	initialDomainReloadingComplete (70ms)
+	LoadAllAssembliesAndSetupDomain (910ms)
+		LoadAssemblies (606ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (472ms)
+			TypeCache.Refresh (332ms)
+				TypeCache.ScanAssembly (262ms)
+			BuildScriptInfoCaches (117ms)
+			ResolveRequiredComponents (16ms)
+	FinalizeReload (1344ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1023ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (9ms)
+			BeforeProcessingInitializeOnLoad (268ms)
+			ProcessInitializeOnLoadAttributes (595ms)
+			ProcessInitializeOnLoadMethodAttributes (126ms)
+			AfterProcessingInitializeOnLoad (23ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (12ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Refreshing native plugins compatible for Editor in 1.69 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6262 unused Assets / (3.2 MB). Loaded Objects now: 7080.
+Memory consumption went from 147.5 MB to 144.4 MB.
+Total: 18.876800 ms (FindLiveObjects: 1.973100 ms CreateObjectMapping: 1.198400 ms MarkObjects: 11.810000 ms  DeleteObjects: 3.894200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 18541.175594 seconds.
+  path: Assets/MainAssets/textures/Gold_normal.jpeg
+  artifactKey: Guid(c5e2b4e28a7d71b45bbc057f25c83b25) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/textures/Gold_normal.jpeg using Guid(c5e2b4e28a7d71b45bbc057f25c83b25) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6c6e48ecbca7efe30875038bf81f1810') in 0.168042 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/MainAssets/textures/wood_table_001_normal.png
+  artifactKey: Guid(815b49a4878c6914d877323f244a80c0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/textures/wood_table_001_normal.png using Guid(815b49a4878c6914d877323f244a80c0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '63951deb26fbacdb10136e4a6b1844c4') in 0.0153177 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.790521 seconds.
+  path: Assets/MainAssets/textures/Counter_emissive.png
+  artifactKey: Guid(588075ceba9c30543b7c18ecc466c98e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/textures/Counter_emissive.png using Guid(588075ceba9c30543b7c18ecc466c98e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ca151ee378c7861fffb96c97b0545f32') in 0.0816336 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/MainAssets/textures/wood_table_001_normal.png
+  artifactKey: Guid(815b49a4878c6914d877323f244a80c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/textures/wood_table_001_normal.png using Guid(815b49a4878c6914d877323f244a80c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '264434736ce629a3c001a574024d8108') in 0.0172323 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.747670 seconds.
+  path: Assets/MainAssets/Pegasus Studios/Elegant Interior Decor 3D Models Pack/Resources/Materials/Chains.mat
+  artifactKey: Guid(0c5af00eb88f03f4a93cf7c8f0f89abb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Pegasus Studios/Elegant Interior Decor 3D Models Pack/Resources/Materials/Chains.mat using Guid(0c5af00eb88f03f4a93cf7c8f0f89abb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '409482344929c39879b57afc236306eb') in 0.6681109 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/MainAssets/Pegasus Studios/Elegant Interior Decor 3D Models Pack/Resources/Materials/Dark Gold.mat
+  artifactKey: Guid(d59f0974988b5024583f3cc47c7abfd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Pegasus Studios/Elegant Interior Decor 3D Models Pack/Resources/Materials/Dark Gold.mat using Guid(d59f0974988b5024583f3cc47c7abfd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '075f88200bca9e60a66fdac6d1b994e7') in 0.0134394 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/MainAssets/AllSkyFree/Cartoon Base BlueSky/Day_BlueSky_Nothing.mat
+  artifactKey: Guid(c56e28e54cac24b04ae3dd957d214534) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/AllSkyFree/Cartoon Base BlueSky/Day_BlueSky_Nothing.mat using Guid(c56e28e54cac24b04ae3dd957d214534) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '407f0b27b38dfdbd712a8ddaf41ed9db') in 0.0362823 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/MainAssets/AllSkyFree/Epic_GloriousPink/Epic_GloriousPink.mat
+  artifactKey: Guid(8b7dd0809c7c6498789fa32a61eaa6cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/AllSkyFree/Epic_GloriousPink/Epic_GloriousPink.mat using Guid(8b7dd0809c7c6498789fa32a61eaa6cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '18cda9b6b3b8456fd9e49c810823fcdd') in 0.26368 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/MainAssets/Pegasus Studios/Elegant Interior Decor 3D Models Pack/Resources/Materials/Door Handle Holder.mat
+  artifactKey: Guid(058c953d52ee2404fa0926c8f0c4e387) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Pegasus Studios/Elegant Interior Decor 3D Models Pack/Resources/Materials/Door Handle Holder.mat using Guid(058c953d52ee2404fa0926c8f0c4e387) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e578114c713d16e8059bd9a8043421a5') in 0.0100833 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/TextMesh Pro/Fonts/LiberationSans.ttf
+  artifactKey: Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Fonts/LiberationSans.ttf using Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e3840d548b1efdb4c70712420807deb8') in 0.0240924 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Materials/Ground - Surface Shader Scene.mat
+  artifactKey: Guid(aadd5a709a48466c887296bb5b1b8110) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Materials/Ground - Surface Shader Scene.mat using Guid(aadd5a709a48466c887296bb5b1b8110) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b15dc8952192b0beb484ed55633915aa') in 0.0135475 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Materials/Ground - Logo Scene.mat
+  artifactKey: Guid(c719e38f25a9480abd2480ab621a2949) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Materials/Ground - Logo Scene.mat using Guid(c719e38f25a9480abd2480ab621a2949) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '853b22744a52b61c067f97cb753b7e44') in 0.0118019 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/LiberationSans SDF - Overlay.mat
+  artifactKey: Guid(9ad269c99dcf42b7aedefd83dd5a7b9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/LiberationSans SDF - Overlay.mat using Guid(9ad269c99dcf42b7aedefd83dd5a7b9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2ba35d7066358a67f6f69ceb689a968d') in 0.0342775 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/MainAssets/AllSkyFree/_AllSkyFreeDemoEnvironment/Materials/Landscape.mat
+  artifactKey: Guid(5325c862586721544a0400345e7759ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/AllSkyFree/_AllSkyFreeDemoEnvironment/Materials/Landscape.mat using Guid(5325c862586721544a0400345e7759ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '80987b18d2425f8e689e94d2228f8837') in 0.0115716 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Fonts/Anton.ttf
+  artifactKey: Guid(997a43b767814dd0a7642ec9b78cba41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Fonts/Anton.ttf using Guid(997a43b767814dd0a7642ec9b78cba41) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b50f5387c69dc26ec435d9db2f58911c') in 0.0173404 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/LiberationSans SDF - Metalic Green.mat
+  artifactKey: Guid(8b29aaa3eec7468097ff07adfcf29ac9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/LiberationSans SDF - Metalic Green.mat using Guid(8b29aaa3eec7468097ff07adfcf29ac9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6dcc9d019bba5dd8b2657b7651a857be') in 0.1605295 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Fonts/Oswald-Bold.ttf
+  artifactKey: Guid(c9f6d0e7bc8541498c9a4799ba184ede) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Fonts/Oswald-Bold.ttf using Guid(c9f6d0e7bc8541498c9a4799ba184ede) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1cad2f8aae4a0e19fae98e32a1e6692c') in 0.0149331 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Fonts/Roboto-Bold.ttf
+  artifactKey: Guid(4beb055f07aaff244873dec698d0363e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Fonts/Roboto-Bold.ttf using Guid(4beb055f07aaff244873dec698d0363e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7a0f7594f3dd65d25504c6af2c9dabc0') in 0.0151697 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/MainAssets/Pegasus Studios/Elegant Interior Decor 3D Models Pack/Resources/Materials/Glow Light.mat
+  artifactKey: Guid(313a16696554c374ea715f9414774901) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Pegasus Studios/Elegant Interior Decor 3D Models Pack/Resources/Materials/Glow Light.mat using Guid(313a16696554c374ea715f9414774901) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '09e54bd87b76547cebfc9a6434984bfe') in 0.0142281 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/MainAssets/Pegasus Studios/Elegant Interior Decor 3D Models Pack/Resources/Materials/Flower Pot.mat
+  artifactKey: Guid(e5f7da0307c54db43b76a1f51653a443) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Pegasus Studios/Elegant Interior Decor 3D Models Pack/Resources/Materials/Flower Pot.mat using Guid(e5f7da0307c54db43b76a1f51653a443) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '88a566702be25eedfab9078324a181dc') in 0.0105193 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/MainAssets/Pegasus Studios/Elegant Interior Decor 3D Models Pack/Resources/Materials/Door Dark Polished Wood.mat
+  artifactKey: Guid(478dcabf80ecfa141b36ae19a5420ab4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Pegasus Studios/Elegant Interior Decor 3D Models Pack/Resources/Materials/Door Dark Polished Wood.mat using Guid(478dcabf80ecfa141b36ae19a5420ab4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f9c8d50504c7a7cf18e466ef3d3bf4c7') in 4.4361814 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.858114 seconds.
+  path: Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_CornerBevel.mat
+  artifactKey: Guid(fbfbc0e016c456a48a9103a883f609ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_CornerBevel.mat using Guid(fbfbc0e016c456a48a9103a883f609ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2b4e939071dd61a491060a4314797bd2') in 0.0448159 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_CornerRound.mat
+  artifactKey: Guid(2d7c840b2ccb2fd44a8e526cdc6d4fdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_CornerRound.mat using Guid(2d7c840b2ccb2fd44a8e526cdc6d4fdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6f4b3cec931ff139228594219ce420fd') in 0.0264625 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.094552 seconds.
+  path: Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_FauxTin03.mat
+  artifactKey: Guid(5a2e95b043698e140ba81a0b1b1e7893) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_FauxTin03.mat using Guid(5a2e95b043698e140ba81a0b1b1e7893) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '33f883c76fbabc6d4c1beb280d64d8a1') in 0.0539752 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_FractalCircle.mat
+  artifactKey: Guid(c7c37962fb97fc841a1e79b64cf0bbbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_FractalCircle.mat using Guid(c7c37962fb97fc841a1e79b64cf0bbbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e6ffee609b86fd1e01d51df902d623fc') in 0.0398603 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_OX1.mat
+  artifactKey: Guid(993f61b603682f141b90539d9b260104) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_OX1.mat using Guid(993f61b603682f141b90539d9b260104) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5834fd2fdcb48aa58a1738a18a2f5161') in 0.0329199 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_Honeycomb.mat
+  artifactKey: Guid(37a6406dc4666ba4e815c0e66184abb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_Honeycomb.mat using Guid(37a6406dc4666ba4e815c0e66184abb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '714c1dc8c1d87ea61c181a1b196f4ccf') in 0.0291088 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_Xlvl2.mat
+  artifactKey: Guid(7e26ae110ceb4ad44bfd2b394a906f22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_Xlvl2.mat using Guid(7e26ae110ceb4ad44bfd2b394a906f22) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8d81a1d257a420a1c1cbde9c6adbf372') in 0.0278541 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_Lines.mat
+  artifactKey: Guid(30c3a26d7e6a89d48a62dc44dfaf6d61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_Lines.mat using Guid(30c3a26d7e6a89d48a62dc44dfaf6d61) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4ec64f622aeda8ba87ec2d94576b61d0') in 0.0284515 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.057814 seconds.
+  path: Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_Xlvl3b.mat
+  artifactKey: Guid(62a06edec251c2a4fbad22b78e9490b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/YughuesFreeNormalMaps/Materials/M_YFNMap_Xlvl3b.mat using Guid(62a06edec251c2a4fbad22b78e9490b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fffaab8cddb45a6dcc71496f46db7461') in 0.0261716 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.670290 seconds.
+  path: Assets/MainAssets/Pegasus Studios/Elegant Interior Decor 3D Models Pack/Resources/Materials/Painting (Handsome Man).mat
+  artifactKey: Guid(dc1441e8bc522134eb6ae2efda8fff17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Pegasus Studios/Elegant Interior Decor 3D Models Pack/Resources/Materials/Painting (Handsome Man).mat using Guid(dc1441e8bc522134eb6ae2efda8fff17) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd28f8d54fadeb14e120e65074171b50f') in 0.0127717 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/MainAssets/Pegasus Studios/Elegant Interior Decor 3D Models Pack/Resources/Materials/Painting (Young Man).mat
+  artifactKey: Guid(c78097677f428aa4394128aee81c3a00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Pegasus Studios/Elegant Interior Decor 3D Models Pack/Resources/Materials/Painting (Young Man).mat using Guid(c78097677f428aa4394128aee81c3a00) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4ddf8bb6ff9463ff23a1c4f5e4869605') in 0.0130058 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/MainAssets/Pegasus Studios/Elegant Interior Decor 3D Models Pack/Resources/Materials/Pink Red 2.mat
+  artifactKey: Guid(ad78e631e665f4d40870f40885a3beac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Pegasus Studios/Elegant Interior Decor 3D Models Pack/Resources/Materials/Pink Red 2.mat using Guid(ad78e631e665f4d40870f40885a3beac) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '94e13ae43d62c4e56c3065a8bc70e2d4') in 0.013143 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/MainAssets/Pegasus Studios/Elegant Interior Decor 3D Models Pack/Resources/Materials/Painting (Rose).mat
+  artifactKey: Guid(1aa12ba40f13c12439aeec0ff9297abc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Pegasus Studios/Elegant Interior Decor 3D Models Pack/Resources/Materials/Painting (Rose).mat using Guid(1aa12ba40f13c12439aeec0ff9297abc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f66b4a4e6f04243fc53783499e714f87') in 0.0134683 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/MainAssets/AllSkyFree/_AllSkyFreeDemoEnvironment/Materials/rock.mat
+  artifactKey: Guid(0428f2d2b4e941a4aa39a5e8851eb8a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/AllSkyFree/_AllSkyFreeDemoEnvironment/Materials/rock.mat using Guid(0428f2d2b4e941a4aa39a5e8851eb8a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3e0af2328672090d4a976eae8446f3a4') in 0.0108194 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/MainAssets/Pegasus Studios/Elegant Interior Decor 3D Models Pack/Resources/Materials/Rose Red.mat
+  artifactKey: Guid(063be2dbf2a292143bae86e23546addc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Pegasus Studios/Elegant Interior Decor 3D Models Pack/Resources/Materials/Rose Red.mat using Guid(063be2dbf2a292143bae86e23546addc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0a1bd3541627b3775ed6bc52c03d1160') in 0.0100414 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF - HDRP Unlit.mat
+  artifactKey: Guid(2ddca8f46aa0838419d568affb0ca6b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF - HDRP Unlit.mat using Guid(2ddca8f46aa0838419d568affb0ca6b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '29a0d449dc868c413cdc8001efd6df05') in 0.0125996 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF - Surface.mat
+  artifactKey: Guid(e6b276ec991f467aa14ef1f3cc665993) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF - Surface.mat using Guid(e6b276ec991f467aa14ef1f3cc665993) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '044195111439944ff87897eda299d0f1') in 0.0106675 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.833230 seconds.
+  path: Assets/MainAssets/Pegasus Studios/Elegant Interior Decor 3D Models Pack/Resources/Materials/Table Legs.mat
+  artifactKey: Guid(204879291077c2a40923ddd733b4ca2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Pegasus Studios/Elegant Interior Decor 3D Models Pack/Resources/Materials/Table Legs.mat using Guid(204879291077c2a40923ddd733b4ca2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ef2fd6b8adeb8cc3802efd83e7534b37') in 0.0105767 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_SDF-URP Unlit.shadergraph
+  artifactKey: Guid(124c112a6e8f1a54e8b0870e881b56d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Shaders/TMP_SDF-URP Unlit.shadergraph using Guid(124c112a6e8f1a54e8b0870e881b56d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0f3cc3d8c803eb1208409c0581b9e52c') in 0.4119606 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/MainAssets/AllSkyFree/_AllSkyFreeDemoEnvironment/Materials/TreeLeaves.mat
+  artifactKey: Guid(2fe5176d2e53d7e419a69b7f81899ab5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/AllSkyFree/_AllSkyFreeDemoEnvironment/Materials/TreeLeaves.mat using Guid(2fe5176d2e53d7e419a69b7f81899ab5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6396846cf9360a92badd4b5a8bc2e285') in 0.0139134 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_SDF-HDRP LIT.shadergraph
+  artifactKey: Guid(ca2ed216f98028c4dae6c5224a952b3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Shaders/TMP_SDF-HDRP LIT.shadergraph using Guid(ca2ed216f98028c4dae6c5224a952b3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8a6955a7a4dc8f63866088346c9648bf') in 0.0143509 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/MainAssets/Pegasus Studios/Elegant Interior Decor 3D Models Pack/Resources/Materials/Wine Logo.mat
+  artifactKey: Guid(dc71e79996dd41442b597cf420274a38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Pegasus Studios/Elegant Interior Decor 3D Models Pack/Resources/Materials/Wine Logo.mat using Guid(dc71e79996dd41442b597cf420274a38) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7799477ef70ffd8ea2f284819385317a') in 0.0132134 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

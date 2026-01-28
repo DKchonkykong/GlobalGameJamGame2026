@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,8 +7,10 @@ public class EvidenceManager : MonoBehaviour
     public static EvidenceManager Instance { get; private set; }
 
     private readonly List<EvidenceItem> collected = new List<EvidenceItem>();
-
     public IReadOnlyList<EvidenceItem> Collected => collected;
+
+    // Fired whenever evidence is added (or later, removed).
+    public event Action EvidenceChanged;
 
     void Awake()
     {
@@ -21,6 +24,7 @@ public class EvidenceManager : MonoBehaviour
         if (collected.Contains(item)) return false;
 
         collected.Add(item);
+        EvidenceChanged?.Invoke();
         return true;
     }
 }
