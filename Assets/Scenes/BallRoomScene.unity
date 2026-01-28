@@ -164,6 +164,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIInputRouter
   evidenceUI: {fileID: 1507995531}
+  inventoryKey: 3
+  nextKey1: 19
+  nextKey2: 62
+  prevKey1: 31
+  prevKey2: 61
+  closeKey: 60
 --- !u!1 &11978139
 GameObject:
   m_ObjectHideFlags: 0
@@ -193,7 +199,7 @@ Transform:
   m_GameObject: {fileID: 11978139}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.23, y: 1.07, z: -25.51}
+  m_LocalPosition: {x: -9.23, y: 1.07, z: 6.08}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -632,7 +638,8 @@ GameObject:
   - component: {fileID: 153166411}
   - component: {fileID: 153166410}
   - component: {fileID: 153166409}
-  m_Layer: 0
+  - component: {fileID: 153166412}
+  m_Layer: 3
   m_Name: Police
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -734,6 +741,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 153166407}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &153166412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153166407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 776f0d3335b36584587049046287e6a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EvidencePickup
+  evidence: {fileID: 11400000, guid: 04ad212b3fb37c541b50d3bc2fef74c0, type: 2}
+  prompt: Inspect
+  dialogueLinesOnPickup:
+  - Police here is Autopsy Report
+  - Detective Thanks!
+  - You Got Autopsy Report
+  disableAfterPickup: 1
 --- !u!1 &186882851
 GameObject:
   m_ObjectHideFlags: 0
@@ -1048,7 +1074,7 @@ Transform:
   m_GameObject: {fileID: 273665132}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 11.397344, y: 7.82308, z: -31.45}
+  m_LocalPosition: {x: 11.397344, y: 7.82308, z: 1.5200024}
   m_LocalScale: {x: 21.421875, y: 15.794725, z: 0.26296315}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1160,7 +1186,7 @@ Transform:
   m_GameObject: {fileID: 284059903}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -70.5, y: 5.09, z: -80.3}
+  m_LocalPosition: {x: -70.5, y: 5.09, z: -47.19}
   m_LocalScale: {x: 48.033894, y: 15.794725, z: 0.26296315}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1696,6 +1722,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIInputRouter
   evidenceUI: {fileID: 1507995531}
+  inventoryKey: 3
+  nextKey1: 19
+  nextKey2: 62
+  prevKey1: 31
+  prevKey2: 61
+  closeKey: 60
 --- !u!114 &520975660
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3695,37 +3727,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1052000909}
   m_CullTransparentMesh: 1
---- !u!1 &1107414349
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1107414350}
-  m_Layer: 0
-  m_Name: DetectiveBadge
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1107414350
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1107414349}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -33.8694, y: 0.54662, z: -25.03882}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1124060786
 GameObject:
   m_ObjectHideFlags: 0
@@ -3954,8 +3955,8 @@ Transform:
   m_GameObject: {fileID: 1146837816}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -53.1, y: -2.73307, z: -38.7}
-  m_LocalScale: {x: 7.521323, y: 10, z: 8.308408}
+  m_LocalPosition: {x: -53.1, y: -2.73307, z: -22}
+  m_LocalScale: {x: 7.521323, y: 10, z: 5.057737}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2013435009}
@@ -4297,8 +4298,8 @@ Transform:
   m_GameObject: {fileID: 1263786702}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -14.3, y: 0.58, z: -32.5}
-  m_LocalScale: {x: 6.2792277, y: 12.5134945, z: 2.327542}
+  m_LocalPosition: {x: -14.3, y: 0.63, z: 7.14}
+  m_LocalScale: {x: 6.2792277, y: 12.5134945, z: 1.0326372}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 201384735}
@@ -4651,6 +4652,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1507995532}
   - component: {fileID: 1507995531}
+  - component: {fileID: 1507995533}
   m_Layer: 0
   m_Name: EvidenceUIManager
   m_TagString: Untagged
@@ -4679,7 +4681,7 @@ MonoBehaviour:
   nextButton: {fileID: 1514635387}
   closeButton: {fileID: 1124060788}
   fpsController: {fileID: 520975662}
-  interactor: {fileID: 1052000911}
+  interactor: {fileID: 201791}
 --- !u!4 &1507995532
 Transform:
   m_ObjectHideFlags: 0
@@ -4695,6 +4697,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1005223377}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1507995533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1507995530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 298554842f23a904182d586974bdeab9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EvidenceToastUI
+  panel: {fileID: 904328957}
+  icon: {fileID: 115314866}
+  title: {fileID: 732054961}
+  description: {fileID: 1517104364}
+  showSeconds: 5
 --- !u!1 &1514635385
 GameObject:
   m_ObjectHideFlags: 0
@@ -4981,7 +5000,7 @@ Transform:
   m_GameObject: {fileID: 1563614542}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.9, y: 7.82308, z: -31.01}
+  m_LocalPosition: {x: 6.9, y: 7.82308, z: 2.710001}
   m_LocalScale: {x: 102.36966, y: 15.794725, z: 0.26296315}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5687,7 +5706,7 @@ Transform:
   m_GameObject: {fileID: 1807243316}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -16, y: 5.09, z: -40.1}
+  m_LocalPosition: {x: -26.3, y: 5.09, z: -39.18}
   m_LocalScale: {x: 82.79034, y: 15.794725, z: 0.26296315}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5815,6 +5834,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 439f67109e35b7b41956964355d76ba9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EvidenceManager
+  maxEvidence: 4
+  startingEvidence:
+  - {fileID: 11400000, guid: 2066b12648b912b4e83af295a09ea957, type: 2}
 --- !u!1 &1890641996
 GameObject:
   m_ObjectHideFlags: 0
@@ -5989,7 +6011,7 @@ Transform:
   m_GameObject: {fileID: 2082755951}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -14.5, y: 5.09, z: -79.57}
+  m_LocalPosition: {x: -14.5, y: 5.09, z: -46.6}
   m_LocalScale: {x: 48.033894, y: 15.794725, z: 0.26296315}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6085,14 +6107,13 @@ GameObject:
   - component: {fileID: 2092499285}
   - component: {fileID: 2092499284}
   - component: {fileID: 2092499283}
-  - component: {fileID: 2092499282}
   m_Layer: 3
   m_Name: Clue_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2092499281
 Transform:
   m_ObjectHideFlags: 0
@@ -6102,31 +6123,12 @@ Transform:
   m_GameObject: {fileID: 2092499280}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -34.97, y: -2.17, z: -30.19}
+  m_LocalPosition: {x: -34.97, y: -2.17, z: -29.27}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2013435009}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2092499282
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2092499280}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 776f0d3335b36584587049046287e6a9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EvidencePickup
-  evidence: {fileID: 11400000, guid: 04ad212b3fb37c541b50d3bc2fef74c0, type: 2}
-  prompt: Inspect
-  dialogueLinesOnPickup:
-  - Evidence 1
-  - Test
-  - Test final line
-  disableAfterPickup: 1
 --- !u!65 &2092499283
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6220,4 +6222,3 @@ SceneRoots:
   - {fileID: 516978633}
   - {fileID: 1784266060}
   - {fileID: 1490976529}
-  - {fileID: 1107414350}

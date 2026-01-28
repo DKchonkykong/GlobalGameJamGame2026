@@ -16,20 +16,12 @@ public class EvidencePickup : MonoBehaviour, IInteractable
     {
         bool added = EvidenceManager.Instance.AddEvidence(evidence);
 
-        if (added)
-        {
-            if (dialogueLinesOnPickup != null && dialogueLinesOnPickup.Length > 0)
-                DialogueManager.Instance.ShowDialogue("Detective", dialogueLinesOnPickup);
-            else
-                DialogueManager.Instance.ShowDialogue("Detective", new[] { $"Added {evidence.displayName} to evidence." });
+        if (added && dialogueLinesOnPickup != null && dialogueLinesOnPickup.Length > 0)
+            DialogueManager.Instance.ShowDialogue("Detective", dialogueLinesOnPickup);
 
-            if (disableAfterPickup)
-                gameObject.SetActive(false);
-        }
-        else
-        {
-            DialogueManager.Instance.ShowDialogue("Detective", new[] { "Can't pick that up (evidence full or already collected)." });
-        }
+        if (disableAfterPickup && added)
+            gameObject.SetActive(false);
     }
+
 
 }
