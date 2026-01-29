@@ -1,11 +1,11 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-ady" at "2026-01-29T20:08:51.8003613Z"
 Built from '6000.3/respin/6000.3.5f1-a1ec4b2f2d19' branch; Version is '6000.3.5f2 (3fa8bc678cb0) revision 4171964'; Using compiler version '194234433'; Build Type 'Release'
 OS: 'Windows 11  (10.0.26100) Core' Language: 'en' Physical Memory: 32654 MB
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-ady" at "2026-01-28T14:41:27.5915323Z"
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
 System  architecture: x64
 Process architecture: x64
-Date: 2026-01-28T14:41:27Z
+Date: 2026-01-29T20:08:51Z
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\6000.3.5f2\Editor\Unity.exe
@@ -19,7 +19,9 @@ C:/Users/ady/Documents/GitHub/GlobalGameJamGame2026
 -logFile
 Logs/AssetImportWorker9.log
 -srvPort
-58448
+54574
+-licensingIpc
+LicenseClient-ady
 -job-worker-count
 7
 -background-job-worker-count
@@ -65,12 +67,12 @@ C:/Users/ady/Documents/GitHub/GlobalGameJamGame2026
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
     "memorysetup-temp-allocator-size-cloud-worker=32768"
-Player connection [26248]  Target information:
+Player connection [30428]  Target information:
 
-Player connection [26248]  * "[IP] 192.168.1.207 [Port] 0 [Flags] 2 [Guid] 3128543022 [EditorId] 3128543022 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-IAST724) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [30428]  * "[IP] 192.168.1.207 [Port] 0 [Flags] 2 [Guid] 1340949887 [EditorId] 1340949887 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-IAST724) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [26248] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [26248] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [30428] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [30428] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 7
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -82,7 +84,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 5.02 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 3.64 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.3.5f2 (3fa8bc678cb0)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.3.5f2/Editor/Data/Resources/UnitySubsystems
@@ -98,53 +100,53 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.3.5f2/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.3.5f2/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.3.5f2/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56056
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56624
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.5f2/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.004069 seconds.
+Registered in 0.004676 seconds.
 [Licensing::Client] Handshaking with LicensingClient:
   Version:                 1.17.4+4293ba1
-  Session Id:              c83892633e034766aa54f26aa4b00ac9
-  Correlation Id:          5deea81f421e7221185a8b536ced2ffa
-  External correlation Id: 7287264175680040058
+  Session Id:              92d5bfffaa904085852da50d33a8f433
+  Correlation Id:          cd35c8191757decb21c415f60e223d2b
+  External correlation Id: 3979427064803597240
   Machine Id:              w74mvXlGn566yFKgA+XQ5jLQxKI=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-ady" (connect: 0.00s, validation: 0.00s, handshake: 1.60s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-ady-notifications" at "2026-01-28T14:41:29.198194Z"
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-ady" (connect: 0.00s, validation: 0.00s, handshake: 1.61s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-ady-notifications" at "2026-01-29T20:08:53.4097528Z"
 [Licensing::Module] Licensing Background thread has ended after 1.61s
-- Loaded All Assemblies, in  0.791 seconds
+- Loaded All Assemblies, in  0.766 seconds
 Native extension for WindowsStandalone target not found
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.662 seconds
-Domain Reload Profiling: 1444ms
-	BeginReloadAssembly (249ms)
+- Finished resetting the current domain, in  0.657 seconds
+Domain Reload Profiling: 1414ms
+	BeginReloadAssembly (218ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (108ms)
-	RebuildNativeTypeToScriptingClass (28ms)
-	initialDomainReloadingComplete (93ms)
-	LoadAllAssembliesAndSetupDomain (303ms)
-		LoadAssemblies (242ms)
+	RebuildCommonClasses (74ms)
+	RebuildNativeTypeToScriptingClass (24ms)
+	initialDomainReloadingComplete (98ms)
+	LoadAllAssembliesAndSetupDomain (341ms)
+		LoadAssemblies (212ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (298ms)
-			TypeCache.Refresh (295ms)
-				TypeCache.ScanAssembly (248ms)
+		AnalyzeDomain (335ms)
+			TypeCache.Refresh (333ms)
+				TypeCache.ScanAssembly (285ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (663ms)
+	FinalizeReload (657ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (583ms)
+		SetupLoadedEditorAssemblies (576ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (75ms)
+			InitializePlatformSupportModulesInManaged (74ms)
 			SetLoadedEditorAssemblies (6ms)
-			BeforeProcessingInitializeOnLoad (150ms)
+			BeforeProcessingInitializeOnLoad (136ms)
 			ProcessInitializeOnLoadAttributes (238ms)
-			ProcessInitializeOnLoadMethodAttributes (114ms)
+			ProcessInitializeOnLoadMethodAttributes (122ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -159,8 +161,8 @@ Begin MonoManager ReloadAssembly
   Product: Unity Personal
   Type: Assigned
   Expiration: Unlimited
-- Loaded All Assemblies, in  1.353 seconds
-Refreshing native plugins compatible for Editor in 1.45 ms, found 3 plugins.
+- Loaded All Assemblies, in  1.338 seconds
+Refreshing native plugins compatible for Editor in 1.42 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
@@ -168,294 +170,414 @@ Package Manager log level set to [2]
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.172 seconds
-Domain Reload Profiling: 2514ms
-	BeginReloadAssembly (290ms)
+- Finished resetting the current domain, in  1.165 seconds
+Domain Reload Profiling: 2493ms
+	BeginReloadAssembly (304ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (9ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (53ms)
-	RebuildCommonClasses (61ms)
-	RebuildNativeTypeToScriptingClass (20ms)
-	initialDomainReloadingComplete (64ms)
-	LoadAllAssembliesAndSetupDomain (906ms)
-		LoadAssemblies (590ms)
+		CreateAndSetChildDomain (59ms)
+	RebuildCommonClasses (69ms)
+	RebuildNativeTypeToScriptingClass (23ms)
+	initialDomainReloadingComplete (67ms)
+	LoadAllAssembliesAndSetupDomain (864ms)
+		LoadAssemblies (565ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (476ms)
-			TypeCache.Refresh (340ms)
-				TypeCache.ScanAssembly (272ms)
+		AnalyzeDomain (463ms)
+			TypeCache.Refresh (327ms)
+				TypeCache.ScanAssembly (264ms)
 			BuildScriptInfoCaches (115ms)
 			ResolveRequiredComponents (16ms)
-	FinalizeReload (1173ms)
+	FinalizeReload (1166ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (879ms)
+		SetupLoadedEditorAssemblies (873ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (2ms)
 			SetLoadedEditorAssemblies (8ms)
-			BeforeProcessingInitializeOnLoad (237ms)
-			ProcessInitializeOnLoadAttributes (528ms)
-			ProcessInitializeOnLoadMethodAttributes (91ms)
-			AfterProcessingInitializeOnLoad (13ms)
+			BeforeProcessingInitializeOnLoad (229ms)
+			ProcessInitializeOnLoadAttributes (533ms)
+			ProcessInitializeOnLoadMethodAttributes (90ms)
+			AfterProcessingInitializeOnLoad (11ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (8ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
-Refreshing native plugins compatible for Editor in 2.45 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.54 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6262 unused Assets / (4.0 MB). Loaded Objects now: 7080.
-Memory consumption went from 147.2 MB to 143.2 MB.
-Total: 24.088800 ms (FindLiveObjects: 3.688600 ms CreateObjectMapping: 3.305400 ms MarkObjects: 11.986800 ms  DeleteObjects: 5.107100 ms)
+Unloading 6270 unused Assets / (4.9 MB). Loaded Objects now: 7093.
+Memory consumption went from 152.5 MB to 147.6 MB.
+Total: 19.922600 ms (FindLiveObjects: 1.815800 ms CreateObjectMapping: 1.484300 ms MarkObjects: 11.710100 ms  DeleteObjects: 4.911500 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 16461.617906 seconds.
-  path: Assets/MainAssets/YughuesFreeFlooringMaterials/Materials/M_YFFlM_08.mat
-  artifactKey: Guid(5c0de40c69f48b14eb67d6190333581f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MainAssets/YughuesFreeFlooringMaterials/Materials/M_YFFlM_08.mat using Guid(5c0de40c69f48b14eb67d6190333581f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '27e3cfaf5a71b2eb7daf317bdfbb81d1') in 0.130723 seconds
+  Time since last request: 2299.945073 seconds.
+  path: Assets/MainAssets/UI/EB_Garamond/static/EBGaramond-ExtraBold.ttf
+  artifactKey: Guid(567909f7fdf5f384ea9688f5df7e5e2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/UI/EB_Garamond/static/EBGaramond-ExtraBold.ttf using Guid(567909f7fdf5f384ea9688f5df7e5e2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4bb399db21b8f62a9542ee5b0367c61f') in 0.7200592 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/MainAssets/YughuesFreeFlooringMaterials/Materials/M_YFFlM_07.mat
-  artifactKey: Guid(8277198ec0924384ca46355178c0195b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MainAssets/YughuesFreeFlooringMaterials/Materials/M_YFFlM_07.mat using Guid(8277198ec0924384ca46355178c0195b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '81d734e5cc3753d8ea67e2e1c409a9a3') in 0.0169641 seconds
+  Time since last request: 120.364585 seconds.
+  path: Assets/TextMesh Pro/Glyph Report.txt
+  artifactKey: Guid(472276719d35314479359c0d3860f744) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TextMesh Pro/Glyph Report.txt using Guid(472276719d35314479359c0d3860f744) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'cb9a3b561f4b839576f07dec42eaae7a') in 0.0578535 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.748842 seconds.
+  path: Assets/MainAssets/UI/EB_Garamond/EBGaramond-Italic-VariableFont_wght SDF.asset
+  artifactKey: Guid(38d75006682972144bd74973ca730f87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/UI/EB_Garamond/EBGaramond-Italic-VariableFont_wght SDF.asset using Guid(38d75006682972144bd74973ca730f87) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6477efe7bfda951ede625763f0bf586b') in 0.0353228 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/MainAssets/YughuesFreeFlooringMaterials/Materials/M_YFFlM_03.mat
-  artifactKey: Guid(901d491d68de4614f94082da47053d79) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MainAssets/YughuesFreeFlooringMaterials/Materials/M_YFFlM_03.mat using Guid(901d491d68de4614f94082da47053d79) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ef489c444e340015b763d7bdcb870d26') in 0.013641 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/MainAssets/YughuesFreeFlooringMaterials/Materials/M_YFFlM_01.mat
-  artifactKey: Guid(c72c18a65c5a3ed4ead4b1b025a1a5d8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MainAssets/YughuesFreeFlooringMaterials/Materials/M_YFFlM_01.mat using Guid(c72c18a65c5a3ed4ead4b1b025a1a5d8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '277cf46eafc85cf1eb595b1d5ba65c91') in 0.0099386 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.260692 seconds.
-  path: Assets/MainAssets/YughuesFreeFlooringMaterials/Materials/M_YFFlM_08.mat
-  artifactKey: Guid(5c0de40c69f48b14eb67d6190333581f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MainAssets/YughuesFreeFlooringMaterials/Materials/M_YFFlM_08.mat using Guid(5c0de40c69f48b14eb67d6190333581f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1fedd1e151aa7c71d5caf96497fc6f8b') in 0.0133609 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000066 seconds.
-  path: Assets/MainAssets/YughuesFreeFlooringMaterials/Materials/M_YFFlM_02.mat
-  artifactKey: Guid(057523c35ac98894fa1692c16a6b2827) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MainAssets/YughuesFreeFlooringMaterials/Materials/M_YFFlM_02.mat using Guid(057523c35ac98894fa1692c16a6b2827) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b891b679011648a7c0ad14e1ecffa896') in 0.0112733 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/MainAssets/YughuesFreeFlooringMaterials/Materials/M_YFFlM_06.mat
-  artifactKey: Guid(02558090a64f563428be76397f7d0c72) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MainAssets/YughuesFreeFlooringMaterials/Materials/M_YFFlM_06.mat using Guid(02558090a64f563428be76397f7d0c72) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '22550edd67ad08e2544628fb3468d8ab') in 0.0101977 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
-
-========================================================================
-Received Import Request.
-  Time since last request: 11.612101 seconds.
-  path: Assets/MainAssets/YughuesFreeFlooringMaterials/Materials/M_YFFlM_03.mat
-  artifactKey: Guid(901d491d68de4614f94082da47053d79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MainAssets/YughuesFreeFlooringMaterials/Materials/M_YFFlM_03.mat using Guid(901d491d68de4614f94082da47053d79) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3ad0552fa0bf7e484b43ef1749854a80') in 0.7480582 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000046 seconds.
-  path: Assets/MainAssets/YughuesFreeFlooringMaterials/Materials/T_YFFlM_03_s.mat
-  artifactKey: Guid(868064f86e9db304d8143f7786f42b42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MainAssets/YughuesFreeFlooringMaterials/Materials/T_YFFlM_03_s.mat using Guid(868064f86e9db304d8143f7786f42b42) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b3650b8752b3ea357bd8fc434ae07bbc') in 3.1356833 seconds
+  Time since last request: 0.866877 seconds.
+  path: Assets/MainAssets/UI/EB_Garamond/EBGaramond-Italic-VariableFont_wght SDF.asset
+  artifactKey: Guid(38d75006682972144bd74973ca730f87) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/UI/EB_Garamond/EBGaramond-Italic-VariableFont_wght SDF.asset using Guid(38d75006682972144bd74973ca730f87) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '633a6bc5410c5a131b771cdd09b95599') in 0.0965728 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000054 seconds.
-  path: Assets/MainAssets/YughuesFreeFlooringMaterials/Materials/M_YFFlM_08.mat
-  artifactKey: Guid(5c0de40c69f48b14eb67d6190333581f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MainAssets/YughuesFreeFlooringMaterials/Materials/M_YFFlM_08.mat using Guid(5c0de40c69f48b14eb67d6190333581f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f47d8ee20b13dc85c858a4e7f3dc2286') in 0.0172512 seconds
+  Time since last request: 6.043254 seconds.
+  path: Assets/MainAssets/UI/EB_Garamond/EBGaramond-VariableFont_wght SDF.asset
+  artifactKey: Guid(3da5f4e42e870ce4aafda0289e95d0dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/UI/EB_Garamond/EBGaramond-VariableFont_wght SDF.asset using Guid(3da5f4e42e870ce4aafda0289e95d0dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0f7893fd2303a2588de721d96e081d0c') in 0.0214373 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000129 seconds.
-  path: Assets/MainAssets/YughuesFreeFlooringMaterials/Materials/M_YFFlM_12.mat
-  artifactKey: Guid(e20fae5a4472e48469ab68229b53bd6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MainAssets/YughuesFreeFlooringMaterials/Materials/M_YFFlM_12.mat using Guid(e20fae5a4472e48469ab68229b53bd6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8756797e0f72ea996122d473fd708736') in 0.018001 seconds
+  Time since last request: 0.883930 seconds.
+  path: Assets/TextMesh Pro/Glyph Report.txt
+  artifactKey: Guid(472276719d35314479359c0d3860f744) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TextMesh Pro/Glyph Report.txt using Guid(472276719d35314479359c0d3860f744) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6732e30be9726884dfcf8a6407bbbf05') in 0.0046336 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.210168 seconds.
+  path: Assets/TextMesh Pro/Glyph Report.txt
+  artifactKey: Guid(472276719d35314479359c0d3860f744) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TextMesh Pro/Glyph Report.txt using Guid(472276719d35314479359c0d3860f744) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f0c078a31212d924fb67b61cdd7b86cb') in 0.0045405 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.803354 seconds.
+  path: Assets/MainAssets/UI/EB_Garamond/static/EBGaramond-Bold SDF.asset
+  artifactKey: Guid(d591dbf119d18594bbf1274da020c333) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/UI/EB_Garamond/static/EBGaramond-Bold SDF.asset using Guid(d591dbf119d18594bbf1274da020c333) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '08cbac1ad7c23aa709dbfd1e0b9432e5') in 0.0196391 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.888143 seconds.
+  path: Assets/MainAssets/UI/EB_Garamond/static/EBGaramond-Bold SDF.asset
+  artifactKey: Guid(d591dbf119d18594bbf1274da020c333) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/UI/EB_Garamond/static/EBGaramond-Bold SDF.asset using Guid(d591dbf119d18594bbf1274da020c333) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bbba363211c45d500eedb9fe001f4cc9') in 0.016801 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.012369 seconds.
+  path: Assets/TextMesh Pro/Glyph Report.txt
+  artifactKey: Guid(472276719d35314479359c0d3860f744) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TextMesh Pro/Glyph Report.txt using Guid(472276719d35314479359c0d3860f744) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8ba50afa70c568792b9ada722ca5b62f') in 0.0078859 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.660302 seconds.
+  path: Assets/MainAssets/UI/EB_Garamond/static/EBGaramond-BoldItalic SDF.asset
+  artifactKey: Guid(2471d099b85a42a4b8b8037c006f2106) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/UI/EB_Garamond/static/EBGaramond-BoldItalic SDF.asset using Guid(2471d099b85a42a4b8b8037c006f2106) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5d0ff97453f608f9b87e66c099b1de63') in 0.0209178 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.888991 seconds.
+  path: Assets/MainAssets/UI/EB_Garamond/static/EBGaramond-BoldItalic SDF.asset
+  artifactKey: Guid(2471d099b85a42a4b8b8037c006f2106) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/UI/EB_Garamond/static/EBGaramond-BoldItalic SDF.asset using Guid(2471d099b85a42a4b8b8037c006f2106) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '76f5b498f801070c059abc87df252fe5') in 0.0247212 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.877101 seconds.
+  path: Assets/TextMesh Pro/Glyph Report.txt
+  artifactKey: Guid(472276719d35314479359c0d3860f744) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TextMesh Pro/Glyph Report.txt using Guid(472276719d35314479359c0d3860f744) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9b7a199d6c607fb30c8fe6e3de7de433') in 0.0047949 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.856975 seconds.
+  path: Assets/MainAssets/UI/EB_Garamond/static/EBGaramond-ExtraBold SDF.asset
+  artifactKey: Guid(0136531b9acd7094b9bca8fb51ceed5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/UI/EB_Garamond/static/EBGaramond-ExtraBold SDF.asset using Guid(0136531b9acd7094b9bca8fb51ceed5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6603933aba0e3cff5ee0245125f4bdbe') in 0.0259945 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.870900 seconds.
+  path: Assets/MainAssets/UI/EB_Garamond/static/EBGaramond-ExtraBold SDF.asset
+  artifactKey: Guid(0136531b9acd7094b9bca8fb51ceed5a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/UI/EB_Garamond/static/EBGaramond-ExtraBold SDF.asset using Guid(0136531b9acd7094b9bca8fb51ceed5a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e0bf6fff38fcfa74eb35bf68cff9fbb2') in 0.0201667 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.973187 seconds.
+  path: Assets/MainAssets/UI/EB_Garamond/static/EBGaramond-ExtraBoldItalic SDF.asset
+  artifactKey: Guid(6b92e70f343b70146ae5e81ea86778b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/UI/EB_Garamond/static/EBGaramond-ExtraBoldItalic SDF.asset using Guid(6b92e70f343b70146ae5e81ea86778b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '762662063f407f614a94712a6d057969') in 0.0207093 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.324183 seconds.
+  path: Assets/TextMesh Pro/Glyph Report.txt
+  artifactKey: Guid(472276719d35314479359c0d3860f744) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TextMesh Pro/Glyph Report.txt using Guid(472276719d35314479359c0d3860f744) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3acae34f4d14b8ba8741667ae78036e9') in 0.0048789 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.557682 seconds.
+  path: Assets/MainAssets/UI/EB_Garamond/static/EBGaramond-Italic SDF.asset
+  artifactKey: Guid(11f35b557e19f90459f5bab24077cdac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/UI/EB_Garamond/static/EBGaramond-Italic SDF.asset using Guid(11f35b557e19f90459f5bab24077cdac) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '07d25b8a231f9126ca595a50c7621ee5') in 0.0208878 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.886309 seconds.
+  path: Assets/MainAssets/UI/EB_Garamond/static/EBGaramond-Italic SDF.asset
+  artifactKey: Guid(11f35b557e19f90459f5bab24077cdac) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/UI/EB_Garamond/static/EBGaramond-Italic SDF.asset using Guid(11f35b557e19f90459f5bab24077cdac) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5ec5a784f9541516f374b18936025abc') in 0.0210393 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.020680 seconds.
+  path: Assets/MainAssets/UI/EB_Garamond/static/EBGaramond-Medium SDF.asset
+  artifactKey: Guid(6f1f52671b1af4742a76382f8a6f0d8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/UI/EB_Garamond/static/EBGaramond-Medium SDF.asset using Guid(6f1f52671b1af4742a76382f8a6f0d8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ef780577aee6c6fa78982ecf22e6a58f') in 0.0211778 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.883955 seconds.
+  path: Assets/TextMesh Pro/Glyph Report.txt
+  artifactKey: Guid(472276719d35314479359c0d3860f744) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TextMesh Pro/Glyph Report.txt using Guid(472276719d35314479359c0d3860f744) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '10a3e14220b88b68a0f501b9a2168dc3') in 0.0047759 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.047922 seconds.
+  path: Assets/MainAssets/UI/EB_Garamond/static/EBGaramond-MediumItalic SDF.asset
+  artifactKey: Guid(3e0820af378476d4d9f4f2c2f4d5a2b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/UI/EB_Garamond/static/EBGaramond-MediumItalic SDF.asset using Guid(3e0820af378476d4d9f4f2c2f4d5a2b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd5f4a2bf2dde9705f064ff1a8451f114') in 0.0226186 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.882146 seconds.
+  path: Assets/TextMesh Pro/Glyph Report.txt
+  artifactKey: Guid(472276719d35314479359c0d3860f744) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TextMesh Pro/Glyph Report.txt using Guid(472276719d35314479359c0d3860f744) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4aa007d227113c5db1d5017dfb943523') in 0.0043858 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.131144 seconds.
+  path: Assets/MainAssets/UI/EB_Garamond/static/EBGaramond-Regular SDF.asset
+  artifactKey: Guid(9557220b944675c4b89089bdf4c8f5f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/UI/EB_Garamond/static/EBGaramond-Regular SDF.asset using Guid(9557220b944675c4b89089bdf4c8f5f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5cb9365caedeb54603e5c4d7ead3fadd') in 0.0251358 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.880155 seconds.
+  path: Assets/MainAssets/UI/EB_Garamond/static/EBGaramond-Regular SDF.asset
+  artifactKey: Guid(9557220b944675c4b89089bdf4c8f5f1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/UI/EB_Garamond/static/EBGaramond-Regular SDF.asset using Guid(9557220b944675c4b89089bdf4c8f5f1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd253f87c3702ed77d054e4477ebf2970') in 0.023983 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.591182 seconds.
+  path: Assets/MainAssets/UI/EB_Garamond/static/EBGaramond-SemiBold SDF.asset
+  artifactKey: Guid(7898ced7a70591e49943f299cfc5fb41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/UI/EB_Garamond/static/EBGaramond-SemiBold SDF.asset using Guid(7898ced7a70591e49943f299cfc5fb41) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd690160e3748308b8687bee0958bbd52') in 0.0281115 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.831223 seconds.
+  path: Assets/TextMesh Pro/Glyph Report.txt
+  artifactKey: Guid(472276719d35314479359c0d3860f744) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TextMesh Pro/Glyph Report.txt using Guid(472276719d35314479359c0d3860f744) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3b01b00c2a280d3857d0905e2dbe712b') in 0.0043268 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.751721 seconds.
+  path: Assets/MainAssets/UI/EB_Garamond/static/EBGaramond-SemiBoldItalic SDF.asset
+  artifactKey: Guid(b625514147bd7414c88907073d5a2bce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/UI/EB_Garamond/static/EBGaramond-SemiBoldItalic SDF.asset using Guid(b625514147bd7414c88907073d5a2bce) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8975321883ccc9e747fc472cce36bdff') in 0.0205969 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.663079 seconds.
+  path: Assets/MainAssets/UI/EB_Garamond/static/EBGaramond-SemiBoldItalic SDF.asset
+  artifactKey: Guid(b625514147bd7414c88907073d5a2bce) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/UI/EB_Garamond/static/EBGaramond-SemiBoldItalic SDF.asset using Guid(b625514147bd7414c88907073d5a2bce) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e639c9fee87b39fa62bf1121af8dbda9') in 0.0211954 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 345.837780 seconds.
+  path: Assets/MainAssets/UI/EB_Garamond/static/EBGaramond-Bold SDF.asset
+  artifactKey: Guid(d591dbf119d18594bbf1274da020c333) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/UI/EB_Garamond/static/EBGaramond-Bold SDF.asset using Guid(d591dbf119d18594bbf1274da020c333) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1b0d18b6e5c0579c9d9f032e69a01509') in 0.0266826 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/MainAssets/UI/EB_Garamond/static/EBGaramond-Regular SDF.asset
+  artifactKey: Guid(9557220b944675c4b89089bdf4c8f5f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/UI/EB_Garamond/static/EBGaramond-Regular SDF.asset using Guid(9557220b944675c4b89089bdf4c8f5f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8240336a50a1f7b009b09baabfcdcd13') in 0.0212208 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/MainAssets/UI/EB_Garamond/static/EBGaramond-MediumItalic SDF.asset
+  artifactKey: Guid(3e0820af378476d4d9f4f2c2f4d5a2b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/UI/EB_Garamond/static/EBGaramond-MediumItalic SDF.asset using Guid(3e0820af378476d4d9f4f2c2f4d5a2b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3c5dc07e63e49e55bc76b2f11926b2b1') in 0.0262217 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/MainAssets/UI/EB_Garamond/static/EBGaramond-Italic SDF.asset
+  artifactKey: Guid(11f35b557e19f90459f5bab24077cdac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/UI/EB_Garamond/static/EBGaramond-Italic SDF.asset using Guid(11f35b557e19f90459f5bab24077cdac) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0b7f81b37975f88f3c4d013c357bc5e5') in 0.0396513 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/MainAssets/UI/EB_Garamond/static/EBGaramond-Medium SDF.asset
+  artifactKey: Guid(6f1f52671b1af4742a76382f8a6f0d8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/UI/EB_Garamond/static/EBGaramond-Medium SDF.asset using Guid(6f1f52671b1af4742a76382f8a6f0d8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bba5810e9af350826d59811bf7f2e890') in 0.0295217 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.342422 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Electronic Highway Sign SDF.asset
+  artifactKey: Guid(dc36b3fdc14f47ebb36fd484a67e268a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Electronic Highway Sign SDF.asset using Guid(dc36b3fdc14f47ebb36fd484a67e268a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '83a733f685cb897bfd8234d95ab79e65') in 0.0443803 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF.asset
+  artifactKey: Guid(5302535af1044152a457ed104f1f4b91) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF.asset using Guid(5302535af1044152a457ed104f1f4b91) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9cca26966c97d4090eeafb57f3c8573c') in 0.1357324 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/MainAssets/UI/EB_Garamond/static/EBGaramond-ExtraBold SDF.asset
+  artifactKey: Guid(0136531b9acd7094b9bca8fb51ceed5a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/UI/EB_Garamond/static/EBGaramond-ExtraBold SDF.asset using Guid(0136531b9acd7094b9bca8fb51ceed5a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '512ab7f59700e2e207f291befe4a47ba') in 0.0216585 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF.asset
+  artifactKey: Guid(125cb55b44b24c4393181402bc6200e6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF.asset using Guid(125cb55b44b24c4393181402bc6200e6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'cff4c3f920f76f594801ebe233756f70') in 0.0794828 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Oswald Bold SDF.asset
+  artifactKey: Guid(0161d805a3764c089bef00bfe00793f5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Oswald Bold SDF.asset using Guid(0161d805a3764c089bef00bfe00793f5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ab7b974e3de0526fa2bbb376a3340673') in 0.0731123 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/MainAssets/UI/EB_Garamond/static/EBGaramond-BoldItalic SDF.asset
+  artifactKey: Guid(2471d099b85a42a4b8b8037c006f2106) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/UI/EB_Garamond/static/EBGaramond-BoldItalic SDF.asset using Guid(2471d099b85a42a4b8b8037c006f2106) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '20b8f4624050c4de7b02f39efd5d6ec9') in 0.0193267 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000038 seconds.
-  path: Assets/MainAssets/YughuesFreeFlooringMaterials/Materials/M_YFFlM_05.mat
-  artifactKey: Guid(c74fd1bcdfc3dc548aa878748c2c73e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MainAssets/YughuesFreeFlooringMaterials/Materials/M_YFFlM_05.mat using Guid(c74fd1bcdfc3dc548aa878748c2c73e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3094cefbad9fcaf85250caf2105b1583') in 0.014443 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
-
-========================================================================
-Received Import Request.
-  Time since last request: 13.120885 seconds.
-  path: Assets/MainAssets/YughuesFreeFlooringMaterials/Materials/T_YFFlM_02_n.mat
-  artifactKey: Guid(29d918a566545f744a936e665bc379cd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MainAssets/YughuesFreeFlooringMaterials/Materials/T_YFFlM_02_n.mat using Guid(29d918a566545f744a936e665bc379cd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8baef14c56969b9827af427e3ac81354') in 0.0125081 seconds
+  path: Assets/MainAssets/UI/EB_Garamond/EBGaramond-Italic-VariableFont_wght SDF.asset
+  artifactKey: Guid(38d75006682972144bd74973ca730f87) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/UI/EB_Garamond/EBGaramond-Italic-VariableFont_wght SDF.asset using Guid(38d75006682972144bd74973ca730f87) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '04aef5a29624ad27c6b4980758765690') in 0.0175272 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000068 seconds.
-  path: Assets/MainAssets/YughuesFreeFlooringMaterials/Materials/T_YFFlM_10_n.mat
-  artifactKey: Guid(d058c01b335d4014882197cf9a3590f8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MainAssets/YughuesFreeFlooringMaterials/Materials/T_YFFlM_10_n.mat using Guid(d058c01b335d4014882197cf9a3590f8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8ca3c7b8a0900195920707860aa179dc') in 0.0094282 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000060 seconds.
-  path: Assets/MainAssets/YughuesFreeFlooringMaterials/Materials/T_YFFlM_11_s.mat
-  artifactKey: Guid(4c12d4ab3f07bad448b0b92b10d423d1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MainAssets/YughuesFreeFlooringMaterials/Materials/T_YFFlM_11_s.mat using Guid(4c12d4ab3f07bad448b0b92b10d423d1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '54d76505a77be2f8856883b5b8170840') in 0.0126792 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/MainAssets/YughuesFreeFlooringMaterials/Materials/T_YFFlM_07_n.mat
-  artifactKey: Guid(49f1fa60686da62488ddeb29ce0ebdab) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MainAssets/YughuesFreeFlooringMaterials/Materials/T_YFFlM_07_n.mat using Guid(49f1fa60686da62488ddeb29ce0ebdab) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c93a8e1d8c2053f75b37f081c866a6ea') in 0.0084384 seconds
+  Time since last request: 0.000034 seconds.
+  path: Assets/MainAssets/UI/EB_Garamond/static/EBGaramond-Regular SDF.asset
+  artifactKey: Guid(9557220b944675c4b89089bdf4c8f5f1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/UI/EB_Garamond/static/EBGaramond-Regular SDF.asset using Guid(9557220b944675c4b89089bdf4c8f5f1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'fdd3217fd8e10a8c9e16de9fac2b6517') in 0.017561 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000037 seconds.
-  path: Assets/MainAssets/YughuesFreeFlooringMaterials/Materials/T_YFFlM_09_n.mat
-  artifactKey: Guid(4426e73cc2ad2d441a4907d65719d1d7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MainAssets/YughuesFreeFlooringMaterials/Materials/T_YFFlM_09_n.mat using Guid(4426e73cc2ad2d441a4907d65719d1d7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4f63d6aed87c60811926216d03d2360c') in 0.0086067 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
+  artifactKey: Guid(2e498d1c8094910479dc3e1b768306a4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset using Guid(2e498d1c8094910479dc3e1b768306a4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2476c1ffffe5f173c6609bc2c99daaf9') in 0.0288979 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/MainAssets/YughuesFreeFlooringMaterials/Materials/T_YFFlM_03_n.mat
-  artifactKey: Guid(d1c6c6aaf9d5f04409b4ca990e86f739) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MainAssets/YughuesFreeFlooringMaterials/Materials/T_YFFlM_03_n.mat using Guid(d1c6c6aaf9d5f04409b4ca990e86f739) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ddf198e4b9bb84e168330590bde1a6b4') in 0.0090356 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+  Time since last request: 27.768905 seconds.
+  path: Assets/MainAssets/UI/EB_Garamond/EBGaramond-VariableFont_wght SDF.asset
+  artifactKey: Guid(3da5f4e42e870ce4aafda0289e95d0dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/UI/EB_Garamond/EBGaramond-VariableFont_wght SDF.asset using Guid(3da5f4e42e870ce4aafda0289e95d0dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b1a57dcfe183884661e51dee22af416e') in 0.0246336 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000050 seconds.
-  path: Assets/MainAssets/YughuesFreeFlooringMaterials/Materials/T_YFFlM_05_s.mat
-  artifactKey: Guid(7d587a37e7840664f8294f6b23b79e7a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MainAssets/YughuesFreeFlooringMaterials/Materials/T_YFFlM_05_s.mat using Guid(7d587a37e7840664f8294f6b23b79e7a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bedecdabd61462a3aee419119c7e693f') in 0.0100103 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+  Time since last request: 0.000074 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
+  artifactKey: Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset using Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dff67b908e89666e453ddc18914e1cb1') in 0.0204435 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/MainAssets/YughuesFreeFlooringMaterials/Materials/T_YFFlM_12_s.mat
-  artifactKey: Guid(10a49b1916dcb684f98499e5155b49fd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MainAssets/YughuesFreeFlooringMaterials/Materials/T_YFFlM_12_s.mat using Guid(10a49b1916dcb684f98499e5155b49fd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a43ccbaa9f5760a7ac146243da4d7904') in 0.0088359 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.337601 seconds.
-  path: Assets/MainAssets/YughuesFreeFlooringMaterials/Materials/T_YFFlM_02_n.mat
-  artifactKey: Guid(29d918a566545f744a936e665bc379cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MainAssets/YughuesFreeFlooringMaterials/Materials/T_YFFlM_02_n.mat using Guid(29d918a566545f744a936e665bc379cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd6a41760ce1d46836367755161d0ac77') in 0.0184054 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/MainAssets/YughuesFreeFlooringMaterials/Materials/T_YFFlM_05_n.mat
-  artifactKey: Guid(04cf06aacc6a7aa48adf745c5ce0df9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MainAssets/YughuesFreeFlooringMaterials/Materials/T_YFFlM_05_n.mat using Guid(04cf06aacc6a7aa48adf745c5ce0df9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f23fd29c80f53ffd07f668cd835d0a44') in 0.0153665 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/MainAssets/YughuesFreeFlooringMaterials/Materials/T_YFFlM_03_d.mat
-  artifactKey: Guid(f26bbbdb7fc30794f92f07a82aafdc71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MainAssets/YughuesFreeFlooringMaterials/Materials/T_YFFlM_03_d.mat using Guid(f26bbbdb7fc30794f92f07a82aafdc71) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c5766bfd4fbe1001f16d1ef1a6dfd093') in 0.0140189 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000043 seconds.
-  path: Assets/MainAssets/YughuesFreeFlooringMaterials/Materials/T_YFFlM_11_s.mat
-  artifactKey: Guid(4c12d4ab3f07bad448b0b92b10d423d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MainAssets/YughuesFreeFlooringMaterials/Materials/T_YFFlM_11_s.mat using Guid(4c12d4ab3f07bad448b0b92b10d423d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7e2d7278aabe3af1afe519cc4634bd43') in 0.0165941 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/MainAssets/YughuesFreeFlooringMaterials/Materials/T_YFFlM_11_n.mat
-  artifactKey: Guid(361f6f3c82aa70b41a0d69e4ccbb314a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MainAssets/YughuesFreeFlooringMaterials/Materials/T_YFFlM_11_n.mat using Guid(361f6f3c82aa70b41a0d69e4ccbb314a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '49d0147686ca1eb1ae3aaf0582ef74a4') in 0.017682 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/MainAssets/YughuesFreeFlooringMaterials/Materials/T_YFFlM_04_d.mat
-  artifactKey: Guid(01ccc0494e1843342b6fc49819033689) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MainAssets/YughuesFreeFlooringMaterials/Materials/T_YFFlM_04_d.mat using Guid(01ccc0494e1843342b6fc49819033689) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '334599df41d9f41149e2c7d54f0f0e2a') in 0.017032 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/MainAssets/YughuesFreeFlooringMaterials/Materials/T_YFFlM_11_d.mat
-  artifactKey: Guid(14d6778014fc35f40922f6cc4ff5b5e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MainAssets/YughuesFreeFlooringMaterials/Materials/T_YFFlM_11_d.mat using Guid(14d6778014fc35f40922f6cc4ff5b5e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '92c585fdf238f0b25a443ffddad01be2') in 0.0151419 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000052 seconds.
-  path: Assets/MainAssets/YughuesFreeFlooringMaterials/Materials/T_YFFlM_10_s.mat
-  artifactKey: Guid(70d4fd2cd124aef46971766be395e67a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MainAssets/YughuesFreeFlooringMaterials/Materials/T_YFFlM_10_s.mat using Guid(70d4fd2cd124aef46971766be395e67a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a9cb49f84f9b6059210567c189c109c9') in 0.0152004 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 47.248394 seconds.
-  path: Assets/MainAssets/ALP_Assets/Old Floor Linoleum FREE/Materials/OldFloor01_b_noSeams 1.mat
-  artifactKey: Guid(18711ad22f76fc34b8015be9b871c2e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MainAssets/ALP_Assets/Old Floor Linoleum FREE/Materials/OldFloor01_b_noSeams 1.mat using Guid(18711ad22f76fc34b8015be9b871c2e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '53b2beed5a57a7c0fb66a706543c81d6') in 0.0222086 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/MainAssets/ALP_Assets/Old Floor Linoleum FREE/Materials/OldFloor01_d_noSeams_R.mat
-  artifactKey: Guid(11b0430ebf927fc478f4cf12246fb279) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MainAssets/ALP_Assets/Old Floor Linoleum FREE/Materials/OldFloor01_d_noSeams_R.mat using Guid(11b0430ebf927fc478f4cf12246fb279) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '85b5cafc6e33dd00b13ba4ad9998c515') in 0.015682 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/MainAssets/ALP_Assets/Old Floor Linoleum FREE/Materials/OldFloor01_d_noSeams_AO.mat
-  artifactKey: Guid(b6ee12e59c976a94f89b849a6f1df64c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MainAssets/ALP_Assets/Old Floor Linoleum FREE/Materials/OldFloor01_d_noSeams_AO.mat using Guid(b6ee12e59c976a94f89b849a6f1df64c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '423e75172484f1f2c88c786ec2ef4681') in 0.0198058 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+  Time since last request: 0.000051 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Oswald Bold SDF.asset
+  artifactKey: Guid(0161d805a3764c089bef00bfe00793f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Oswald Bold SDF.asset using Guid(0161d805a3764c089bef00bfe00793f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ede29a318e9babb92f0e9ffa008c077f') in 0.0332168 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
