@@ -14,6 +14,7 @@ public class EvidenceManager : MonoBehaviour
     private int currentIndex = 0;
 
     public event Action OnEvidenceChanged;
+    public event Action<EvidenceItem> OnEvidenceAdded; // Added this event
 
     public IReadOnlyList<EvidenceItem> Evidence => evidenceList;
     public int Count => evidenceList.Count;
@@ -53,7 +54,15 @@ public class EvidenceManager : MonoBehaviour
 
         evidenceList.Add(item);
         currentIndex = Mathf.Clamp(currentIndex, 0, evidenceList.Count - 1);
+        
         OnEvidenceChanged?.Invoke();
+        
+        // Fire the OnEvidenceAdded event only if showToast is true
+        if (showToast)
+        {
+            OnEvidenceAdded?.Invoke(item);
+        }
+        
         return true;
     }
 

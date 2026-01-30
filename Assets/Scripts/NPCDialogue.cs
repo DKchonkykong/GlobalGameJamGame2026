@@ -33,13 +33,13 @@ public class NPCDialogue : MonoBehaviour, IEvidenceReceiver
     }
 
     // Called when player "presents" evidence while talking to this NPC
-    public void ReceiveEvidence(EvidenceItem item)
+    public bool ReceiveEvidence(EvidenceItem item)
     {
-        if (currentNode == null) return;
+        if (currentNode == null) return false;
 
         // Node not expecting evidence
         if (currentNode.requiredEvidence == null)
-            return;
+            return false;
 
         if (item == currentNode.requiredEvidence)
         {
@@ -53,6 +53,8 @@ public class NPCDialogue : MonoBehaviour, IEvidenceReceiver
             // after showing success node, hop to its next
             if (currentNode != null)
                 currentNode = currentNode.next;
+
+            return true;
         }
         else
         {
@@ -62,6 +64,8 @@ public class NPCDialogue : MonoBehaviour, IEvidenceReceiver
                 DialogueManager.Instance.ShowDialogue(wrong.lines);
             else if (currentNode.ifNoEvidence != null)
                 DialogueManager.Instance.ShowDialogue(currentNode.ifNoEvidence.lines);
+
+            return false;
         }
     }
 }

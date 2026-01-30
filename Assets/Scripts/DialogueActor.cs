@@ -107,15 +107,14 @@ public class DialogueActor : MonoBehaviour, IInteractable, IEvidenceReceiver
         return currentNode;
     }
 
-    public void ReceiveEvidence(EvidenceItem item)
+    public bool ReceiveEvidence(EvidenceItem item)
     {
-        if (item == null) return;
+        if (item == null) return false;
 
         // Check if this is evidence we're specifically waiting for (from dialogue nodes)
         if (currentNode != null && currentNode.requiredEvidence != null)
         {
-            HandleRequiredEvidence(item);
-            return;
+            return HandleRequiredEvidence(item);
         }
 
         // Check custom evidence reactions
@@ -123,7 +122,7 @@ public class DialogueActor : MonoBehaviour, IInteractable, IEvidenceReceiver
         if (reaction != null)
         {
             HandleEvidenceReaction(item, reaction);
-            return;
+            return true;
         }
 
         // Default: not interested in this evidence
@@ -132,9 +131,10 @@ public class DialogueActor : MonoBehaviour, IInteractable, IEvidenceReceiver
             new DialogueLine { speaker = displayName, text = "I don't think that's relevant right now." }
         };
         DialogueManager.Instance.ShowDialogue(defaultLines);
+        return false;
     }
 
-    void HandleRequiredEvidence(EvidenceItem item)
+    bool HandleRequiredEvidence(EvidenceItem item)
     {
         if (item == currentNode.requiredEvidence)
         {
@@ -158,6 +158,7 @@ public class DialogueActor : MonoBehaviour, IInteractable, IEvidenceReceiver
             }
 
             SaveState();
+            return true;
         }
         else
         {
@@ -176,6 +177,7 @@ public class DialogueActor : MonoBehaviour, IInteractable, IEvidenceReceiver
                 };
                 DialogueManager.Instance.ShowDialogue(wrongLines);
             }
+            return false;
         }
     }
 
