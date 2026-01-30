@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47b606592c9bc9e4dbee052ee82597cb, type: 3}
+  m_Name: Electritian_Greeting
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  nodeId: Electritian_greeting
+  lines:
+  - speaker: Witness
+    text: 'I KEEP TELLING YOU I DIDN''T DO IT.
+
+      I DIDN''T KILL HER I DID NOT!'
+  - speaker: Witness
+    text: 'Oh um h-hello Detective.
+
+      My name is Joe but everyone calls me Electritian
+      Joe'
+  - speaker: Electritian Joe
+    text: 'A-Anyway I kept telling the police officer
+
+      That I didn''t kill
+      Elizabeth Winfred.'
+  - speaker: Detective
+    text: But he doesn't believe you?
+  - speaker: Electritian Joe
+    text: 'It s-seems so
+
+      Why does this happen to be now...'
+  - speaker: Detective
+    text: Right...
+  requiredEvidence: {fileID: 11400000, guid: 2066b12648b912b4e83af295a09ea957, type: 2}
+  ifEvidenceCorrect: {fileID: 11400000, guid: a6fe9066e7bf37944a89df9109b8b427, type: 2}
+  ifEvidenceWrong: {fileID: 11400000, guid: 63b4b4f7b4ffbed4088857bab7a93ad2, type: 2}
+  ifNoEvidence: {fileID: 0}
+  next: {fileID: 11400000, guid: 3c9bf7467ca7c95449dc0cfda6dfeda2, type: 2}

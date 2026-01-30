@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47b606592c9bc9e4dbee052ee82597cb, type: 3}
+  m_Name: Aristrocrat_Greeting
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  nodeId: Electritian_greeting
+  lines:
+  - speaker: Witness
+    text: How long is this going to take?
+  - speaker: Witness
+    text: 'I''ll have you know this ball was ruined
+
+      Now if you excuse me.'
+  - speaker: Detective
+    text: "This is an ongoing investigation!\nIf you don't want to get arrested I
+      will need your name.\t"
+  - speaker: Hans Sterling
+    text: 'Fine
+
+      My name is Hans Sterling.'
+  - speaker: Hans Sterling
+    text: 'Make this quick
+
+      I have an appointment on the hour.'
+  - speaker: Detective
+    text: This won't end well...
+  requiredEvidence: {fileID: 11400000, guid: 2066b12648b912b4e83af295a09ea957, type: 2}
+  ifEvidenceCorrect: {fileID: 11400000, guid: a6fe9066e7bf37944a89df9109b8b427, type: 2}
+  ifEvidenceWrong: {fileID: 11400000, guid: 63b4b4f7b4ffbed4088857bab7a93ad2, type: 2}
+  ifNoEvidence: {fileID: 0}
+  next: {fileID: 11400000, guid: 3c9bf7467ca7c95449dc0cfda6dfeda2, type: 2}

@@ -1,0 +1,1337 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+Built from '6000.3/respin/6000.3.5f1-a1ec4b2f2d19' branch; Version is '6000.3.5f2 (3fa8bc678cb0) revision 4171964'; Using compiler version '194234433'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26100) Core' Language: 'en' Physical Memory: 32654 MB
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-ady" at "2026-01-30T17:57:28.0979895Z"
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-01-30T17:57:28Z
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.3.5f2\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker4
+-projectPath
+C:/Users/ady/Documents/GitHub/GlobalGameJamGame2026
+-logFile
+Logs/AssetImportWorker4.log
+-srvPort
+65134
+-licensingIpc
+LicenseClient-ady
+-job-worker-count
+7
+-background-job-worker-count
+8
+-gc-helper-count
+1
+-name
+AssetImport
+Successfully changed project path to: C:/Users/ady/Documents/GitHub/GlobalGameJamGame2026
+C:/Users/ady/Documents/GitHub/GlobalGameJamGame2026
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+Player connection [26740]  Target information:
+
+Player connection [26740]  * "[IP] 192.168.1.207 [Port] 0 [Flags] 2 [Guid] 3275719972 [EditorId] 3275719972 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-IAST724) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [26740] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [26740] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 7
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Refreshing native plugins compatible for Editor in 4.00 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.3.5f2 (3fa8bc678cb0)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.3.5f2/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/ady/Documents/GitHub/GlobalGameJamGame2026/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 4070 (ID=0x2786)
+    Vendor:   NVIDIA
+    VRAM:     12010 MB
+    Driver:   32.0.15.9174
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.3.5f2/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.3.5f2/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.3.5f2/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56892
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.5f2/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003207 seconds.
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.17.4+4293ba1
+  Session Id:              176478c9115c43f284f4a25bddabd1c6
+  Correlation Id:          75d0e2004c23608cf35211940a76fd7f
+  External correlation Id: 3343688648100063081
+  Machine Id:              w74mvXlGn566yFKgA+XQ5jLQxKI=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-ady" (connect: 0.00s, validation: 0.00s, handshake: 1.37s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-ady-notifications" at "2026-01-30T17:57:29.4721958Z"
+[Licensing::Module] Licensing Background thread has ended after 1.37s
+- Loaded All Assemblies, in  0.670 seconds
+Native extension for WindowsStandalone target not found
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.642 seconds
+Domain Reload Profiling: 1306ms
+	BeginReloadAssembly (204ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (63ms)
+	RebuildNativeTypeToScriptingClass (22ms)
+	initialDomainReloadingComplete (79ms)
+	LoadAllAssembliesAndSetupDomain (295ms)
+		LoadAssemblies (196ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (290ms)
+			TypeCache.Refresh (288ms)
+				TypeCache.ScanAssembly (244ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (642ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (562ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (74ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (137ms)
+			ProcessInitializeOnLoadAttributes (231ms)
+			ProcessInitializeOnLoadMethodAttributes (113ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 5773840413360-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+- Loaded All Assemblies, in  1.374 seconds
+Refreshing native plugins compatible for Editor in 1.40 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Package Manager log level set to [2]
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.239 seconds
+Domain Reload Profiling: 2601ms
+	BeginReloadAssembly (290ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (9ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (57ms)
+	RebuildCommonClasses (64ms)
+	RebuildNativeTypeToScriptingClass (20ms)
+	initialDomainReloadingComplete (65ms)
+	LoadAllAssembliesAndSetupDomain (923ms)
+		LoadAssemblies (592ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (484ms)
+			TypeCache.Refresh (344ms)
+				TypeCache.ScanAssembly (276ms)
+			BuildScriptInfoCaches (118ms)
+			ResolveRequiredComponents (16ms)
+	FinalizeReload (1239ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (917ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (8ms)
+			BeforeProcessingInitializeOnLoad (248ms)
+			ProcessInitializeOnLoadAttributes (555ms)
+			ProcessInitializeOnLoadMethodAttributes (90ms)
+			AfterProcessingInitializeOnLoad (13ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (8ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Refreshing native plugins compatible for Editor in 2.34 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6271 unused Assets / (4.9 MB). Loaded Objects now: 7098.
+Memory consumption went from 152.6 MB to 147.6 MB.
+Total: 18.352700 ms (FindLiveObjects: 1.901800 ms CreateObjectMapping: 1.408800 ms MarkObjects: 10.376300 ms  DeleteObjects: 4.664900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 11560.051752 seconds.
+  path: Assets/MainAssets/Dialogue/Police/Receptionist_AutopsyReport.asset
+  artifactKey: Guid(6a52be3e2b5f7b647af1d31fb5d332dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Dialogue/Police/Receptionist_AutopsyReport.asset using Guid(6a52be3e2b5f7b647af1d31fb5d332dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '745200b5b31261f96e2be517b8b3a65b') in 0.0372676 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/MainAssets/Dialogue/Police/Receptionist_Wrong.asset
+  artifactKey: Guid(f5a2581a550f1404b9884175d579a78c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Dialogue/Police/Receptionist_Wrong.asset using Guid(f5a2581a550f1404b9884175d579a78c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e4eeb9cf2b6bca48dd799607bbc330ef') in 0.0015039 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/MainAssets/Dialogue/Police/Receptionist_GenericEvidence.asset
+  artifactKey: Guid(5508213d8ab9cc34d9fd97d33481c415) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Dialogue/Police/Receptionist_GenericEvidence.asset using Guid(5508213d8ab9cc34d9fd97d33481c415) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a515a2d4fc1172b5c01e0bde6416ee29') in 0.0015176 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/MainAssets/Dialogue/Police/Receptionist_BadgeGeneric.asset
+  artifactKey: Guid(82783391670a20e4d9eba1ac08f881ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Dialogue/Police/Receptionist_BadgeGeneric.asset using Guid(82783391670a20e4d9eba1ac08f881ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5cfc625b6a154b8801f8a28660c77fdc') in 0.0014415 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/MainAssets/Dialogue/Police/Receptionist_Greeting.asset
+  artifactKey: Guid(ddefc4ed14ed5394188bca1d1899a082) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Dialogue/Police/Receptionist_Greeting.asset using Guid(ddefc4ed14ed5394188bca1d1899a082) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '11a97850dc2925d43db5e86bd495352b') in 0.0054413 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.527437 seconds.
+  path: Assets/MainAssets/Dialogue/Receptionist/Receptionist_SilverMask.asset
+  artifactKey: Guid(64a3ae3996eb6d04b9e366acfee58b63) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Receptionist/Receptionist_SilverMask.asset using Guid(64a3ae3996eb6d04b9e366acfee58b63) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8709a619290a2599b9b056bd4e54494f') in 0.1910206 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/MainAssets/Dialogue/Police/Receptionist_SilverMask.asset
+  artifactKey: Guid(926f5f8100b945146a8923944383a0de) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Police/Receptionist_SilverMask.asset using Guid(926f5f8100b945146a8923944383a0de) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '83f96e5e593db78364d9ed55a239db46') in 0.0078036 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/MainAssets/Dialogue/Police/Receptionist_GenericEvidence.asset
+  artifactKey: Guid(5508213d8ab9cc34d9fd97d33481c415) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Police/Receptionist_GenericEvidence.asset using Guid(5508213d8ab9cc34d9fd97d33481c415) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'eda8f5cfbc8dbce546c9861d15e627bb') in 0.006918 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/MainAssets/Dialogue/Police/Receptionist_Greeting.asset
+  artifactKey: Guid(ddefc4ed14ed5394188bca1d1899a082) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Police/Receptionist_Greeting.asset using Guid(ddefc4ed14ed5394188bca1d1899a082) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '13bb46468402c3ad39292cd3a530ff8a') in 0.0133492 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/MainAssets/Dialogue/Police/Receptionist_Generic.asset
+  artifactKey: Guid(a726d55a2f413fc4c8075db8583025c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Police/Receptionist_Generic.asset using Guid(a726d55a2f413fc4c8075db8583025c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c61415d07fc11f757d14115d37bb3bd4') in 0.0060045 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.254534 seconds.
+  path: Assets/MainAssets/Dialogue/Witness1/Receptionist_AutopsyReport.asset
+  artifactKey: Guid(06562a72ce57102449e3ea6798ba622c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Dialogue/Witness1/Receptionist_AutopsyReport.asset using Guid(06562a72ce57102449e3ea6798ba622c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f6b875a76becd6335724c4e6cc2ef074') in 0.0014838 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/MainAssets/Dialogue/Witness1/Receptionist_Generic.asset
+  artifactKey: Guid(cabbc01e975951648be08230187ff4b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Dialogue/Witness1/Receptionist_Generic.asset using Guid(cabbc01e975951648be08230187ff4b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '61f6f592d72db3c5c57f2e08ca49c253') in 0.0015036 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/MainAssets/Dialogue/Witness1/Receptionist_BadgeGeneric.asset
+  artifactKey: Guid(b0d98a8d35b37df4f8657d559f4f889d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Dialogue/Witness1/Receptionist_BadgeGeneric.asset using Guid(b0d98a8d35b37df4f8657d559f4f889d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9f9ee0efee518d8229b2b59c0d056489') in 0.0019097 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/MainAssets/Dialogue/Witness1/Receptionist_Greeting.asset
+  artifactKey: Guid(8c2e80cf167d8b243b01e05750f7694f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Dialogue/Witness1/Receptionist_Greeting.asset using Guid(8c2e80cf167d8b243b01e05750f7694f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c580a8c1084bb4664ff6e8b2180c31a1') in 0.0066702 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.631748 seconds.
+  path: Assets/MainAssets/Dialogue/Witness1/Receptionist_AutopsyReport.asset
+  artifactKey: Guid(06562a72ce57102449e3ea6798ba622c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Witness1/Receptionist_AutopsyReport.asset using Guid(06562a72ce57102449e3ea6798ba622c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '99eb4accaa017e80490caacb15f0f7a2') in 0.0062397 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/MainAssets/Dialogue/Witness1/Receptionist_Greeting.asset
+  artifactKey: Guid(8c2e80cf167d8b243b01e05750f7694f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Witness1/Receptionist_Greeting.asset using Guid(8c2e80cf167d8b243b01e05750f7694f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '820a5f469cf1b357ef000cc13bae7c00') in 0.0123806 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/MainAssets/Dialogue/Witness1/Receptionist_GenericEvidence.asset
+  artifactKey: Guid(80ec11a773dc62648bda6d3476699b93) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Witness1/Receptionist_GenericEvidence.asset using Guid(80ec11a773dc62648bda6d3476699b93) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '61336fc82da461bdc385ba6373f26818') in 0.0064352 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/MainAssets/Dialogue/Witness1/Receptionist_Wrong.asset
+  artifactKey: Guid(4e5449dee5ad4ae4cb10061e36dee346) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Witness1/Receptionist_Wrong.asset using Guid(4e5449dee5ad4ae4cb10061e36dee346) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '38fc8ed8502a2128a19d5e1058d8a598') in 0.008823 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.537584 seconds.
+  path: Assets/MainAssets/Dialogue/Witness2/Receptionist_AutopsyReport.asset
+  artifactKey: Guid(4c20d3b5233073248870228c8a842bd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Dialogue/Witness2/Receptionist_AutopsyReport.asset using Guid(4c20d3b5233073248870228c8a842bd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '759189c446d6c100e5864816c4924cfb') in 0.0015803 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/MainAssets/Dialogue/Witness2/Receptionist_GenericEvidence.asset
+  artifactKey: Guid(1193aa0f799c6a34b8c847617bd0c258) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Dialogue/Witness2/Receptionist_GenericEvidence.asset using Guid(1193aa0f799c6a34b8c847617bd0c258) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fb6b12eb1e890bf4df78bc3598009168') in 0.0014695 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/MainAssets/Dialogue/Witness2/Receptionist_BrokenSwitch.asset
+  artifactKey: Guid(6403ea8b14739244690c6607c2f8b64a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Dialogue/Witness2/Receptionist_BrokenSwitch.asset using Guid(6403ea8b14739244690c6607c2f8b64a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '678a1d031ed5aeadfe0b952fd6982268') in 0.0024059 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/MainAssets/Dialogue/Witness2/Receptionist_Greeting.asset
+  artifactKey: Guid(a93ac88fdb7a2ee4083a40cae1e738d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Dialogue/Witness2/Receptionist_Greeting.asset using Guid(a93ac88fdb7a2ee4083a40cae1e738d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '73dc855c9f191da61e146827dcb411d8') in 0.0035935 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/MainAssets/Dialogue/Witness2/Receptionist_BadgeGeneric.asset
+  artifactKey: Guid(2fd92f03024bc174e8086d363775f721) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Dialogue/Witness2/Receptionist_BadgeGeneric.asset using Guid(2fd92f03024bc174e8086d363775f721) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '42336442647a7128914c13148316602a') in 0.0017307 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.548180 seconds.
+  path: Assets/MainAssets/Dialogue/Witness2/Receptionist_AutopsyReport.asset
+  artifactKey: Guid(4c20d3b5233073248870228c8a842bd5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Witness2/Receptionist_AutopsyReport.asset using Guid(4c20d3b5233073248870228c8a842bd5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9924111c055a32c6d460d7bdf466576a') in 0.0068066 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/MainAssets/Dialogue/Witness2/Receptionist_SilverMask.asset
+  artifactKey: Guid(59d6a96425d55a84ea16e874829abf71) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Witness2/Receptionist_SilverMask.asset using Guid(59d6a96425d55a84ea16e874829abf71) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e39050b172d1d72d3758d9d8ce0279d7') in 0.00718 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/MainAssets/Dialogue/Witness2/Receptionist_Greeting.asset
+  artifactKey: Guid(a93ac88fdb7a2ee4083a40cae1e738d1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Witness2/Receptionist_Greeting.asset using Guid(a93ac88fdb7a2ee4083a40cae1e738d1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a93177b16574cd761c5121d9ab5cefea') in 0.0177839 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/MainAssets/Dialogue/Witness2/Receptionist_Generic.asset
+  artifactKey: Guid(4878b62ec253ab24f85dc8e27199aec7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Witness2/Receptionist_Generic.asset using Guid(4878b62ec253ab24f85dc8e27199aec7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9a34dc4b79569aab03286f116995b9e8') in 0.0116963 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.265642 seconds.
+  path: Assets/MainAssets/Dialogue/Witness3/Receptionist_AutopsyReport.asset
+  artifactKey: Guid(939312de25e56ff42898b40bc9708341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Dialogue/Witness3/Receptionist_AutopsyReport.asset using Guid(939312de25e56ff42898b40bc9708341) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0859b5cfd0eb3f103d2aab633d521155') in 0.0015123 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/MainAssets/Dialogue/Witness3/Receptionist_Greeting.asset
+  artifactKey: Guid(ab00bd41214ff074e80e7e3f31e4b039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Dialogue/Witness3/Receptionist_Greeting.asset using Guid(ab00bd41214ff074e80e7e3f31e4b039) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ab5a220b776d45cbf339fdcce631a5ac') in 0.0031273 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.799024 seconds.
+  path: Assets/MainAssets/Dialogue/Witness3/Receptionist_AutopsyReport.asset
+  artifactKey: Guid(939312de25e56ff42898b40bc9708341) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Witness3/Receptionist_AutopsyReport.asset using Guid(939312de25e56ff42898b40bc9708341) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7f0269e36a4218db1a418bd4c0076e89') in 0.0065232 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/MainAssets/Dialogue/Witness3/Receptionist_GenericEvidence.asset
+  artifactKey: Guid(44b17c390f555924a8c945d8a255ca94) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Witness3/Receptionist_GenericEvidence.asset using Guid(44b17c390f555924a8c945d8a255ca94) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5db8ac5c3b0261f895372daa2d2122fe') in 0.0066842 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/MainAssets/Dialogue/Witness3/Receptionist_Generic.asset
+  artifactKey: Guid(01dd0f61c94d7754497048c72366bcf3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Witness3/Receptionist_Generic.asset using Guid(01dd0f61c94d7754497048c72366bcf3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7528cfbc1b8202dfc8e637cd3ead1a3b') in 0.0075502 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.691899 seconds.
+  path: Assets/MainAssets/Dialogue/Police/Police_AutopsyReport.asset
+  artifactKey: Guid(6a52be3e2b5f7b647af1d31fb5d332dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Dialogue/Police/Police_AutopsyReport.asset using Guid(6a52be3e2b5f7b647af1d31fb5d332dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2a4dbd653612b918f1712dfade4e2b6e') in 0.0014591 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.898940 seconds.
+  path: Assets/MainAssets/Dialogue/Police/Police_AutopsyReport.asset
+  artifactKey: Guid(6a52be3e2b5f7b647af1d31fb5d332dc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Police/Police_AutopsyReport.asset using Guid(6a52be3e2b5f7b647af1d31fb5d332dc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '42fb853d07ea11f4c2a0d7f9a80502a4') in 0.00624 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.991085 seconds.
+  path: Assets/MainAssets/Dialogue/Police/_BadgeCorrect.asset
+  artifactKey: Guid(81835c638e372d74aa8b6f66431f5f82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Dialogue/Police/_BadgeCorrect.asset using Guid(81835c638e372d74aa8b6f66431f5f82) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c5e9f58a55412b226728b7b7a04e8ad4') in 0.0016476 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.912947 seconds.
+  path: Assets/MainAssets/Dialogue/Police/_BadgeCorrect.asset
+  artifactKey: Guid(81835c638e372d74aa8b6f66431f5f82) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Police/_BadgeCorrect.asset using Guid(81835c638e372d74aa8b6f66431f5f82) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '829a3d9e44d53d1f7935ba1d5694ae65') in 0.0061602 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.877362 seconds.
+  path: Assets/MainAssets/Dialogue/Police/Police_BadgeGeneric.asset
+  artifactKey: Guid(82783391670a20e4d9eba1ac08f881ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Dialogue/Police/Police_BadgeGeneric.asset using Guid(82783391670a20e4d9eba1ac08f881ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9267ff162a23778f7c0353269c8a9e8f') in 0.0015378 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.918710 seconds.
+  path: Assets/MainAssets/Dialogue/Police/Police_BadgeGeneric.asset
+  artifactKey: Guid(82783391670a20e4d9eba1ac08f881ed) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Police/Police_BadgeGeneric.asset using Guid(82783391670a20e4d9eba1ac08f881ed) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '93cbe37920bcb86f0ba8170a022769dc') in 0.0061421 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.715301 seconds.
+  path: Assets/MainAssets/Dialogue/Police/Police_BrokenSwitch.asset
+  artifactKey: Guid(1aed3401514207548b7271273d5d6c9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Dialogue/Police/Police_BrokenSwitch.asset using Guid(1aed3401514207548b7271273d5d6c9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bf154baf019e213e65ef8f436df559fa') in 0.0016242 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.913496 seconds.
+  path: Assets/MainAssets/Dialogue/Police/Police_BrokenSwitch.asset
+  artifactKey: Guid(1aed3401514207548b7271273d5d6c9e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Police/Police_BrokenSwitch.asset using Guid(1aed3401514207548b7271273d5d6c9e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9adfa7e7504334aa91fca7d44265a6e7') in 0.0061112 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.029586 seconds.
+  path: Assets/MainAssets/Dialogue/Police/Police_Generic.asset
+  artifactKey: Guid(a726d55a2f413fc4c8075db8583025c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Dialogue/Police/Police_Generic.asset using Guid(a726d55a2f413fc4c8075db8583025c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2094c37f98131bc8654fdbd1385a4e79') in 0.0016045 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.808391 seconds.
+  path: Assets/MainAssets/Dialogue/Police/Police_Generic.asset
+  artifactKey: Guid(a726d55a2f413fc4c8075db8583025c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Police/Police_Generic.asset using Guid(a726d55a2f413fc4c8075db8583025c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2fa73c7e2a5560fc23a450e96c47ef2a') in 0.0061458 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.511947 seconds.
+  path: Assets/MainAssets/Dialogue/Police/Police_GenericEvidence.asset
+  artifactKey: Guid(5508213d8ab9cc34d9fd97d33481c415) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Dialogue/Police/Police_GenericEvidence.asset using Guid(5508213d8ab9cc34d9fd97d33481c415) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ce9b1c0716fdae1a8438fb1a3e9fccd1') in 0.0015134 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.658795 seconds.
+  path: Assets/MainAssets/Dialogue/Police/Police_GenericEvidence.asset
+  artifactKey: Guid(5508213d8ab9cc34d9fd97d33481c415) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Police/Police_GenericEvidence.asset using Guid(5508213d8ab9cc34d9fd97d33481c415) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ee37b32d7c08960422f9101c860c667b') in 0.005977 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.984684 seconds.
+  path: Assets/MainAssets/Dialogue/Police/Police_Greeting.asset
+  artifactKey: Guid(ddefc4ed14ed5394188bca1d1899a082) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Dialogue/Police/Police_Greeting.asset using Guid(ddefc4ed14ed5394188bca1d1899a082) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '228f07c102c50bfe0fc00c84b8a77d6f') in 0.0032954 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.912798 seconds.
+  path: Assets/MainAssets/Dialogue/Police/Police_Greeting.asset
+  artifactKey: Guid(ddefc4ed14ed5394188bca1d1899a082) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Police/Police_Greeting.asset using Guid(ddefc4ed14ed5394188bca1d1899a082) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '600d08972d643d2317039c477052a60e') in 0.0110866 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.386850 seconds.
+  path: Assets/MainAssets/Dialogue/Police/Police_SilverMask.asset
+  artifactKey: Guid(926f5f8100b945146a8923944383a0de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Dialogue/Police/Police_SilverMask.asset using Guid(926f5f8100b945146a8923944383a0de) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '684646245d5641f4827afbaf39baf992') in 0.0014931 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.915306 seconds.
+  path: Assets/MainAssets/Dialogue/Police/Police_SilverMask.asset
+  artifactKey: Guid(926f5f8100b945146a8923944383a0de) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Police/Police_SilverMask.asset using Guid(926f5f8100b945146a8923944383a0de) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5a9e10a3d527372c33ada3fb868e9d9a') in 0.0053804 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 1600.288199 seconds.
+  path: Assets/MainAssets/Dialogue/Witness1/Police_AutopsyReport.asset
+  artifactKey: Guid(a07cf0bdb651dd74596477cacb6d4032) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Dialogue/Witness1/Police_AutopsyReport.asset using Guid(a07cf0bdb651dd74596477cacb6d4032) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bd2fcac0fbf4b73b83848d6c0033c831') in 0.0015991 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/MainAssets/Dialogue/Witness1/Police_SilverMask.asset
+  artifactKey: Guid(0ef1b65cad05bd143aed1dbccaa8904d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Dialogue/Witness1/Police_SilverMask.asset using Guid(0ef1b65cad05bd143aed1dbccaa8904d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f9a381671105f0ee965e69e7e7e94d39') in 0.0011868 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/MainAssets/Dialogue/Witness1/Police_Generic.asset
+  artifactKey: Guid(01e790bc4e8a77345b1bc7ae704e848c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Dialogue/Witness1/Police_Generic.asset using Guid(01e790bc4e8a77345b1bc7ae704e848c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cc66768854445107e79083024625d2c4') in 0.0014502 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.729019 seconds.
+  path: Assets/MainAssets/Dialogue/Police/Police_BrokenSwitch.asset
+  artifactKey: Guid(1aed3401514207548b7271273d5d6c9e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Police/Police_BrokenSwitch.asset using Guid(1aed3401514207548b7271273d5d6c9e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b13bc26358d39c8b977af3c9e764407e') in 0.0084095 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/MainAssets/Dialogue/Police/Police_AutopsyReport.asset
+  artifactKey: Guid(6a52be3e2b5f7b647af1d31fb5d332dc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Police/Police_AutopsyReport.asset using Guid(6a52be3e2b5f7b647af1d31fb5d332dc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b2bba99b994eeeec214340bb4adbca71') in 0.0058073 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/MainAssets/Dialogue/Police/Police_SilverMask.asset
+  artifactKey: Guid(926f5f8100b945146a8923944383a0de) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Police/Police_SilverMask.asset using Guid(926f5f8100b945146a8923944383a0de) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '36d21ef398093fee7205a854c523c5bc') in 0.0090834 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/MainAssets/Dialogue/Witness1/Police_Greeting.asset
+  artifactKey: Guid(67f8fdc4313a8404fbf70030f1e14ae7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Witness1/Police_Greeting.asset using Guid(67f8fdc4313a8404fbf70030f1e14ae7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8b736c5bc95f70dba8485c9dd6336d55') in 0.0113947 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/MainAssets/Dialogue/Police/Police_Greeting.asset
+  artifactKey: Guid(ddefc4ed14ed5394188bca1d1899a082) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Police/Police_Greeting.asset using Guid(ddefc4ed14ed5394188bca1d1899a082) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bd4594cdc9124a0bc56b0e4709668ffd') in 0.0084925 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/MainAssets/Dialogue/Witness1/Police_Generic.asset
+  artifactKey: Guid(01e790bc4e8a77345b1bc7ae704e848c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Witness1/Police_Generic.asset using Guid(01e790bc4e8a77345b1bc7ae704e848c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e6df4fa4b2c0ac3f4060c8be2878fd04') in 0.0152549 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 25.661305 seconds.
+  path: Assets/MainAssets/Dialogue/Electritian Joe (Witness)
+  artifactKey: Guid(9847bd2655a550949b54f9a3a614c021) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Dialogue/Electritian Joe (Witness) using Guid(9847bd2655a550949b54f9a3a614c021) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '443e3a38db40439c817125c32b9075dd') in 0.0007656 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.809984 seconds.
+  path: Assets/MainAssets/Dialogue/Electritian Joe (Witness)
+  artifactKey: Guid(9847bd2655a550949b54f9a3a614c021) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Electritian Joe (Witness) using Guid(9847bd2655a550949b54f9a3a614c021) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '39617400b243506ee65c0d043788e2b5') in 0.0052592 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/MainAssets/Dialogue/Electritian Joe (Witness)/Police_SilverMask.asset
+  artifactKey: Guid(0ef1b65cad05bd143aed1dbccaa8904d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Electritian Joe (Witness)/Police_SilverMask.asset using Guid(0ef1b65cad05bd143aed1dbccaa8904d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6f2a373857f28ec4c71d504885b8d5c5') in 0.0065409 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/MainAssets/Dialogue/Electritian Joe (Witness)/Police_AutopsyReport.asset
+  artifactKey: Guid(a07cf0bdb651dd74596477cacb6d4032) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Electritian Joe (Witness)/Police_AutopsyReport.asset using Guid(a07cf0bdb651dd74596477cacb6d4032) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c886357096cbcfc1f006a14c8d8fd0db') in 0.0073823 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 324.944858 seconds.
+  path: Assets/MainAssets/Dialogue/Electritian Joe (Witness)/Electritian_Greeting.asset
+  artifactKey: Guid(67f8fdc4313a8404fbf70030f1e14ae7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Dialogue/Electritian Joe (Witness)/Electritian_Greeting.asset using Guid(67f8fdc4313a8404fbf70030f1e14ae7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a993cfe5d937aa69311a78a13eb12a6b') in 0.0029882 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.897769 seconds.
+  path: Assets/MainAssets/Dialogue/Electritian Joe (Witness)/Electritian_Greeting.asset
+  artifactKey: Guid(67f8fdc4313a8404fbf70030f1e14ae7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Electritian Joe (Witness)/Electritian_Greeting.asset using Guid(67f8fdc4313a8404fbf70030f1e14ae7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'fb3fb834409d1cf7a32ec6980e97fb13') in 0.0085008 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.358378 seconds.
+  path: Assets/MainAssets/Dialogue/Electritian Joe (Witness)/Electritian_AutopsyReport.asset
+  artifactKey: Guid(a07cf0bdb651dd74596477cacb6d4032) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Dialogue/Electritian Joe (Witness)/Electritian_AutopsyReport.asset using Guid(a07cf0bdb651dd74596477cacb6d4032) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bb143207563c43e5c75469cc1c5f8a3b') in 0.0015652 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.899152 seconds.
+  path: Assets/MainAssets/Dialogue/Electritian Joe (Witness)/Electritian_AutopsyReport.asset
+  artifactKey: Guid(a07cf0bdb651dd74596477cacb6d4032) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Electritian Joe (Witness)/Electritian_AutopsyReport.asset using Guid(a07cf0bdb651dd74596477cacb6d4032) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'aae1ac774b2b6044b38da7578a61d3e9') in 0.0061934 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.806331 seconds.
+  path: Assets/MainAssets/Dialogue/Electritian Joe (Witness)/Electritian_BadgeGeneric.asset
+  artifactKey: Guid(ef8ef0ab6a88bb3479244f0f6072bf17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Dialogue/Electritian Joe (Witness)/Electritian_BadgeGeneric.asset using Guid(ef8ef0ab6a88bb3479244f0f6072bf17) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd30ca39940d0802d0634dbb41f58e72a') in 0.0017424 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.904232 seconds.
+  path: Assets/MainAssets/Dialogue/Electritian Joe (Witness)/Electritian_BadgeGeneric.asset
+  artifactKey: Guid(ef8ef0ab6a88bb3479244f0f6072bf17) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Electritian Joe (Witness)/Electritian_BadgeGeneric.asset using Guid(ef8ef0ab6a88bb3479244f0f6072bf17) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '279e76299ea817266c36318e78cc6431') in 0.0061627 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.441276 seconds.
+  path: Assets/MainAssets/Dialogue/Electritian Joe (Witness)/Electritian_BrokenSwitch.asset
+  artifactKey: Guid(ecd2e748fc7b08b4a8b29a0499db9824) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Dialogue/Electritian Joe (Witness)/Electritian_BrokenSwitch.asset using Guid(ecd2e748fc7b08b4a8b29a0499db9824) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '69cadeaf6320d3d05d2b59e484b87bb4') in 0.0015308 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.903675 seconds.
+  path: Assets/MainAssets/Dialogue/Electritian Joe (Witness)/Electritian_BrokenSwitch.asset
+  artifactKey: Guid(ecd2e748fc7b08b4a8b29a0499db9824) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Electritian Joe (Witness)/Electritian_BrokenSwitch.asset using Guid(ecd2e748fc7b08b4a8b29a0499db9824) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f6ae67618198e697ef9520c70463496e') in 0.006587 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.931378 seconds.
+  path: Assets/MainAssets/Dialogue/Electritian Joe (Witness)/Electritian_Generic.asset
+  artifactKey: Guid(01e790bc4e8a77345b1bc7ae704e848c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Dialogue/Electritian Joe (Witness)/Electritian_Generic.asset using Guid(01e790bc4e8a77345b1bc7ae704e848c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c6b2b88cf778f9eddad560ac22e13fbc') in 0.0016318 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.894040 seconds.
+  path: Assets/MainAssets/Dialogue/Electritian Joe (Witness)/Electritian_Generic.asset
+  artifactKey: Guid(01e790bc4e8a77345b1bc7ae704e848c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Electritian Joe (Witness)/Electritian_Generic.asset using Guid(01e790bc4e8a77345b1bc7ae704e848c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2bed9c193bfd122242b612647c317d87') in 0.0061696 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.015182 seconds.
+  path: Assets/MainAssets/Dialogue/Electritian Joe (Witness)/Electritian_SilverMask.asset
+  artifactKey: Guid(0ef1b65cad05bd143aed1dbccaa8904d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Dialogue/Electritian Joe (Witness)/Electritian_SilverMask.asset using Guid(0ef1b65cad05bd143aed1dbccaa8904d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cff4ada94886f7591b85222e34577fd3') in 0.0014667 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.900650 seconds.
+  path: Assets/MainAssets/Dialogue/Electritian Joe (Witness)/Electritian_SilverMask.asset
+  artifactKey: Guid(0ef1b65cad05bd143aed1dbccaa8904d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Electritian Joe (Witness)/Electritian_SilverMask.asset using Guid(0ef1b65cad05bd143aed1dbccaa8904d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f1bff019fb927f97efc6b506da1676c9') in 0.0060462 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.425318 seconds.
+  path: Assets/Scenes/BallRoomScene.unity
+  artifactKey: Guid(761019210e9a00046b0a53a4ae02a53c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/BallRoomScene.unity using Guid(761019210e9a00046b0a53a4ae02a53c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '563925c26388760be6e023e83414d6a3') in 0.0156715 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 1208.518905 seconds.
+  path: Assets/MainAssets/Dialogue/Police/Police_AutopsyReport.asset
+  artifactKey: Guid(6a52be3e2b5f7b647af1d31fb5d332dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Dialogue/Police/Police_AutopsyReport.asset using Guid(6a52be3e2b5f7b647af1d31fb5d332dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4caac0344a3422f194da50e25cc1efc4') in 0.0016111 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/MainAssets/Dialogue/Police/Police_SilverMask.asset
+  artifactKey: Guid(926f5f8100b945146a8923944383a0de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Dialogue/Police/Police_SilverMask.asset using Guid(926f5f8100b945146a8923944383a0de) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b65c303a597eae6697de6e6a8f13bdc4') in 0.0013963 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/MainAssets/Dialogue/Police/Police_BrokenSwitch.asset
+  artifactKey: Guid(1aed3401514207548b7271273d5d6c9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Dialogue/Police/Police_BrokenSwitch.asset using Guid(1aed3401514207548b7271273d5d6c9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '28b692fbc8e95314aaa01a176d354594') in 0.0018093 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.771171 seconds.
+  path: Assets/MainAssets/Dialogue/Receptionist/Receptionist_SilverMask.asset
+  artifactKey: Guid(64a3ae3996eb6d04b9e366acfee58b63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Dialogue/Receptionist/Receptionist_SilverMask.asset using Guid(64a3ae3996eb6d04b9e366acfee58b63) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '94ec4cd61c958b9a12260995849158ea') in 0.0015715 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 385.682670 seconds.
+  path: Assets/MainAssets/Dialogue/Receptionist/Receptionist_AutopsyReport.asset
+  artifactKey: Guid(4bec96141ae82af44a9d848dff50fd8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Dialogue/Receptionist/Receptionist_AutopsyReport.asset using Guid(4bec96141ae82af44a9d848dff50fd8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5853acdd14c7aa6d6e70fa74634e726a') in 0.0017402 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.898705 seconds.
+  path: Assets/MainAssets/Dialogue/Electritian Joe (Witness)/Electritian_Generic.asset
+  artifactKey: Guid(01e790bc4e8a77345b1bc7ae704e848c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Electritian Joe (Witness)/Electritian_Generic.asset using Guid(01e790bc4e8a77345b1bc7ae704e848c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '34fc306dae072f5bb74921ffeb2846db') in 0.0069392 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/MainAssets/Dialogue/Electritian Joe (Witness)/Electritian_BrokenSwitch.asset
+  artifactKey: Guid(ecd2e748fc7b08b4a8b29a0499db9824) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Electritian Joe (Witness)/Electritian_BrokenSwitch.asset using Guid(ecd2e748fc7b08b4a8b29a0499db9824) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1474777fba6e959b2d6bdb6e6d541712') in 0.0060412 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/MainAssets/Dialogue/Receptionist/Receptionist_AutopsyReport.asset
+  artifactKey: Guid(4bec96141ae82af44a9d848dff50fd8a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Receptionist/Receptionist_AutopsyReport.asset using Guid(4bec96141ae82af44a9d848dff50fd8a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5ea413f6ead86aff3d4894d20943251b') in 0.0067501 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 40.046316 seconds.
+  path: Assets/MainAssets/Dialogue/Receptionist/Receptionist_AutopsyReport.asset
+  artifactKey: Guid(4bec96141ae82af44a9d848dff50fd8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Dialogue/Receptionist/Receptionist_AutopsyReport.asset using Guid(4bec96141ae82af44a9d848dff50fd8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '098cba055c6da250812eb06c238774bf') in 0.0015673 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.805182 seconds.
+  path: Assets/MainAssets/Dialogue/Receptionist/Receptionist_AutopsyReport.asset
+  artifactKey: Guid(4bec96141ae82af44a9d848dff50fd8a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Receptionist/Receptionist_AutopsyReport.asset using Guid(4bec96141ae82af44a9d848dff50fd8a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '95b7070ad793f7a259adb6bb0df3c45f') in 0.0058499 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 117.991986 seconds.
+  path: Assets/MainAssets/Dialogue/Aristrocrat(Witness)
+  artifactKey: Guid(e788f365a498d7b49846e4f98c1c8415) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Dialogue/Aristrocrat(Witness) using Guid(e788f365a498d7b49846e4f98c1c8415) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '77bc31739c95b679524c3dfef177ca61') in 0.0007534 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.883695 seconds.
+  path: Assets/MainAssets/Dialogue/Aristrocrat(Witness)
+  artifactKey: Guid(e788f365a498d7b49846e4f98c1c8415) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Aristrocrat(Witness) using Guid(e788f365a498d7b49846e4f98c1c8415) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'af8b3bfd396520903321358e5a2ff303') in 0.0059043 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/MainAssets/Dialogue/Aristrocrat(Witness)/Receptionist_SilverMask.asset
+  artifactKey: Guid(59d6a96425d55a84ea16e874829abf71) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Aristrocrat(Witness)/Receptionist_SilverMask.asset using Guid(59d6a96425d55a84ea16e874829abf71) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ebea65a8f075fed3adab0405d54fb2c9') in 0.0064735 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/MainAssets/Dialogue/Aristrocrat(Witness)/Receptionist_BadgeCorrect.asset
+  artifactKey: Guid(dd464fff08760344a987c6ffe8dee9d6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Aristrocrat(Witness)/Receptionist_BadgeCorrect.asset using Guid(dd464fff08760344a987c6ffe8dee9d6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'db871ee3df5b0e3eb590149713fa79e7') in 0.0070441 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/MainAssets/Dialogue/Aristrocrat(Witness)/Receptionist_Wrong.asset
+  artifactKey: Guid(4472bd0db88a63f4d9d325a75559c33f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Aristrocrat(Witness)/Receptionist_Wrong.asset using Guid(4472bd0db88a63f4d9d325a75559c33f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '794069728fa877305a15fdeb1e431425') in 0.006367 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/MainAssets/Dialogue/Aristrocrat(Witness)/Receptionist_BrokenSwitch.asset
+  artifactKey: Guid(6403ea8b14739244690c6607c2f8b64a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Aristrocrat(Witness)/Receptionist_BrokenSwitch.asset using Guid(6403ea8b14739244690c6607c2f8b64a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8cb2695f40eca4207bada645cc390c7b') in 0.009616 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/MainAssets/Dialogue/Aristrocrat(Witness)/Receptionist_Generic.asset
+  artifactKey: Guid(4878b62ec253ab24f85dc8e27199aec7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Aristrocrat(Witness)/Receptionist_Generic.asset using Guid(4878b62ec253ab24f85dc8e27199aec7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bde6adf0f00b2a62fd3da31d00557178') in 0.0055177 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.183312 seconds.
+  path: Assets/MainAssets/Dialogue/Aristrocrat (Witness)
+  artifactKey: Guid(e788f365a498d7b49846e4f98c1c8415) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Dialogue/Aristrocrat (Witness) using Guid(e788f365a498d7b49846e4f98c1c8415) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a78f0af452ff85f101c99172616f90cc') in 0.0007563 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.880552 seconds.
+  path: Assets/MainAssets/Dialogue/Aristrocrat (Witness)
+  artifactKey: Guid(e788f365a498d7b49846e4f98c1c8415) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Aristrocrat (Witness) using Guid(e788f365a498d7b49846e4f98c1c8415) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '76d9fe9ad247cb1697e9c90203600f7d') in 0.0048798 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/MainAssets/Dialogue/Aristrocrat (Witness)/Receptionist_BadgeCorrect.asset
+  artifactKey: Guid(dd464fff08760344a987c6ffe8dee9d6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Aristrocrat (Witness)/Receptionist_BadgeCorrect.asset using Guid(dd464fff08760344a987c6ffe8dee9d6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd351216364ba6148ad6b6c55a7e81bec') in 0.0062785 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/MainAssets/Dialogue/Aristrocrat (Witness)/Receptionist_Greeting.asset
+  artifactKey: Guid(a93ac88fdb7a2ee4083a40cae1e738d1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Aristrocrat (Witness)/Receptionist_Greeting.asset using Guid(a93ac88fdb7a2ee4083a40cae1e738d1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '854f3c615f41781aa2b8855ff6d7ec73') in 0.0095978 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.208517 seconds.
+  path: Assets/MainAssets/Dialogue/Electritian Joe (Witness)/Electritian_AutopsyReport.asset
+  artifactKey: Guid(a07cf0bdb651dd74596477cacb6d4032) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Dialogue/Electritian Joe (Witness)/Electritian_AutopsyReport.asset using Guid(a07cf0bdb651dd74596477cacb6d4032) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5d4204b6ff4ea2960ea5b61c5789ddfc') in 0.0017469 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.939639 seconds.
+  path: Assets/MainAssets/Dialogue/Aristrocrat (Witness)/Electritian_AutopsyReport.asset
+  artifactKey: Guid(0a778091203bd354ea096573ee5743c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Dialogue/Aristrocrat (Witness)/Electritian_AutopsyReport.asset using Guid(0a778091203bd354ea096573ee5743c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '768b6dae23ac189dd5550ac554730374') in 0.0015654 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/MainAssets/Dialogue/Aristrocrat (Witness)/Electritian_Greeting.asset
+  artifactKey: Guid(ef6d1466a27439d498604d3b23481891) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Dialogue/Aristrocrat (Witness)/Electritian_Greeting.asset using Guid(ef6d1466a27439d498604d3b23481891) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f252dcf5baea6a506a1094265908c6de') in 0.0029837 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.798497 seconds.
+  path: Assets/MainAssets/Dialogue/Receptionist/Receptionist_AutopsyReport.asset
+  artifactKey: Guid(4bec96141ae82af44a9d848dff50fd8a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Receptionist/Receptionist_AutopsyReport.asset using Guid(4bec96141ae82af44a9d848dff50fd8a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a987b420952a6796fe3951933174d09c') in 0.0069182 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/MainAssets/Dialogue/Aristrocrat (Witness)/Electritian_Generic.asset
+  artifactKey: Guid(5682de98445be214db952ddc371a3e43) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Aristrocrat (Witness)/Electritian_Generic.asset using Guid(5682de98445be214db952ddc371a3e43) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0b437623211b5a45a8a0fdd8bbfa9531') in 0.0064891 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.874239 seconds.
+  path: Assets/MainAssets/Dialogue/Aristrocrat (Witness)/Aristrocrat_AutopsyReport.asset
+  artifactKey: Guid(0a778091203bd354ea096573ee5743c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Dialogue/Aristrocrat (Witness)/Aristrocrat_AutopsyReport.asset using Guid(0a778091203bd354ea096573ee5743c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2157e07fd4fc81fae6856958d0bd7eb0') in 0.0015932 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.914244 seconds.
+  path: Assets/MainAssets/Dialogue/Aristrocrat (Witness)/Aristrocrat_AutopsyReport.asset
+  artifactKey: Guid(0a778091203bd354ea096573ee5743c0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Aristrocrat (Witness)/Aristrocrat_AutopsyReport.asset using Guid(0a778091203bd354ea096573ee5743c0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'befd9d786c9f485197d2dfc7e542a735') in 0.00654 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.401757 seconds.
+  path: Assets/MainAssets/Dialogue/Aristrocrat (Witness)/Aristrocrat_BadgeGeneric.asset
+  artifactKey: Guid(afcc63e3662e4f8438a34d98d5b3061f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Dialogue/Aristrocrat (Witness)/Aristrocrat_BadgeGeneric.asset using Guid(afcc63e3662e4f8438a34d98d5b3061f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e396f3363aea9e9e218e22c1a68d3884') in 0.0015336 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.916934 seconds.
+  path: Assets/MainAssets/Dialogue/Aristrocrat (Witness)/Aristrocrat_BadgeGeneric.asset
+  artifactKey: Guid(afcc63e3662e4f8438a34d98d5b3061f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Aristrocrat (Witness)/Aristrocrat_BadgeGeneric.asset using Guid(afcc63e3662e4f8438a34d98d5b3061f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3538b29f2d56ec9c5dabd8e8f649b137') in 0.0066006 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.977690 seconds.
+  path: Assets/MainAssets/Dialogue/Aristrocrat (Witness)/Aristrocrat_BrokenSwitch.asset
+  artifactKey: Guid(6e33d9ccca82bca42a9a4756af12401c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Dialogue/Aristrocrat (Witness)/Aristrocrat_BrokenSwitch.asset using Guid(6e33d9ccca82bca42a9a4756af12401c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b9160fbc090722ff256816947c20ccd9') in 0.0015634 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.901659 seconds.
+  path: Assets/MainAssets/Dialogue/Aristrocrat (Witness)/Aristrocrat_BrokenSwitch.asset
+  artifactKey: Guid(6e33d9ccca82bca42a9a4756af12401c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Aristrocrat (Witness)/Aristrocrat_BrokenSwitch.asset using Guid(6e33d9ccca82bca42a9a4756af12401c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '736611e7b410f71152c312d78f46582f') in 0.0069246 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.431318 seconds.
+  path: Assets/MainAssets/Dialogue/Aristrocrat (Witness)/Aristrocrat_Generic.asset
+  artifactKey: Guid(5682de98445be214db952ddc371a3e43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Dialogue/Aristrocrat (Witness)/Aristrocrat_Generic.asset using Guid(5682de98445be214db952ddc371a3e43) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '16cffc70170af848e479f31fc84f155b') in 0.0014803 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.899894 seconds.
+  path: Assets/MainAssets/Dialogue/Aristrocrat (Witness)/Aristrocrat_Generic.asset
+  artifactKey: Guid(5682de98445be214db952ddc371a3e43) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Aristrocrat (Witness)/Aristrocrat_Generic.asset using Guid(5682de98445be214db952ddc371a3e43) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e4ea2ba7e3a7039e425fa6555b270d8c') in 0.005892 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.639635 seconds.
+  path: Assets/MainAssets/Dialogue/Aristrocrat (Witness)/Aristrocrat_Greeting.asset
+  artifactKey: Guid(ef6d1466a27439d498604d3b23481891) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Dialogue/Aristrocrat (Witness)/Aristrocrat_Greeting.asset using Guid(ef6d1466a27439d498604d3b23481891) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a0574b7417a3cf75a8edb73c0e72c072') in 0.0031382 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.901330 seconds.
+  path: Assets/MainAssets/Dialogue/Aristrocrat (Witness)/Aristrocrat_Greeting.asset
+  artifactKey: Guid(ef6d1466a27439d498604d3b23481891) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Aristrocrat (Witness)/Aristrocrat_Greeting.asset using Guid(ef6d1466a27439d498604d3b23481891) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c3a6c3dd901ca8914dd2cc781fdb965c') in 0.0090772 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.467535 seconds.
+  path: Assets/MainAssets/Dialogue/Aristrocrat (Witness)/Aristrocrat_SilverMask.asset
+  artifactKey: Guid(1675afa76d3e89348a657c89322881f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Dialogue/Aristrocrat (Witness)/Aristrocrat_SilverMask.asset using Guid(1675afa76d3e89348a657c89322881f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b1e81728424ad907989c0f380d37edfb') in 0.0015959 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.900441 seconds.
+  path: Assets/MainAssets/Dialogue/Aristrocrat (Witness)/Aristrocrat_SilverMask.asset
+  artifactKey: Guid(1675afa76d3e89348a657c89322881f2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Aristrocrat (Witness)/Aristrocrat_SilverMask.asset using Guid(1675afa76d3e89348a657c89322881f2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd746581100b58cd700126f6b92cf0031') in 0.00646 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 1613.622817 seconds.
+  path: Assets/MainAssets/Dialogue/Witness3/Aristrocrat_AutopsyReport.asset
+  artifactKey: Guid(20c454dfa3aa0884e965ccf0512724f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Dialogue/Witness3/Aristrocrat_AutopsyReport.asset using Guid(20c454dfa3aa0884e965ccf0512724f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c767d76ddae04b9ce878e6e397c7f117') in 0.0018389 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/MainAssets/Dialogue/Witness3/Aristrocrat_BrokenSwitch.asset
+  artifactKey: Guid(94c7e0df4498ff6468e1bab3cc33c20e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Dialogue/Witness3/Aristrocrat_BrokenSwitch.asset using Guid(94c7e0df4498ff6468e1bab3cc33c20e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4ff69efaebac46c16076a3fcd12ca930') in 0.0014346 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/MainAssets/Dialogue/Witness3/Aristrocrat_Greeting.asset
+  artifactKey: Guid(9792088cf6c48434aa62359a9528cef2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Dialogue/Witness3/Aristrocrat_Greeting.asset using Guid(9792088cf6c48434aa62359a9528cef2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f384f5f4d395145dc5b79241316e9742') in 0.0032363 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.761159 seconds.
+  path: Assets/MainAssets/Dialogue/Aristrocrat (Witness)/Aristrocrat_AutopsyReport.asset
+  artifactKey: Guid(0a778091203bd354ea096573ee5743c0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Aristrocrat (Witness)/Aristrocrat_AutopsyReport.asset using Guid(0a778091203bd354ea096573ee5743c0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '354fbb18a1dbdb28aac3f1b643018add') in 0.0073685 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/MainAssets/Dialogue/Aristrocrat (Witness)/Aristrocrat_SilverMask.asset
+  artifactKey: Guid(1675afa76d3e89348a657c89322881f2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Aristrocrat (Witness)/Aristrocrat_SilverMask.asset using Guid(1675afa76d3e89348a657c89322881f2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5a2e30e7749455184b63ec358e48f22f') in 0.0092892 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/MainAssets/Dialogue/Witness3/Aristrocrat_AutopsyReport.asset
+  artifactKey: Guid(20c454dfa3aa0884e965ccf0512724f6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Witness3/Aristrocrat_AutopsyReport.asset using Guid(20c454dfa3aa0884e965ccf0512724f6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '155694bad7385f5e9c2c6bf1aad25265') in 0.0141661 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/MainAssets/Dialogue/Witness3/Aristrocrat_Generic.asset
+  artifactKey: Guid(2c606c871b4c4324f9ca3871631f5477) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Witness3/Aristrocrat_Generic.asset using Guid(2c606c871b4c4324f9ca3871631f5477) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd14dc5cbb88e4972e812727aa1e00457') in 0.0158728 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/MainAssets/Dialogue/Aristrocrat (Witness)/Aristrocrat_Greeting.asset
+  artifactKey: Guid(ef6d1466a27439d498604d3b23481891) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Aristrocrat (Witness)/Aristrocrat_Greeting.asset using Guid(ef6d1466a27439d498604d3b23481891) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'aeb702e762fa905de25f242fa369d06e') in 0.0087691 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/MainAssets/Dialogue/Witness3/Aristrocrat_SilverMask.asset
+  artifactKey: Guid(6c933c8984b8b004885d2d078764387e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Witness3/Aristrocrat_SilverMask.asset using Guid(6c933c8984b8b004885d2d078764387e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e790d41d242c0b35061be19e2dc0619a') in 0.0085097 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.325983 seconds.
+  path: Assets/MainAssets/Dialogue/Witness3/Thug_AutopsyReport.asset
+  artifactKey: Guid(20c454dfa3aa0884e965ccf0512724f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Dialogue/Witness3/Thug_AutopsyReport.asset using Guid(20c454dfa3aa0884e965ccf0512724f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a709c2e1bfcebe04692ebaca4c1b93d8') in 0.0015942 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.901818 seconds.
+  path: Assets/MainAssets/Dialogue/Witness3/Thug_AutopsyReport.asset
+  artifactKey: Guid(20c454dfa3aa0884e965ccf0512724f6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Witness3/Thug_AutopsyReport.asset using Guid(20c454dfa3aa0884e965ccf0512724f6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e1077f01c410a4f62e9154984bce18bb') in 0.0058189 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.150375 seconds.
+  path: Assets/MainAssets/Dialogue/Witness3/Thug_SilverMask.asset
+  artifactKey: Guid(6c933c8984b8b004885d2d078764387e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Dialogue/Witness3/Thug_SilverMask.asset using Guid(6c933c8984b8b004885d2d078764387e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b5f326cdbc10a81162eda0f0409d923a') in 0.0017797 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.041652 seconds.
+  path: Assets/MainAssets/Dialogue/Witness3/Thug_SilverMask.asset
+  artifactKey: Guid(6c933c8984b8b004885d2d078764387e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Witness3/Thug_SilverMask.asset using Guid(6c933c8984b8b004885d2d078764387e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a8366aec0d5e4103adfdd0c6c5334304') in 0.0063813 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.998599 seconds.
+  path: Assets/MainAssets/Dialogue/Witness3/Thug_Greeting.asset
+  artifactKey: Guid(9792088cf6c48434aa62359a9528cef2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Dialogue/Witness3/Thug_Greeting.asset using Guid(9792088cf6c48434aa62359a9528cef2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd146f2893bd8c4b0ff36c5572947f831') in 0.0030936 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.482248 seconds.
+  path: Assets/MainAssets/Dialogue/Witness3/Thug_Greeting.asset
+  artifactKey: Guid(9792088cf6c48434aa62359a9528cef2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Witness3/Thug_Greeting.asset using Guid(9792088cf6c48434aa62359a9528cef2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '27d0a50c2cd1f27676e5b2d9001efd6a') in 0.0085428 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.461894 seconds.
+  path: Assets/MainAssets/Dialogue/Witness3/Thug_Generic.asset
+  artifactKey: Guid(2c606c871b4c4324f9ca3871631f5477) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Dialogue/Witness3/Thug_Generic.asset using Guid(2c606c871b4c4324f9ca3871631f5477) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4bcd07329d1994eefe7ff8c81cfa4824') in 0.0015937 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.350505 seconds.
+  path: Assets/MainAssets/Dialogue/Witness3/Thug_Generic.asset
+  artifactKey: Guid(2c606c871b4c4324f9ca3871631f5477) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Witness3/Thug_Generic.asset using Guid(2c606c871b4c4324f9ca3871631f5477) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '44d9bc20e993b3b137effb0a4252d091') in 0.0059623 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.782356 seconds.
+  path: Assets/MainAssets/Dialogue/Witness3/Thug_BrokenSwitch.asset
+  artifactKey: Guid(94c7e0df4498ff6468e1bab3cc33c20e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Dialogue/Witness3/Thug_BrokenSwitch.asset using Guid(94c7e0df4498ff6468e1bab3cc33c20e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1e6adebea78902e12df57d1c450ee78b') in 0.0015719 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.535984 seconds.
+  path: Assets/MainAssets/Dialogue/Witness3/Thug_BrokenSwitch.asset
+  artifactKey: Guid(94c7e0df4498ff6468e1bab3cc33c20e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Witness3/Thug_BrokenSwitch.asset using Guid(94c7e0df4498ff6468e1bab3cc33c20e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1c5fb179764736c350c7e1c344762b96') in 0.0062882 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.202154 seconds.
+  path: Assets/MainAssets/Dialogue/Witness3/Thug_BadgeGeneric.asset
+  artifactKey: Guid(7591735d64cbd4e48bad6b9dedccee07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Dialogue/Witness3/Thug_BadgeGeneric.asset using Guid(7591735d64cbd4e48bad6b9dedccee07) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '77616dd3c616e5bf79f5401a6df2e13a') in 0.0015611 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.916602 seconds.
+  path: Assets/MainAssets/Dialogue/Witness3/Thug_BadgeGeneric.asset
+  artifactKey: Guid(7591735d64cbd4e48bad6b9dedccee07) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Witness3/Thug_BadgeGeneric.asset using Guid(7591735d64cbd4e48bad6b9dedccee07) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '30ab27384b9f5edb257f3c1590e4dfc7') in 0.0061195 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 1542.983282 seconds.
+  path: Assets/MainAssets/Dialogue/Witness3/Thug_Badge.asset
+  artifactKey: Guid(7591735d64cbd4e48bad6b9dedccee07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Dialogue/Witness3/Thug_Badge.asset using Guid(7591735d64cbd4e48bad6b9dedccee07) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '702be09509de074a62e1d72032d0fab7') in 0.0016465 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.882386 seconds.
+  path: Assets/MainAssets/Dialogue/Witness3/Thug_Badge.asset
+  artifactKey: Guid(7591735d64cbd4e48bad6b9dedccee07) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Witness3/Thug_Badge.asset using Guid(7591735d64cbd4e48bad6b9dedccee07) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3bca3575c39565098be503c453cf68ad') in 0.0064282 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 273.718405 seconds.
+  path: Assets/MainAssets/Dialogue/Thug (Witness)
+  artifactKey: Guid(74a33efce3724ac4db0644fd091dbedf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/Dialogue/Thug (Witness) using Guid(74a33efce3724ac4db0644fd091dbedf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0d5ea6a602e9281c975e878c8645a225') in 0.0008749 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.891495 seconds.
+  path: Assets/MainAssets/Dialogue/Thug (Witness)
+  artifactKey: Guid(74a33efce3724ac4db0644fd091dbedf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Thug (Witness) using Guid(74a33efce3724ac4db0644fd091dbedf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7d4afa597c890ca269ee4a47a54dc6b5') in 0.0077133 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/MainAssets/Dialogue/Thug (Witness)/Thug_Badge.asset
+  artifactKey: Guid(7591735d64cbd4e48bad6b9dedccee07) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Thug (Witness)/Thug_Badge.asset using Guid(7591735d64cbd4e48bad6b9dedccee07) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9970021e0a0b86c533b8247750a532dc') in 0.0061201 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/MainAssets/Dialogue/Thug (Witness)/Thug_AutopsyReport.asset
+  artifactKey: Guid(20c454dfa3aa0884e965ccf0512724f6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Thug (Witness)/Thug_AutopsyReport.asset using Guid(20c454dfa3aa0884e965ccf0512724f6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '92ad3399c69ae9ff3446de457ea6c308') in 0.0088469 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/MainAssets/Dialogue/Thug (Witness)/Thug_Greeting.asset
+  artifactKey: Guid(9792088cf6c48434aa62359a9528cef2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/Dialogue/Thug (Witness)/Thug_Greeting.asset using Guid(9792088cf6c48434aa62359a9528cef2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '731067026c1b8202afeef1ca8f79cf8d') in 0.0111894 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

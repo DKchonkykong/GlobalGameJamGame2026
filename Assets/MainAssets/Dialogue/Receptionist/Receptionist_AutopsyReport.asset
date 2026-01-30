@@ -15,22 +15,23 @@ MonoBehaviour:
   nodeId: Receptionist_Generic
   lines:
   - speaker: Receptionist
-    text: The autopsy report?
+    text: "It is unfortunate that \nElizabeth Winfred died."
   - speaker: Receptionist
-    text: Oh my goodness!
+    text: I was a big fan of her work.
   - speaker: Receptionist
-    text: Elizabeth Winfred died?!
-  - speaker: Receptionist
-    text: 'I didn''t expect someone so influential to die right in the heart of the
-      city
+    text: 'Especially her new novel "The Atlantis"
 
-      must''ve been those damn silver masks.'
+      I love the novel especially
+      near the end when they-'
+  - speaker: Receptionist
+    text: 'Sorry I got a bit worked up
+
+      I hope you find whomever did this to
+      her.'
   - speaker: Detective
     text: Trust me I want to get to the bottom of this as much as the next guy.
   - speaker: Receptionist
-    text: Then try to be careful I don't want you being the next murder case.
-  - speaker: Detective
-    text: Thanks, I'll try to.
+    text: "Then try to be careful I don't want you becoming the next \nmurder case."
   requiredEvidence: {fileID: 0}
   ifEvidenceCorrect: {fileID: 0}
   ifEvidenceWrong: {fileID: 0}

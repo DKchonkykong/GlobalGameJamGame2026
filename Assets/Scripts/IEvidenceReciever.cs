@@ -1,4 +1,5 @@
 public interface IEvidenceReceiver
 {
-    void ReceiveEvidence(EvidenceItem item);
+    // Return true if the NPC accepted it (so you can branch dialogue/state).
+    bool ReceiveEvidence(EvidenceItem item);
 }

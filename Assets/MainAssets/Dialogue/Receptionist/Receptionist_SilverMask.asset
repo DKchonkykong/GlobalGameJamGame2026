@@ -12,25 +12,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47b606592c9bc9e4dbee052ee82597cb, type: 3}
   m_Name: Receptionist_SilverMask
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
-  nodeId: Receptionist_Generic
+  nodeId: Receptionist_SilverMask
   lines:
   - speaker: Receptionist
     text: This is a masquerade ball you know...
   - speaker: Receptionist
     text: Everyone is wearing some sort of mask.
   - speaker: Detective
-    text: I know, but I am sure that this relates to a case i'm working on
-  - speaker: Detective
-    text: The silver mask do you know anything about them?
-  - speaker: Receptionist
-    text: 'Well all I know is that they''ve terrorized this establishment with
+    text: 'I know, but this relates to a case i''m working on
 
-      MURDER!'
+      The silver masks
+      do you know anything about them?'
   - speaker: Receptionist
-    text: "But other than that I haven't heard much about them. \nI don't want to
-      get myself involved in that lifestyle."
-  - speaker: Detective
-    text: I see...
+    text: The silver masks? Yes I have heard of them.
+  - speaker: Receptionist
+    text: It is quite shocking what happened today.
+  - speaker: Receptionist
+    text: "Although, usually they help out common folk behind the scenes but you
+      haven\u2019t heard that from me."
+  - speaker: Receptionist
+    text: Well, If you need anything else from me I'll be sure to help...
   requiredEvidence: {fileID: 0}
   ifEvidenceCorrect: {fileID: 0}
   ifEvidenceWrong: {fileID: 0}

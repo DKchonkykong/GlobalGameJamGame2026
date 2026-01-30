@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47b606592c9bc9e4dbee052ee82597cb, type: 3}
+  m_Name: Police_Greeting
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  nodeId: Police_greeting
+  lines:
+  - speaker: Police
+    text: Ah, evening Detective!
+  - speaker: Police
+    text: Don't worry we managed to get everyone out of here safely.
+  - speaker: Police
+    text: "We caught a few suspicious individuals. \nYour task is to help us figure
+      out who murdered Elizabeth Winfred."
+  - speaker: Detective
+    text: 'Do you have the autopsy report?
+
+      I''d be a start if nothing else.'
+  - speaker: Police
+    text: 'Ah right almost forgot Detective.
+
+      This should cover it.'
+  requiredEvidence: {fileID: 11400000, guid: 2066b12648b912b4e83af295a09ea957, type: 2}
+  ifEvidenceCorrect: {fileID: 11400000, guid: a6fe9066e7bf37944a89df9109b8b427, type: 2}
+  ifEvidenceWrong: {fileID: 11400000, guid: 63b4b4f7b4ffbed4088857bab7a93ad2, type: 2}
+  ifNoEvidence: {fileID: 0}
+  next: {fileID: 11400000, guid: 3c9bf7467ca7c95449dc0cfda6dfeda2, type: 2}

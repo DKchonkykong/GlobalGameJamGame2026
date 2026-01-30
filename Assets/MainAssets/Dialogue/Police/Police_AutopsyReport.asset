@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47b606592c9bc9e4dbee052ee82597cb, type: 3}
+  m_Name: Police_AutopsyReport
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  nodeId: Police_AutopsyReport
+  lines:
+  - speaker: Police
+    text: Ah, yeah the autopsy report what about it?
+  - speaker: Detective
+    text: Do you know anything about Elizabeth Winfred?
+  - speaker: Police
+    text: 'Never worked for her but I know she''s got a lot of fans
+
+      Mainly
+      overseas it seems...'
+  - speaker: Police
+    text: 'Me, Personally?
+
+      I just want the culprits to be already behind bars.'
+  - speaker: Detective
+    text: I see...
+  requiredEvidence: {fileID: 0}
+  ifEvidenceCorrect: {fileID: 0}
+  ifEvidenceWrong: {fileID: 0}
+  ifNoEvidence: {fileID: 0}
+  next: {fileID: 0}

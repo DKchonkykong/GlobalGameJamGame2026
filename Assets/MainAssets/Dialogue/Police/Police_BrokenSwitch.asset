@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47b606592c9bc9e4dbee052ee82597cb, type: 3}
+  m_Name: Police_BrokenSwitch
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  nodeId: Police_Generic
+  lines:
+  - speaker: Police
+    text: A broken light switch?
+  - speaker: Police
+    text: "Then it's clear as day that the culprit is \nElectritian Joe."
+  - speaker: Police
+    text: 'What are you waitin'' for
+
+      Arrest him already!'
+  - speaker: Detective
+    text: Calm down.
+  - speaker: Detective
+    text: 'Let''s not get too hasty.
+
+      He''s too obvious to be a suspect.'
+  - speaker: Police
+    text: 'Right, if you find any other clues of who might''ve done this
+
+      I
+      might be convinced.'
+  requiredEvidence: {fileID: 0}
+  ifEvidenceCorrect: {fileID: 0}
+  ifEvidenceWrong: {fileID: 0}
+  ifNoEvidence: {fileID: 0}
+  next: {fileID: 0}

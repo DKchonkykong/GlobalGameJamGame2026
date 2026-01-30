@@ -7,60 +7,67 @@ public class EvidenceManager : MonoBehaviour
     public static EvidenceManager Instance { get; private set; }
 
     [Header("Capacity / Starting Evidence")]
-    [SerializeField] private int maxEvidence = 4;
-    [SerializeField] private List<EvidenceItem> startingEvidence = new();
+    public int maxEvidence = 4;
+    public List<EvidenceItem> startingEvidence = new();
 
-    private readonly List<EvidenceItem> collected = new();
-    public IReadOnlyList<EvidenceItem> Collected => collected;
+    private readonly List<EvidenceItem> evidenceList = new();
+    private int currentIndex = 0;
 
-    // Fired when the list changes (added/removed/cleared)
     public event Action OnEvidenceChanged;
 
-    // Fired only when a new item is successfully added
-    public event Action<EvidenceItem> OnEvidenceAdded;
+    public IReadOnlyList<EvidenceItem> Evidence => evidenceList;
+    public int Count => evidenceList.Count;
+    public int CurrentIndex => currentIndex;
+
+    public EvidenceItem Current
+    {
+        get
+        {
+            if (evidenceList.Count == 0) return null;
+            currentIndex = Mathf.Clamp(currentIndex, 0, evidenceList.Count - 1);
+            return evidenceList[currentIndex];
+        }
+    }
 
     private void Awake()
     {
-        if (Instance != null && Instance != this)
-        {
-            Destroy(gameObject);
-            return;
-        }
+        if (Instance != null && Instance != this) { Destroy(gameObject); return; }
         Instance = this;
 
-        // Optional: persist between scenes
+        // Optional: keep across scenes if you want
         // DontDestroyOnLoad(gameObject);
 
-        InitialiseStartingEvidence();
-    }
-
-    private void InitialiseStartingEvidence()
-    {
-        collected.Clear();
-
+        // Load starting items once
         foreach (var item in startingEvidence)
-        {
-            if (item == null) continue;
-            if (collected.Count >= maxEvidence) break;
-            if (!collected.Contains(item))
-                collected.Add(item);
-        }
+            AddEvidence(item, showToast: false);
 
+        if (evidenceList.Count > 0) currentIndex = 0;
         OnEvidenceChanged?.Invoke();
     }
 
-    public bool AddEvidence(EvidenceItem item)
+    public bool AddEvidence(EvidenceItem item, bool showToast = true)
     {
         if (item == null) return false;
-        if (collected.Contains(item)) return false;
-        if (collected.Count >= maxEvidence) return false;
+        if (evidenceList.Contains(item)) return false;
+        if (evidenceList.Count >= maxEvidence) return false;
 
-        collected.Add(item);
-
-        OnEvidenceAdded?.Invoke(item);
+        evidenceList.Add(item);
+        currentIndex = Mathf.Clamp(currentIndex, 0, evidenceList.Count - 1);
         OnEvidenceChanged?.Invoke();
         return true;
     }
 
-    public int MaxEvidence => maxEvidence;
+    public void Next()
+    {
+        if (evidenceList.Count == 0) return;
+        currentIndex = (currentIndex + 1) % evidenceList.Count;
+        OnEvidenceChanged?.Invoke();
+    }
+
+    public void Prev()
+    {
+        if (evidenceList.Count == 0) return;
+        currentIndex = (currentIndex - 1 + evidenceList.Count) % evidenceList.Count;
+        OnEvidenceChanged?.Invoke();
+    }
 }
