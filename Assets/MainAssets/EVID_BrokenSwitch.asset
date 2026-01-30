@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60cb136a50fc7614089afa0dbd9b5212, type: 3}
   m_Name: EVID_BrokenSwitch
   m_EditorClassIdentifier: Assembly-CSharp::EvidenceItem
-  displayName: 
-  icon: {fileID: 0}
-  description: 
+  displayName: Broken Switch
+  icon: {fileID: 21300000, guid: 274796756ae16ba4c80728478a001338, type: 3}
+  description: 'It seems that whoever caused the blackout.
+
+    Also messed around
+    with the lighting beforehand.'

@@ -13,5 +13,7 @@ MonoBehaviour:
   m_Name: EVID_SilverMask
   m_EditorClassIdentifier: Assembly-CSharp::EvidenceItem
   displayName: Silver Mask
-  icon: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  description: A silver mask
+  icon: {fileID: 21300000, guid: 01e982cc01d843b4ba86fe2694f42830, type: 3}
+  description: "They are a criminal organization that have been increasing in influence
+    rapidly. \nNo one knows how many there are but they do leave their calling card
+    at every crime scene."

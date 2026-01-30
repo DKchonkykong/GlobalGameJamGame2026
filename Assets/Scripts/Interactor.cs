@@ -2,8 +2,6 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-//uses new unity input system instead of old version
-
 public class Interactor : MonoBehaviour
 {
     public Camera cam;
@@ -37,7 +35,6 @@ public class Interactor : MonoBehaviour
         }
     }
 
-    // PlayerInput (Send Messages) will call this when the "Interact" action fires
     public void OnInteract(InputValue value)
     {
         if (value == null || !value.isPressed) return;

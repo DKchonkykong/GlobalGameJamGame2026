@@ -31,7 +31,8 @@ public class NPCStateManager : MonoBehaviour
             {
                 actorId = actorId,
                 currentNodeId = currentNodeId,
-                hasReceivedEvidence = hasReceivedEvidence
+                hasReceivedEvidence = hasReceivedEvidence,
+                evidenceGiven = new List<string>()
             };
         }
     }
@@ -50,7 +51,15 @@ public class NPCStateManager : MonoBehaviour
         return npcStates.ContainsKey(actorId);
     }
 
-    // Optional: Clear all states (for new game)
+    public bool HasPresentedEvidence(string actorId, string evidenceId)
+    {
+        if (npcStates.TryGetValue(actorId, out NPCState state))
+        {
+            return state.evidenceGiven != null && state.evidenceGiven.Contains(evidenceId);
+        }
+        return false;
+    }
+
     public void ClearAllStates()
     {
         npcStates.Clear();

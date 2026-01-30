@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60cb136a50fc7614089afa0dbd9b5212, type: 3}
   m_Name: EVID_DetectiveBadge
   m_EditorClassIdentifier: Assembly-CSharp::EvidenceItem
-  displayName: 
-  icon: {fileID: 0}
-  description: 
+  displayName: Detective Badge
+  icon: {fileID: 21300000, guid: 69257d953ddc080469f294a20d91e039, type: 3}
+  description: Without this no one would've believed that I am a detective.

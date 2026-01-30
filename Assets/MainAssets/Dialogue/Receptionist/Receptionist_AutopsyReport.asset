@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47b606592c9bc9e4dbee052ee82597cb, type: 3}
+  m_Name: Receptionist_AutopsyReport
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  nodeId: Receptionist_Generic
+  lines:
+  - speaker: Receptionist
+    text: The autopsy report?
+  - speaker: Receptionist
+    text: Oh my goodness!
+  - speaker: Receptionist
+    text: Elizabeth Winfred died?!
+  - speaker: Receptionist
+    text: 'I didn''t expect someone so influential to die right in the heart of the
+      city
+
+      must''ve been those damn silver masks.'
+  - speaker: Detective
+    text: Trust me I want to get to the bottom of this as much as the next guy.
+  - speaker: Receptionist
+    text: Then try to be careful I don't want you being the next murder case.
+  - speaker: Detective
+    text: Thanks, I'll try to.
+  requiredEvidence: {fileID: 0}
+  ifEvidenceCorrect: {fileID: 0}
+  ifEvidenceWrong: {fileID: 0}
+  ifNoEvidence: {fileID: 0}
+  next: {fileID: 0}

@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47b606592c9bc9e4dbee052ee82597cb, type: 3}
+  m_Name: Receptionist_SilverMask
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  nodeId: Receptionist_Generic
+  lines:
+  - speaker: Receptionist
+    text: This is a masquerade ball you know...
+  - speaker: Receptionist
+    text: Everyone is wearing some sort of mask.
+  - speaker: Detective
+    text: I know, but I am sure that this relates to a case i'm working on
+  - speaker: Detective
+    text: The silver mask do you know anything about them?
+  - speaker: Receptionist
+    text: 'Well all I know is that they''ve terrorized this establishment with
+
+      MURDER!'
+  - speaker: Receptionist
+    text: "But other than that I haven't heard much about them. \nI don't want to
+      get myself involved in that lifestyle."
+  - speaker: Detective
+    text: I see...
+  requiredEvidence: {fileID: 0}
+  ifEvidenceCorrect: {fileID: 0}
+  ifEvidenceWrong: {fileID: 0}
+  ifNoEvidence: {fileID: 0}
+  next: {fileID: 0}

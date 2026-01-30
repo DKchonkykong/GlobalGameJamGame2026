@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47b606592c9bc9e4dbee052ee82597cb, type: 3}
+  m_Name: Receptionist_BadgeCorrect
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  nodeId: receptionist_correct
+  lines:
+  - speaker: Receptionist
+    text: It seems that you are indeed at the ball...
+  - speaker: Receptionist
+    text: Although, you don't strike me as the type of person that goes to events
+      like these.
+  - speaker: Detective
+    text: My source told me a person of interest would be here at this ball.
+  - speaker: Receptionist
+    text: I'm sure it's something related to one of your cases.
+  - speaker: Receptionist
+    text: Well, have a nice stay detective...
+  requiredEvidence: {fileID: 0}
+  ifEvidenceCorrect: {fileID: 0}
+  ifEvidenceWrong: {fileID: 0}
+  ifNoEvidence: {fileID: 0}
+  next: {fileID: 0}

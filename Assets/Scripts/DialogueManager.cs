@@ -15,8 +15,7 @@ public class DialogueManager : MonoBehaviour
     public Button continueButton;
 
     [Header("Player Control")]
-    public MonoBehaviour fpsController;
-    public MonoBehaviour interactor;
+    public GameObject playerObject; // Changed to GameObject reference
 
     private readonly Queue<DialogueLine> lines = new();
     private DialogueActor currentActor;
@@ -122,8 +121,14 @@ public class DialogueManager : MonoBehaviour
 
     void LockPlayer()
     {
-        if (fpsController != null) fpsController.enabled = false;
-        if (interactor != null) interactor.enabled = false;
+        if (playerObject != null)
+        {
+            var fpsController = playerObject.GetComponent<FPSController>();
+            if (fpsController != null) fpsController.enabled = false;
+
+            var interactor = playerObject.GetComponent<Interactor>();
+            if (interactor != null) interactor.enabled = false;
+        }
 
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
@@ -131,8 +136,14 @@ public class DialogueManager : MonoBehaviour
 
     void UnlockPlayer()
     {
-        if (fpsController != null) fpsController.enabled = true;
-        if (interactor != null) interactor.enabled = true;
+        if (playerObject != null)
+        {
+            var fpsController = playerObject.GetComponent<FPSController>();
+            if (fpsController != null) fpsController.enabled = true;
+
+            var interactor = playerObject.GetComponent<Interactor>();
+            if (interactor != null) interactor.enabled = true;
+        }
 
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;

@@ -7,16 +7,16 @@ public class EvidenceToastUI : MonoBehaviour
 {
     public GameObject panel;
     public Image icon;
-    public TMP_Text title;
-    public TMP_Text description;
+    public TMP_Text titleText;
 
-    [Range(0.5f, 5f)] public float showSeconds = 2f;
+    [Range(0.5f, 5f)] public float showSeconds = 3f;
 
-    Coroutine routine;
+    private Coroutine routine;
 
     void Start()
     {
-        panel.SetActive(false);
+        if (panel != null)
+            panel.SetActive(false);
 
         if (EvidenceManager.Instance != null)
             EvidenceManager.Instance.OnEvidenceAdded += ShowToast;
@@ -32,20 +32,37 @@ public class EvidenceToastUI : MonoBehaviour
     {
         if (item == null) return;
 
+        // Don't show toast during dialogue
+        if (DialogueManager.Instance != null && DialogueManager.Instance.IsOpen)
+            return;
+
         if (routine != null) StopCoroutine(routine);
         routine = StartCoroutine(ShowRoutine(item));
     }
 
     IEnumerator ShowRoutine(EvidenceItem item)
     {
-        icon.sprite = item.icon;
-        icon.enabled = item.icon != null;
+        // Update icon
+        if (icon != null)
+        {
+            icon.sprite = item.icon;
+            icon.enabled = item.icon != null;
+        }
 
-        title.text = $"Evidence Added: {item.displayName}";
-        description.text = item.description;
+        // Update text
+        if (titleText != null)
+        {
+            titleText.text = $"Evidence Added: {item.displayName}";
+        }
 
-        panel.SetActive(true);
+        // Show panel
+        if (panel != null)
+            panel.SetActive(true);
+
         yield return new WaitForSeconds(showSeconds);
-        panel.SetActive(false);
+
+        // Hide panel
+        if (panel != null)
+            panel.SetActive(false);
     }
 }

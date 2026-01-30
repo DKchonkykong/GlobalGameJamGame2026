@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60cb136a50fc7614089afa0dbd9b5212, type: 3}
   m_Name: EVID_AutopsyReport
   m_EditorClassIdentifier: Assembly-CSharp::EvidenceItem
-  displayName: 
-  icon: {fileID: 0}
-  description: 
+  displayName: Autopsy Report
+  icon: {fileID: 21300000, guid: 325ca79d7999d5444864f7320623c6ca, type: 3}
+  description: "Name: Elizabeth Windfred Age: 32\nTime of Death: 11:35 PM.\nThe victim
+    suffered one stab wound on the neck area causing their death, there's still some
+    chloroform left lingering on the body. \n"
