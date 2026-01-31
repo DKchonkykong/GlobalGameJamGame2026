@@ -16,21 +16,21 @@ MonoBehaviour:
   lines:
   - speaker: Electritian Joe
     text: A broken light switch?
-  - speaker: Electritian Joe
+  - speaker: Electrician Joe
     text: Ah, man I just fixed this yesterday.
   - speaker: Detective
     text: Look closer.
-  - speaker: Electritian Joe
+  - speaker: Electrician Joe
     text: 'Oh wait yeah someone must''ve tampered with this
 
       I was out having
       my smoke break a few minutes prior.'
-  - speaker: Electritian Joe
+  - speaker: Electrician Joe
     text: 'However, I usually lock the door
 
       and I have the keys with me all
       the time.'
-  - speaker: Electritian Joe
+  - speaker: Electrician Joe
     text: 'But when I went and checked the door it was wide open
 
       Somone managed
@@ -39,7 +39,7 @@ MonoBehaviour:
     text: 'They must''ve known a way to open the door then.
 
       Thanks.'
-  - speaker: Electritian Joe
+  - speaker: Electrician Joe
     text: God I really hope they don't fire me for this blunder.
   requiredEvidence: {fileID: 0}
   ifEvidenceCorrect: {fileID: 0}

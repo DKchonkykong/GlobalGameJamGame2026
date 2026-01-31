@@ -14,17 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
   nodeId: Electritian_Badge
   lines:
-  - speaker: Electritian Joe
+  - speaker: Electrician Joe
     text: Your Detective badge?
-  - speaker: Electritian Joe
+  - speaker: Electrician Joe
     text: 'Despite your attiture and looks
 
       You seem like a decent fella.'
-  - speaker: Electritian Joe
+  - speaker: Electrician Joe
     text: At least compared to the police man over there.
   - speaker: Detective
     text: Well I am to please what can I say.
-  - speaker: Electritian Joe
+  - speaker: Electrician Joe
     text: 'I just hope you get to the end of this Detective.
 
       I''m rootin''

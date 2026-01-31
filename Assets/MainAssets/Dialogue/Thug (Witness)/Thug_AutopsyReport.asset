@@ -12,21 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47b606592c9bc9e4dbee052ee82597cb, type: 3}
   m_Name: Thug_AutopsyReport
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
-  nodeId: Electritian_AutopsyReport
+  nodeId: Tony_AutopsyReport
   lines:
-  - speaker: Hans Sterling
+  - speaker: Tony
     text: The autopsy report?
   - speaker: Detective
     text: Do you know anything about Elizabeth Winfred?
-  - speaker: Hans Sterling
-    text: "She was a writer who got rich \nthanks to her novels getting popular"
-  - speaker: Detective
-    text: Although, her novels bore me to death.
-  - speaker: Hans Sterling
-    text: 'But she''s nothing compared to me
+  - speaker: Tony
+    text: She's just some rich girl that died.
+  - speaker: Tony
+    text: 'Big whoop someone dies.
 
-      I only joined her masquerade
-      ball because I had some time to kill.'
+      I frankly don''t care ''bout her. '
   - speaker: Detective
     text: I see...
   requiredEvidence: {fileID: 0}

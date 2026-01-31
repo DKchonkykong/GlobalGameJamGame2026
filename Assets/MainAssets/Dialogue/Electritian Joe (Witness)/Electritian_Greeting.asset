@@ -23,14 +23,14 @@ MonoBehaviour:
 
       My name is Joe but everyone calls me Electritian
       Joe'
-  - speaker: Electritian Joe
+  - speaker: Electrician Joe
     text: 'A-Anyway I kept telling the police officer
 
       That I didn''t kill
       Elizabeth Winfred.'
   - speaker: Detective
     text: But he doesn't believe you?
-  - speaker: Electritian Joe
+  - speaker: Electrician Joe
     text: 'It s-seems so
 
       Why does this happen to be now...'

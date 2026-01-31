@@ -14,20 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
   nodeId: Electritian_Generic
   lines:
-  - speaker: Hans Sterling
-    text: 'My appointment is of great importance
+  - speaker: Tony
+    text: 'Look ''ere detective I don''t have much time
 
-      For the livelyhoods of Noir
-      City.'
-  - speaker: Hans Sterling
-    text: 'Do what you must but do it quickly
-
-      I cannot waste any more time
-      here.'
-  - speaker: Hans Sterling
-    text: 'The longer you keep me here
-
-      The worse the city will get.'
+      I got a gig in a few
+      hours y''see i''m an actor.'
+  - speaker: Tony
+    text: "Do what you need to do \nbut I'd want to get going quickly. "
+  - speaker: Tony
+    text: Don't wanna be your witness forever!
   - speaker: Detective
     text: I'll see what I can do.
   requiredEvidence: {fileID: 0}

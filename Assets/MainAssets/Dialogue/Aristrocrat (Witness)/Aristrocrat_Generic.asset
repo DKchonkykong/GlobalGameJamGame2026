@@ -14,17 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
   nodeId: Electritian_Generic
   lines:
-  - speaker: Hans Sterling
+  - speaker: Johanne Sterling
     text: 'My appointment is of great importance
 
       For the livelyhoods of Noir
       City.'
-  - speaker: Hans Sterling
+  - speaker: Johanne Sterling
     text: 'Do what you must but do it quickly
 
       I cannot waste any more time
       here.'
-  - speaker: Hans Sterling
+  - speaker: Johanne Sterling
     text: 'The longer you keep me here
 
       The worse the city will get.'

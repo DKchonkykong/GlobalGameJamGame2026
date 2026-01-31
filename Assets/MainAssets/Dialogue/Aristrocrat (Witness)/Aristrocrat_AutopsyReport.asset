@@ -18,11 +18,11 @@ MonoBehaviour:
     text: The autopsy report?
   - speaker: Detective
     text: Do you know anything about Elizabeth Winfred?
-  - speaker: Hans Sterling
+  - speaker: Johanne Sterling
     text: "She was a writer who got rich \nthanks to her novels getting popular"
   - speaker: Detective
     text: Although, her novels bore me to death.
-  - speaker: Hans Sterling
+  - speaker: Johanne Sterling
     text: 'But she''s nothing compared to me
 
       I only joined her masquerade

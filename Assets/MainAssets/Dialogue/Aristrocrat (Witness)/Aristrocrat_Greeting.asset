@@ -19,15 +19,16 @@ MonoBehaviour:
   - speaker: Witness
     text: 'I''ll have you know this ball was ruined
 
-      Now if you excuse me.'
+      Now if you''ll excuse
+      me.'
   - speaker: Detective
     text: "This is an ongoing investigation!\nIf you don't want to get arrested I
       will need your name.\t"
-  - speaker: Hans Sterling
+  - speaker: Johanne Sterling
     text: 'Fine
 
-      My name is Hans Sterling.'
-  - speaker: Hans Sterling
+      My name is Johanne Sterling.'
+  - speaker: Johanne Sterling
     text: 'Make this quick
 
       I have an appointment on the hour.'

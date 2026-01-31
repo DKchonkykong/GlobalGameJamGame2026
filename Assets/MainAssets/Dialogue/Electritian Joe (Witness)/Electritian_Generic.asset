@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
   nodeId: Electritian_Generic
   lines:
-  - speaker: Electritian Joe
+  - speaker: Electrician Joe
     text: 'I keep telling you I didn''t kill her
 
       Someone believe me please.'
-  - speaker: Electritian Joe
+  - speaker: Electrician Joe
     text: You have to save my skin detective.
   - speaker: Detective
     text: I'll see what I can do.

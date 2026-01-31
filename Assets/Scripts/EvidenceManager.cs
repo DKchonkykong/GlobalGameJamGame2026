@@ -14,11 +14,15 @@ public class EvidenceManager : MonoBehaviour
     private int currentIndex = 0;
 
     public event Action OnEvidenceChanged;
-    public event Action<EvidenceItem> OnEvidenceAdded; // Added this event
+    public event Action<EvidenceItem> OnEvidenceAdded;
 
     public IReadOnlyList<EvidenceItem> Evidence => evidenceList;
     public int Count => evidenceList.Count;
     public int CurrentIndex => currentIndex;
+
+    // --- optional compatibility property for old code ---
+    public List<EvidenceItem> CurrentEvidence => evidenceList;
+    // ----------------------------------------------------
 
     public EvidenceItem Current
     {

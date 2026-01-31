@@ -14,20 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
   nodeId: Electritian_BrokenSwitch
   lines:
-  - speaker: Hans Sterling
+  - speaker: Johanne Sterling
     text: A broken light switch?
-  - speaker: Hans Sterling
+  - speaker: Johanne Sterling
     text: What does this relate to the case?
   - speaker: Detective
     text: 'The blackout a few minutes ago
 
       This broken lightswitch could relate
       to that.'
-  - speaker: Hans Sterling
+  - speaker: Johanne Sterling
     text: 'I see...
 
       Do you have any idea who could''ve done this?'
-  - speaker: Hans Sterling
+  - speaker: Johanne Sterling
     text: My money is on the incompetent Electritian.
   - speaker: Detective
     text: I need more time to fully know...

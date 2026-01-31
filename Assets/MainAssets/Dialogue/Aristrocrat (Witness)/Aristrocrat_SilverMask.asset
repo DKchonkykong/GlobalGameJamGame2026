@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
   nodeId: Electritian_SilverMask
   lines:
-  - speaker: Hans Sterling
+  - speaker: Johanne Sterling
     text: The silver masks? The anarchist group?
-  - speaker: Hans Sterling
+  - speaker: Johanne Sterling
     text: Such fools I say. What do they achieve by meddling with common folk and
       trying to disrupt our throne.
-  - speaker: Hans Sterling
+  - speaker: Johanne Sterling
     text: I would rather if they bothered someone else for a change instead of us.
   - speaker: Detective
     text: Right...

@@ -14,25 +14,45 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
   nodeId: Electritian_BrokenSwitch
   lines:
-  - speaker: Hans Sterling
+  - speaker: Tony
     text: A broken light switch?
-  - speaker: Hans Sterling
-    text: What does this relate to the case?
+  - speaker: Tony
+    text: 'They''re everywhere detective.
+
+      Even I know that.'
   - speaker: Detective
     text: 'The blackout a few minutes ago
 
       This broken lightswitch could relate
       to that.'
-  - speaker: Hans Sterling
-    text: 'I see...
+  - speaker: Tony
+    text: 'A blackout?
 
-      Do you have any idea who could''ve done this?'
-  - speaker: Hans Sterling
-    text: My money is on the incompetent Electritian.
+      Sorry, had a little too much to drink y''know.'
+  - speaker: Tony
+    text: "Went outside right before the blackout happened \nwanted some fresh air
+      after drinking."
   - speaker: Detective
-    text: I need more time to fully know...
-  - speaker: Hans Sterling
-    text: Don't test my patience Detective.
+    text: 'It happened just as I got in
+
+      plus I didn''t see anyone leaving
+      out of the ball room beforehand'
+  - speaker: Tony
+    text: 'Ah um, wait no I remember now it must''ve been
+
+      that electrician
+      fella Joe something right? '
+  - speaker: Tony
+    text: 'Right, he''s the one that has the keys and the door was left open
+
+      So
+      he must''ve done it! '
+  - speaker: Detective
+    text: I have my doubts...
+  - speaker: Tony
+    text: My theory is sound unlike 'im.
+  - speaker: Detective
+    text: Right...
   requiredEvidence: {fileID: 0}
   ifEvidenceCorrect: {fileID: 0}
   ifEvidenceWrong: {fileID: 0}

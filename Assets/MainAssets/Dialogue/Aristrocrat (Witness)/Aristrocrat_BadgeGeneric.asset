@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
   nodeId: Electritian_Badge
   lines:
-  - speaker: Hans Sterling
+  - speaker: Johanne Sterling
     text: Your Detective badge?
-  - speaker: Hans Sterling
+  - speaker: Johanne Sterling
     text: "I'll have you know I have multiple buisnesses all across \nNoir City."
-  - speaker: Hans Sterling
+  - speaker: Johanne Sterling
     text: I even partially invested in your little police department.
-  - speaker: Hans Sterling
+  - speaker: Johanne Sterling
     text: 'So, if you try anything funny with me I will end your carrer
 
       Detective...'

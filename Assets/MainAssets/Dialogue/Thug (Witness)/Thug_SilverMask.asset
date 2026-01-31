@@ -14,13 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
   nodeId: Electritian_SilverMask
   lines:
-  - speaker: Hans Sterling
-    text: The silver masks? The anarchist group?
-  - speaker: Hans Sterling
-    text: Such fools I say. What do they achieve by meddling with common folk and
-      trying to disrupt our throne.
-  - speaker: Hans Sterling
-    text: I would rather if they bothered someone else for a change instead of us.
+  - speaker: Tony
+    text: "The silver mask? Ah yeah know \u2018em."
+  - speaker: Tony
+    text: 'They seem to be decent folk from what i''ve heard
+
+      giving out jobs
+      for lower class people.'
+  - speaker: Tony
+    text: 'They do seem kind of noble in a way
+
+      Although they are on the wrong
+      side of the law...'
   - speaker: Detective
     text: Right...
   requiredEvidence: {fileID: 0}

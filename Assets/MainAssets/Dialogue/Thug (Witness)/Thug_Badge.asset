@@ -23,7 +23,11 @@ MonoBehaviour:
   - speaker: Detective
     text: I'm rather stubborn....
   - speaker: Tony
-    text: Right
+    text: Right...
+  - speaker: Tony
+    text: "Well I hope you have a nice retirement when all 'o \nthis blows over."
+  - speaker: Detective
+    text: We will see...
   requiredEvidence: {fileID: 0}
   ifEvidenceCorrect: {fileID: 0}
   ifEvidenceWrong: {fileID: 0}

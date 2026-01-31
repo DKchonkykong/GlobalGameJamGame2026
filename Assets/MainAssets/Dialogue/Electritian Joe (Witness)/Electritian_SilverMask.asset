@@ -14,14 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
   nodeId: Electritian_SilverMask
   lines:
-  - speaker: Police
-    text: The silver masks? Absolutely dispicable group.
-  - speaker: Police
-    text: "Well I tell you what Detective they\u2019ve been embarrassing us for years
-      and they keep getting away."
-  - speaker: Police
-    text: "Sooner or later they\u2019re going to turn us into absolute fools if this
-      keeps going any longer."
+  - speaker: Electrician Joe
+    text: The silver masks?
+  - speaker: Electrician Joe
+    text: Look, I just want to get back to my job.
+  - speaker: Electrician Joe
+    text: I don't want any more trouble from them either.
+  - speaker: Electrician Joe
+    text: "Even if they try to help the poor \nI don\u2019t know if their methods
+      are all that good."
   - speaker: Detective
     text: Right...
   requiredEvidence: {fileID: 0}

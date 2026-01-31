@@ -148,7 +148,7 @@ Transform:
   m_GameObject: {fileID: 11978139}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.23, y: 1.07, z: 6.08}
+  m_LocalPosition: {x: 9.62, y: 1.308, z: 8.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -169,8 +169,8 @@ MonoBehaviour:
   evidence: {fileID: 11400000, guid: 1700de1b74cc362438e1a5346d5e6e46, type: 2}
   prompt: Inspect
   dialogueLinesOnPickup:
-  - This is a broken switch
-  - '*Evidence added to detective''s handbook*'
+  - This light switch seems broken.
+  - '*Broken switch added to detective''s handbook*'
   disableAfterPickup: 1
 --- !u!65 &11978142
 BoxCollider:
@@ -632,6 +632,7 @@ GameObject:
   - component: {fileID: 153166410}
   - component: {fileID: 153166409}
   - component: {fileID: 153166412}
+  - component: {fileID: 153166413}
   m_Layer: 3
   m_Name: Police
   m_TagString: Untagged
@@ -753,6 +754,35 @@ MonoBehaviour:
   - Detective Thanks!
   - You Got Autopsy Report
   disableAfterPickup: 1
+--- !u!114 &153166413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153166407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae3ab63aca67c3e49ae4fcf25706cca9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueActor
+  actorId: Police
+  displayName: Police
+  startingNode: {fileID: 11400000, guid: ddefc4ed14ed5394188bca1d1899a082, type: 2}
+  afterEvidenceNode: {fileID: 11400000, guid: a726d55a2f413fc4c8075db8583025c4, type: 2}
+  evidenceReactions:
+  - evidence: {fileID: 11400000, guid: 04ad212b3fb37c541b50d3bc2fef74c0, type: 2}
+    onFirstPresent: {fileID: 11400000, guid: 6a52be3e2b5f7b647af1d31fb5d332dc, type: 2}
+    onRepeat: {fileID: 11400000, guid: a726d55a2f413fc4c8075db8583025c4, type: 2}
+  - evidence: {fileID: 11400000, guid: 1700de1b74cc362438e1a5346d5e6e46, type: 2}
+    onFirstPresent: {fileID: 11400000, guid: 1aed3401514207548b7271273d5d6c9e, type: 2}
+    onRepeat: {fileID: 11400000, guid: a726d55a2f413fc4c8075db8583025c4, type: 2}
+  - evidence: {fileID: 11400000, guid: 2066b12648b912b4e83af295a09ea957, type: 2}
+    onFirstPresent: {fileID: 11400000, guid: 82783391670a20e4d9eba1ac08f881ed, type: 2}
+    onRepeat: {fileID: 11400000, guid: a726d55a2f413fc4c8075db8583025c4, type: 2}
+  - evidence: {fileID: 11400000, guid: 5fe0da5556606f34590d530f431ea70e, type: 2}
+    onFirstPresent: {fileID: 11400000, guid: 926f5f8100b945146a8923944383a0de, type: 2}
+    onRepeat: {fileID: 11400000, guid: a726d55a2f413fc4c8075db8583025c4, type: 2}
 --- !u!1 &186882851
 GameObject:
   m_ObjectHideFlags: 0
@@ -902,8 +932,9 @@ GameObject:
   - component: {fileID: 187582253}
   - component: {fileID: 187582252}
   - component: {fileID: 187582251}
-  m_Layer: 0
-  m_Name: Witness_001
+  - component: {fileID: 187582254}
+  m_Layer: 3
+  m_Name: Thug
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1004,6 +1035,35 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 187582249}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &187582254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 187582249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae3ab63aca67c3e49ae4fcf25706cca9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueActor
+  actorId: Thug
+  displayName: Tony
+  startingNode: {fileID: 11400000, guid: 9792088cf6c48434aa62359a9528cef2, type: 2}
+  afterEvidenceNode: {fileID: 11400000, guid: 2c606c871b4c4324f9ca3871631f5477, type: 2}
+  evidenceReactions:
+  - evidence: {fileID: 11400000, guid: 04ad212b3fb37c541b50d3bc2fef74c0, type: 2}
+    onFirstPresent: {fileID: 11400000, guid: 20c454dfa3aa0884e965ccf0512724f6, type: 2}
+    onRepeat: {fileID: 11400000, guid: 2c606c871b4c4324f9ca3871631f5477, type: 2}
+  - evidence: {fileID: 11400000, guid: 1700de1b74cc362438e1a5346d5e6e46, type: 2}
+    onFirstPresent: {fileID: 11400000, guid: 94c7e0df4498ff6468e1bab3cc33c20e, type: 2}
+    onRepeat: {fileID: 11400000, guid: 2c606c871b4c4324f9ca3871631f5477, type: 2}
+  - evidence: {fileID: 11400000, guid: 2066b12648b912b4e83af295a09ea957, type: 2}
+    onFirstPresent: {fileID: 11400000, guid: 7591735d64cbd4e48bad6b9dedccee07, type: 2}
+    onRepeat: {fileID: 11400000, guid: 2c606c871b4c4324f9ca3871631f5477, type: 2}
+  - evidence: {fileID: 11400000, guid: 5fe0da5556606f34590d530f431ea70e, type: 2}
+    onFirstPresent: {fileID: 11400000, guid: 6c933c8984b8b004885d2d078764387e, type: 2}
+    onRepeat: {fileID: 11400000, guid: 2c606c871b4c4324f9ca3871631f5477, type: 2}
 --- !u!1 &201384734
 GameObject:
   m_ObjectHideFlags: 0
@@ -1344,7 +1404,8 @@ MonoBehaviour:
   speakerText: {fileID: 1190146615}
   bodyText: {fileID: 838164177}
   continueButton: {fileID: 858134346}
-  playerObject: {fileID: 0}
+  playerObject: {fileID: 520975657}
+  playerInput: {fileID: 520975661}
 --- !u!1 &513189720
 GameObject:
   m_ObjectHideFlags: 0
@@ -1357,8 +1418,9 @@ GameObject:
   - component: {fileID: 513189724}
   - component: {fileID: 513189723}
   - component: {fileID: 513189722}
-  m_Layer: 0
-  m_Name: Witness_003
+  - component: {fileID: 513189725}
+  m_Layer: 3
+  m_Name: Electritian
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1459,6 +1521,35 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 513189720}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &513189725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 513189720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae3ab63aca67c3e49ae4fcf25706cca9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueActor
+  actorId: Electritian
+  displayName: Electritian Joe
+  startingNode: {fileID: 11400000, guid: 67f8fdc4313a8404fbf70030f1e14ae7, type: 2}
+  afterEvidenceNode: {fileID: 11400000, guid: 01e790bc4e8a77345b1bc7ae704e848c, type: 2}
+  evidenceReactions:
+  - evidence: {fileID: 11400000, guid: 04ad212b3fb37c541b50d3bc2fef74c0, type: 2}
+    onFirstPresent: {fileID: 11400000, guid: a07cf0bdb651dd74596477cacb6d4032, type: 2}
+    onRepeat: {fileID: 11400000, guid: 01e790bc4e8a77345b1bc7ae704e848c, type: 2}
+  - evidence: {fileID: 11400000, guid: 1700de1b74cc362438e1a5346d5e6e46, type: 2}
+    onFirstPresent: {fileID: 11400000, guid: ecd2e748fc7b08b4a8b29a0499db9824, type: 2}
+    onRepeat: {fileID: 11400000, guid: 01e790bc4e8a77345b1bc7ae704e848c, type: 2}
+  - evidence: {fileID: 11400000, guid: 2066b12648b912b4e83af295a09ea957, type: 2}
+    onFirstPresent: {fileID: 11400000, guid: ef8ef0ab6a88bb3479244f0f6072bf17, type: 2}
+    onRepeat: {fileID: 11400000, guid: 67f8fdc4313a8404fbf70030f1e14ae7, type: 2}
+  - evidence: {fileID: 11400000, guid: 5fe0da5556606f34590d530f431ea70e, type: 2}
+    onFirstPresent: {fileID: 11400000, guid: 0ef1b65cad05bd143aed1dbccaa8904d, type: 2}
+    onRepeat: {fileID: 11400000, guid: 67f8fdc4313a8404fbf70030f1e14ae7, type: 2}
 --- !u!1001 &516978633
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1712,12 +1803,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb32e6d0453384e42b56c34561b7a3cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIInputRouter
-  evidenceUI: {fileID: 0}
+  evidenceUI: {fileID: 904328963}
   inventoryKey: 3
-  nextKey1: 19
-  nextKey2: 62
-  prevKey1: 31
-  prevKey2: 61
+  nextKey: 19
+  prevKey: 31
   closeKey: 60
 --- !u!114 &520975660
 MonoBehaviour:
@@ -2105,37 +2194,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!1 &675813976
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 675813977}
-  m_Layer: 0
-  m_Name: EvidenceUImanager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &675813977
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 675813976}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 866.6112, y: 60.86966, z: -7.14123}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &732054959
 GameObject:
   m_ObjectHideFlags: 0
@@ -2972,8 +3030,8 @@ GameObject:
   - component: {fileID: 904328958}
   - component: {fileID: 904328960}
   - component: {fileID: 904328959}
-  - component: {fileID: 904328961}
   - component: {fileID: 904328962}
+  - component: {fileID: 904328963}
   m_Layer: 5
   m_Name: EvidencePanel
   m_TagString: Untagged
@@ -3047,7 +3105,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 904328957}
   m_CullTransparentMesh: 1
---- !u!114 &904328961
+--- !u!114 &904328962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 904328957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 298554842f23a904182d586974bdeab9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EvidenceToastUI
+  panel: {fileID: 904328957}
+  icon: {fileID: 115314866}
+  titleText: {fileID: 732054961}
+  showSeconds: 2.11
+--- !u!114 &904328963
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3070,23 +3144,13 @@ MonoBehaviour:
   presentButton: {fileID: 1124060788}
   feedbackText: {fileID: 0}
   feedbackDuration: 2
-  playerObject: {fileID: 520975657}
---- !u!114 &904328962
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 904328957}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 298554842f23a904182d586974bdeab9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EvidenceToastUI
-  panel: {fileID: 904328957}
-  icon: {fileID: 115314866}
-  titleText: {fileID: 732054961}
-  showSeconds: 2.11
+  fpsController: {fileID: 520975662}
+  playerCamera: {fileID: 53604329}
+  presentRange: 3
+  facingDot: 0.6
+  npcLayerMask:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!1 &916156674
 GameObject:
   m_ObjectHideFlags: 0
@@ -3307,9 +3371,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 904328961}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: EvidenceUI, Assembly-CSharp
-        m_MethodName: PrevItem
+        m_MethodName: PrevEvidence
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3519,7 +3583,8 @@ MonoBehaviour:
   evidence: {fileID: 11400000, guid: 5fe0da5556606f34590d530f431ea70e, type: 2}
   prompt: Inspect
   dialogueLinesOnPickup:
-  - Test Line pickup
+  - This Silver Mask feels familiar...
+  - '*Silver Mask added to detective''s handbook*'
   disableAfterPickup: 1
 --- !u!65 &956515094
 BoxCollider:
@@ -4025,7 +4090,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 319, y: -286}
-  m_SizeDelta: {x: 160, y: 30}
+  m_SizeDelta: {x: 200, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1124060788
 MonoBehaviour:
@@ -4071,7 +4136,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 904328961}
+      - m_Target: {fileID: 904328963}
         m_TargetAssemblyTypeName: EvidenceUI, Assembly-CSharp
         m_MethodName: OnPresentPressed
         m_Mode: 1
@@ -4099,7 +4164,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
+  m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -4111,7 +4176,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
-  m_UseSpriteMesh: 0
+  m_UseSpriteMesh: 1
   m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1124060790
 CanvasRenderer:
@@ -5140,9 +5205,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 904328961}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: EvidenceUI, Assembly-CSharp
-        m_MethodName: NextItem
+        m_MethodName: NextEvidence
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5674,8 +5739,9 @@ GameObject:
   - component: {fileID: 1669634683}
   - component: {fileID: 1669634682}
   - component: {fileID: 1669634681}
-  m_Layer: 0
-  m_Name: Witness_002
+  - component: {fileID: 1669634684}
+  m_Layer: 3
+  m_Name: Aristrocrat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5776,6 +5842,35 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1669634679}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1669634684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1669634679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae3ab63aca67c3e49ae4fcf25706cca9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueActor
+  actorId: Aristrocrat
+  displayName: Johanne Sterling
+  startingNode: {fileID: 11400000, guid: ef6d1466a27439d498604d3b23481891, type: 2}
+  afterEvidenceNode: {fileID: 11400000, guid: 5682de98445be214db952ddc371a3e43, type: 2}
+  evidenceReactions:
+  - evidence: {fileID: 11400000, guid: 04ad212b3fb37c541b50d3bc2fef74c0, type: 2}
+    onFirstPresent: {fileID: 11400000, guid: 0a778091203bd354ea096573ee5743c0, type: 2}
+    onRepeat: {fileID: 11400000, guid: 6e33d9ccca82bca42a9a4756af12401c, type: 2}
+  - evidence: {fileID: 11400000, guid: 1700de1b74cc362438e1a5346d5e6e46, type: 2}
+    onFirstPresent: {fileID: 11400000, guid: 6e33d9ccca82bca42a9a4756af12401c, type: 2}
+    onRepeat: {fileID: 11400000, guid: 5682de98445be214db952ddc371a3e43, type: 2}
+  - evidence: {fileID: 11400000, guid: 2066b12648b912b4e83af295a09ea957, type: 2}
+    onFirstPresent: {fileID: 11400000, guid: afcc63e3662e4f8438a34d98d5b3061f, type: 2}
+    onRepeat: {fileID: 11400000, guid: 5682de98445be214db952ddc371a3e43, type: 2}
+  - evidence: {fileID: 11400000, guid: 5fe0da5556606f34590d530f431ea70e, type: 2}
+    onFirstPresent: {fileID: 11400000, guid: 1675afa76d3e89348a657c89322881f2, type: 2}
+    onRepeat: {fileID: 11400000, guid: 5682de98445be214db952ddc371a3e43, type: 2}
 --- !u!1 &1675751538
 GameObject:
   m_ObjectHideFlags: 0
@@ -6606,4 +6701,3 @@ SceneRoots:
   - {fileID: 201384735}
   - {fileID: 516978633}
   - {fileID: 1784266060}
-  - {fileID: 675813977}

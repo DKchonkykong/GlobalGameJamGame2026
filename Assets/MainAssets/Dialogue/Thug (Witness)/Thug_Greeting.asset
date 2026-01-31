@@ -15,24 +15,25 @@ MonoBehaviour:
   nodeId: Electritian_greeting
   lines:
   - speaker: Witness
-    text: How long is this going to take?
+    text: What's up Detective?
   - speaker: Witness
-    text: 'I''ll have you know this ball was ruined
+    text: 'Ah, forgot but my name is Antony Castillo
 
-      Now if you excuse me.'
+      But I go by the name
+      of Tony.'
   - speaker: Detective
-    text: "This is an ongoing investigation!\nIf you don't want to get arrested I
-      will need your name.\t"
-  - speaker: Hans Sterling
-    text: 'Fine
+    text: 'You''re talking this too casually
 
-      My name is Hans Sterling.'
-  - speaker: Hans Sterling
-    text: 'Make this quick
+      for someone who got murdered... '
+  - speaker: Tony
+    text: My acting is pretty good eh?
+  - speaker: Tony
+    text: 'Although the party did get trashed
 
-      I have an appointment on the hour.'
+      I couldn''t even enjoy most
+      of it before it ended...'
   - speaker: Detective
-    text: This won't end well...
+    text: I see...
   requiredEvidence: {fileID: 11400000, guid: 2066b12648b912b4e83af295a09ea957, type: 2}
   ifEvidenceCorrect: {fileID: 11400000, guid: a6fe9066e7bf37944a89df9109b8b427, type: 2}
   ifEvidenceWrong: {fileID: 11400000, guid: 63b4b4f7b4ffbed4088857bab7a93ad2, type: 2}

@@ -32,6 +32,13 @@ public class NPCDialogue : MonoBehaviour, IEvidenceReceiver
         // If it IS gated, we wait for evidence via ReceiveEvidence(...)
     }
 
+    // If something expects OnEvidencePresented(EvidenceItem),
+    // forward it to ReceiveEvidence for compatibility.
+    public void OnEvidencePresented(EvidenceItem item)
+    {
+        ReceiveEvidence(item);
+    }
+
     // Called when player "presents" evidence while talking to this NPC
     public bool ReceiveEvidence(EvidenceItem item)
     {

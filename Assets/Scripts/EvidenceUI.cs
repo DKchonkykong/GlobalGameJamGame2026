@@ -1,247 +1,280 @@
-using System.Collections;
+﻿using System.Collections;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class EvidenceUI : MonoBehaviour
 {
-    [Header("UI")]
+    [Header("UI References")]
     public GameObject panel;
     public Image iconImage;
     public TMP_Text titleText;
     public TMP_Text descriptionText;
     public TMP_Text counterText;
+
+    [Header("Buttons")]
     public Button prevButton;
     public Button nextButton;
     public Button closeButton;
-
-    [Header("Present")]
     public Button presentButton;
+
+    [Header("Optional Feedback")]
     public TMP_Text feedbackText;
     public float feedbackDuration = 2f;
 
-    [Header("Present Targeting")]
-    public Camera playerCamera;
-    public float presentRange = 3.0f;
-    public LayerMask presentMask = ~0;
-    public bool requireFacing = true;
+    [Header("Player / Control")]
+    public MonoBehaviour fpsController; // your FPSController script
+    public Transform playerCamera;      // assign PlayerCamera transform (recommended)
 
-    [Header("Player Control")]
-    public GameObject playerObject;
+    [Header("Present Settings")]
+    public float presentRange = 3f;
+    [Range(0f, 1f)] public float facingDot = 0.6f;
+    public LayerMask npcLayerMask = ~0;
 
-    private int currentIndex = 0;
+    private EvidenceManager evidenceManager;
+    private int index = 0;
+    private bool isOpen = false;
     private Coroutine feedbackRoutine;
-    private IEvidenceReceiver cachedReceiver;
 
-    public bool IsOpen => panel != null && panel.activeSelf;
+    public bool IsOpen => isOpen;
 
-    void Awake()
+    private void Awake()
     {
-        if (panel != null)
-            panel.SetActive(false);
+        evidenceManager = FindAnyObjectByType<EvidenceManager>();
+        if (evidenceManager != null)
+            evidenceManager.OnEvidenceChanged += HandleEvidenceChanged;
 
-        if (prevButton != null) prevButton.onClick.AddListener(PrevEvidence);
-        if (nextButton != null) nextButton.onClick.AddListener(NextEvidence);
+        if (prevButton != null) prevButton.onClick.AddListener(Prev);
+        if (nextButton != null) nextButton.onClick.AddListener(Next);
         if (closeButton != null) closeButton.onClick.AddListener(Close);
         if (presentButton != null) presentButton.onClick.AddListener(OnPresentPressed);
 
-        if (feedbackText != null)
-            feedbackText.gameObject.SetActive(false);
-
-        if (EvidenceManager.Instance != null)
-            EvidenceManager.Instance.OnEvidenceChanged += Refresh;
+        if (panel != null) panel.SetActive(false);
+        isOpen = false;
     }
 
-    void OnDestroy()
+    private void OnDestroy()
     {
-        if (EvidenceManager.Instance != null)
-            EvidenceManager.Instance.OnEvidenceChanged -= Refresh;
+        if (evidenceManager != null)
+            evidenceManager.OnEvidenceChanged -= HandleEvidenceChanged;
     }
 
+    // NOTE: Removed Update() – keyboard input is handled by UIInputRouter
+
+    // Called by UIInputRouter (Tab)
     public void Toggle()
     {
-        if (panel == null) return;
-
-        if (IsOpen)
-            Close();
-        else
-            Open();
+        if (isOpen) Close();
+        else Open();
     }
 
     public void Open()
     {
-        if (panel == null) return;
+        // Don't open evidence while dialogue is open
+        if (DialogueManager.Instance != null && DialogueManager.Instance.IsOpen)
+            return;
 
-        panel.SetActive(true);
-        LockPlayer();
+        isOpen = true;
+        if (panel != null) panel.SetActive(true);
 
-        currentIndex = 0;
+        LockPlayer(true);
+        ClampIndex();
         Refresh();
-
-        // Find potential evidence receiver when opening
-        cachedReceiver = FindReceiverInFront();
     }
 
     public void Close()
     {
-        if (panel == null) return;
-        if (!IsOpen) return;
+        isOpen = false;
+        if (panel != null) panel.SetActive(false);
 
-        panel.SetActive(false);
-        UnlockPlayer();
-        cachedReceiver = null;
+        LockPlayer(false);
+        ClearFeedback();
     }
 
-    void LockPlayer()
+    // wrappers so UIInputRouter compiles
+    public void NextItem() => Next();
+    public void PrevItem() => Prev();
+
+    public void Next()
     {
-        if (playerObject != null)
-        {
-            var fpsController = playerObject.GetComponent<FPSController>();
-            if (fpsController != null) fpsController.enabled = false;
+        var list = GetEvidenceList();
+        if (list.Count == 0) { Refresh(); return; }
 
-            var interactor = playerObject.GetComponent<Interactor>();
-            if (interactor != null) interactor.enabled = false;
-        }
-
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
-    }
-
-    void UnlockPlayer()
-    {
-        if (playerObject != null)
-        {
-            var fpsController = playerObject.GetComponent<FPSController>();
-            if (fpsController != null) fpsController.enabled = true;
-
-            var interactor = playerObject.GetComponent<Interactor>();
-            if (interactor != null) interactor.enabled = true;
-        }
-
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
-    }
-
-    // Made public so UIInputRouter can call them
-    public void PrevEvidence()
-    {
-        var list = EvidenceManager.Instance?.Evidence;
-        if (list == null || list.Count == 0) return;
-
-        currentIndex = (currentIndex - 1 + list.Count) % list.Count;
+        index = (index + 1) % list.Count;
         Refresh();
     }
 
-    // Made public so UIInputRouter can call them
-    public void NextEvidence()
+    public void Prev()
     {
-        var list = EvidenceManager.Instance?.Evidence;
-        if (list == null || list.Count == 0) return;
+        var list = GetEvidenceList();
+        if (list.Count == 0) { Refresh(); return; }
 
-        currentIndex = (currentIndex + 1) % list.Count;
+        index = (index - 1 + list.Count) % list.Count;
         Refresh();
-    }
-
-    void Refresh()
-    {
-        var list = EvidenceManager.Instance?.Evidence;
-
-        if (list == null || list.Count == 0)
-        {
-            if (iconImage != null) iconImage.enabled = false;
-            if (titleText != null) titleText.text = "No evidence";
-            if (descriptionText != null) descriptionText.text = "You haven't collected any evidence yet.";
-            if (counterText != null) counterText.text = "0/0";
-            if (presentButton != null) presentButton.interactable = false;
-            return;
-        }
-
-        currentIndex = Mathf.Clamp(currentIndex, 0, list.Count - 1);
-        EvidenceItem item = list[currentIndex];
-
-        if (iconImage != null)
-        {
-            iconImage.enabled = item.icon != null;
-            iconImage.sprite = item.icon;
-        }
-
-        if (titleText != null) titleText.text = item.displayName;
-        if (descriptionText != null) descriptionText.text = item.description;
-        if (counterText != null) counterText.text = $"{currentIndex + 1}/{list.Count}";
-
-        // Enable present button if receiver exists
-        if (presentButton != null)
-        {
-            bool canPresent = cachedReceiver != null || FindReceiverInFront() != null;
-            presentButton.interactable = canPresent;
-        }
     }
 
     public void OnPresentPressed()
     {
-        var list = EvidenceManager.Instance?.Evidence;
-        if (list == null || list.Count == 0)
+        var list = GetEvidenceList();
+        if (list.Count == 0)
         {
             ShowFeedback("No evidence to present.");
             return;
         }
 
-        // Try to find receiver
-        IEvidenceReceiver receiver = cachedReceiver ?? FindReceiverInFront();
+        EvidenceItem selected = list[index];
 
-        if (receiver == null)
+        // Find a valid NPC target in front of the player
+        var target = FindPresentTarget();
+        if (target == null)
         {
-            ShowFeedback("No one is here to show this to.");
+            ShowFeedback("No one to present this to.");
             return;
         }
 
-        EvidenceItem currentItem = list[currentIndex];
-        Debug.Log($"Presenting {currentItem.displayName}");
+        // use ReceiveEvidence (from IEvidenceReceiver) instead of OnEvidencePresented
+        bool ok = target.ReceiveEvidence(selected);
 
-        receiver.ReceiveEvidence(currentItem);
-        Close();
+        ShowFeedback(ok
+            ? $"Presented: {selected.displayName}"
+            : "That didn't work.");
+        // Optional: Close();
     }
 
-    IEvidenceReceiver FindReceiverInFront()
+    private void HandleEvidenceChanged()
     {
-        // First check ConversationContext (if in dialogue)
-        if (ConversationContext.Instance != null && ConversationContext.Instance.ActiveReceiver != null)
-        {
-            return ConversationContext.Instance.ActiveReceiver;
-        }
-
-        // Otherwise raycast to find someone in front
-        if (playerCamera == null || !requireFacing)
-            return null;
-
-        Ray ray = new Ray(playerCamera.transform.position, playerCamera.transform.forward);
-        if (Physics.Raycast(ray, out RaycastHit hit, presentRange, presentMask))
-        {
-            return hit.collider.GetComponentInParent<IEvidenceReceiver>();
-        }
-
-        return null;
+        ClampIndex();
+        if (isOpen) Refresh();
     }
 
-    void ShowFeedback(string message)
+    private void ClampIndex()
     {
-        if (feedbackText == null)
+        var list = GetEvidenceList();
+        if (list.Count == 0) { index = 0; return; }
+        index = Mathf.Clamp(index, 0, list.Count - 1);
+    }
+
+    private void Refresh()
+    {
+        var list = GetEvidenceList();
+
+        if (list.Count == 0)
         {
-            Debug.Log(message);
+            if (titleText) titleText.text = "No evidence";
+            if (descriptionText) descriptionText.text = "No evidence";
+            if (descriptionText) descriptionText.text = "You haven't collected any evidence yet.";
+            if (counterText) counterText.text = "0/0";
+            if (iconImage) iconImage.sprite = null;
+
+            SetNavInteractable(false);
             return;
         }
+
+        EvidenceItem item = list[index];
+
+        // use displayName instead of title
+        if (titleText) titleText.text = item.displayName;
+        if (descriptionText) descriptionText.text = item.description;
+        if (counterText) counterText.text = $"{index + 1}/{list.Count}";
+        if (iconImage) iconImage.sprite = item.icon;
+
+        SetNavInteractable(list.Count > 1);
+    }
+
+    private void SetNavInteractable(bool canNavigate)
+    {
+        if (prevButton) prevButton.interactable = canNavigate;
+        if (nextButton) nextButton.interactable = canNavigate;
+    }
+
+    private List<EvidenceItem> GetEvidenceList()
+    {
+        if (evidenceManager == null)
+            return new List<EvidenceItem>();
+
+        // use EvidenceManager.Evidence instead of non‑existent CurrentEvidence
+        return new List<EvidenceItem>(evidenceManager.Evidence);
+    }
+
+    private void LockPlayer(bool locked)
+    {
+        if (fpsController != null)
+            fpsController.enabled = !locked;
+
+        Cursor.visible = locked;
+        Cursor.lockState = locked ? CursorLockMode.None : CursorLockMode.Locked;
+    }
+
+    private void ShowFeedback(string msg)
+    {
+        if (feedbackText == null) return;
 
         if (feedbackRoutine != null)
             StopCoroutine(feedbackRoutine);
 
-        feedbackRoutine = StartCoroutine(FeedbackRoutine(message));
+        feedbackRoutine = StartCoroutine(FeedbackRoutine(msg));
     }
 
-    IEnumerator FeedbackRoutine(string message)
+    private IEnumerator FeedbackRoutine(string msg)
     {
-        feedbackText.text = message;
         feedbackText.gameObject.SetActive(true);
-        yield return new WaitForSeconds(feedbackDuration);
+        feedbackText.text = msg;
+
+        yield return new WaitForSecondsRealtime(feedbackDuration);
+
+        feedbackText.text = "";
         feedbackText.gameObject.SetActive(false);
+        feedbackRoutine = null;
+    }
+
+    private void ClearFeedback()
+    {
+        if (feedbackText == null) return;
+
+        if (feedbackRoutine != null)
+            StopCoroutine(feedbackRoutine);
+
+        feedbackText.text = "";
+        feedbackText.gameObject.SetActive(false);
+        feedbackRoutine = null;
+    }
+
+    private NPCDialogue FindPresentTarget()
+    {
+        Transform cam = playerCamera != null
+            ? playerCamera
+            : Camera.main != null ? Camera.main.transform : null;
+
+        if (cam == null) return null;
+
+        Collider[] hits = Physics.OverlapSphere(
+            cam.position,
+            presentRange,
+            npcLayerMask,
+            QueryTriggerInteraction.Collide);
+
+        NPCDialogue best = null;
+        float bestDot = -1f;
+
+        foreach (var h in hits)
+        {
+            NPCDialogue npc = h.GetComponentInParent<NPCDialogue>();
+            if (npc == null) continue;
+
+            Vector3 toNpc = npc.transform.position - cam.position;
+            toNpc.y = 0;
+            Vector3 forward = cam.forward;
+            forward.y = 0;
+
+            float dot = Vector3.Dot(forward.normalized, toNpc.normalized);
+            if (dot >= facingDot && dot > bestDot)
+            {
+                bestDot = dot;
+                best = npc;
+            }
+        }
+
+        return best;
     }
 }

@@ -12,15 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47b606592c9bc9e4dbee052ee82597cb, type: 3}
   m_Name: Electritian_AutopsyReport
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
-  nodeId: Electritian_AutopsyReport
+  nodeId: electrician _AutopsyReport
   lines:
-  - speaker: Electritian Joe
+  - speaker: Electrician Joe
     text: The autopsy report?
   - speaker: Detective
     text: Do you know anything about Elizabeth Winfred?
-  - speaker: Electritian Joe
+  - speaker: Electrician Joe
     text: I read a bit about her on the papers.
-  - speaker: Electritian Joe
+  - speaker: Electrician Joe
     text: 'She was pretty but underneath
 
       I think she had a few skeletons in

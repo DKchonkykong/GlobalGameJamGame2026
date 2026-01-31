@@ -15,7 +15,10 @@ public class DialogueManager : MonoBehaviour
     public Button continueButton;
 
     [Header("Player Control")]
-    public GameObject playerObject; // Changed to GameObject reference
+    public GameObject playerObject;
+    
+    [Header("Input System")]
+    public PlayerInput playerInput; // Reference to PlayerInput component
 
     private readonly Queue<DialogueLine> lines = new();
     private DialogueActor currentActor;
@@ -32,6 +35,12 @@ public class DialogueManager : MonoBehaviour
     {
         panel.SetActive(false);
         continueButton.onClick.AddListener(NextLine);
+
+        // Auto-find PlayerInput if not assigned
+        if (playerInput == null && playerObject != null)
+        {
+            playerInput = playerObject.GetComponent<PlayerInput>();
+        }
     }
 
     void Update()
@@ -45,7 +54,6 @@ public class DialogueManager : MonoBehaviour
         if (advance) NextLine();
     }
 
-    // New method for DialogueActor
     public void StartConversation(DialogueActor actor)
     {
         if (actor == null) return;
@@ -57,7 +65,6 @@ public class DialogueManager : MonoBehaviour
         {
             ShowDialogue(node.lines);
 
-            // Set up evidence receiver if this node has evidence requirements
             if (node.requiredEvidence != null && ConversationContext.Instance != null)
             {
                 ConversationContext.Instance.SetActiveReceiver(actor);
@@ -65,7 +72,6 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    // Overload for simple string array dialogue (used by SimpleInteractable and EvidencePickup)
     public void ShowDialogue(string speaker, string[] dialogueLines)
     {
         if (dialogueLines == null || dialogueLines.Length == 0) return;
@@ -83,7 +89,6 @@ public class DialogueManager : MonoBehaviour
         NextLine();
     }
 
-    // Main method for DialogueLine array
     public void ShowDialogue(DialogueLine[] dialogueLines)
     {
         if (dialogueLines == null || dialogueLines.Length == 0) return;
@@ -109,7 +114,6 @@ public class DialogueManager : MonoBehaviour
     {
         panel.SetActive(false);
 
-        // Clear conversation context when dialogue ends
         if (ConversationContext.Instance != null)
         {
             ConversationContext.Instance.Clear();
@@ -130,6 +134,12 @@ public class DialogueManager : MonoBehaviour
             if (interactor != null) interactor.enabled = false;
         }
 
+        // Switch to UI action map
+        if (playerInput != null)
+        {
+            playerInput.SwitchCurrentActionMap("UI");
+        }
+
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
     }
@@ -143,6 +153,12 @@ public class DialogueManager : MonoBehaviour
 
             var interactor = playerObject.GetComponent<Interactor>();
             if (interactor != null) interactor.enabled = true;
+        }
+
+        // Switch back to Player action map
+        if (playerInput != null)
+        {
+            playerInput.SwitchCurrentActionMap("Player");
         }
 
         Cursor.lockState = CursorLockMode.Locked;

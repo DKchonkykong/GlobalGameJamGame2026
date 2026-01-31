@@ -33,16 +33,16 @@ public class UIInputRouter : MonoBehaviour
 
         if (kb[nextKey].wasPressedThisFrame)
         {
-            evidenceUI.NextEvidence();
+            evidenceUI.NextItem();
         }
 
         if (kb[prevKey].wasPressedThisFrame)
         {
-            evidenceUI.PrevEvidence();
+            evidenceUI.PrevItem();
         }
     }
 
-    // Make public methods so buttons can call them too
-    public void NextEvidence() => evidenceUI?.NextEvidence();
-    public void PrevEvidence() => evidenceUI?.PrevEvidence();
+    // Optional wrappers if you want to call from UI Buttons
+    public void NextEvidence() => evidenceUI?.NextItem();
+    public void PrevEvidence() => evidenceUI?.PrevItem();
 }
