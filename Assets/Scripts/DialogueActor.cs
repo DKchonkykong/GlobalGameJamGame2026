@@ -22,6 +22,12 @@ public class DialogueActor : MonoBehaviour, IInteractable, IEvidenceReceiver
     [Header("Evidence Reactions")]
     public List<EvidenceReaction> evidenceReactions = new List<EvidenceReaction>();
 
+    [Header("Fallback Responses")]
+    [Tooltip("Show a generic response when presenting unrelated evidence? If false, NPC will be silent.")]
+    public bool showDefaultResponse = false;
+    [TextArea(2, 3)]
+    public string defaultResponseText = "I don't think that's relevant right now.";
+
     // Private state (not shown in Inspector)
     private DialogueNode currentNode;
     private bool hasReceivedCorrectEvidence;
@@ -111,9 +117,12 @@ public class DialogueActor : MonoBehaviour, IInteractable, IEvidenceReceiver
     {
         if (item == null) return false;
 
+        Debug.Log($"[{actorId}] Received evidence: {item.name}");
+
         // Check if this is evidence we're specifically waiting for (from dialogue nodes)
         if (currentNode != null && currentNode.requiredEvidence != null)
         {
+            Debug.Log($"[{actorId}] Current node has required evidence: {currentNode.requiredEvidence.name}");
             return HandleRequiredEvidence(item);
         }
 
@@ -121,16 +130,23 @@ public class DialogueActor : MonoBehaviour, IInteractable, IEvidenceReceiver
         EvidenceReaction reaction = evidenceReactions.Find(r => r.evidence == item);
         if (reaction != null)
         {
+            Debug.Log($"[{actorId}] Found evidence reaction for {item.name}");
             HandleEvidenceReaction(item, reaction);
             return true;
         }
 
-        // Default: not interested in this evidence
-        DialogueLine[] defaultLines = new DialogueLine[]
+        Debug.Log($"[{actorId}] No reaction found for {item.name}, using default response");
+
+        // Default: This NPC doesn't recognize this evidence
+        if (showDefaultResponse)
         {
-            new DialogueLine { speaker = displayName, text = "I don't think that's relevant right now." }
-        };
-        DialogueManager.Instance.ShowDialogue(defaultLines);
+            DialogueLine[] defaultLines = new DialogueLine[]
+            {
+                new DialogueLine { speaker = displayName, text = defaultResponseText }
+            };
+            DialogueManager.Instance.ShowDialogue(defaultLines);
+        }
+        
         return false;
     }
 
@@ -138,11 +154,13 @@ public class DialogueActor : MonoBehaviour, IInteractable, IEvidenceReceiver
     {
         if (item == currentNode.requiredEvidence)
         {
+            Debug.Log($"[{actorId}] Correct evidence! Transitioning node.");
             hasReceivedCorrectEvidence = true;
 
             if (currentNode.ifEvidenceCorrect != null)
             {
                 currentNode = currentNode.ifEvidenceCorrect;
+                Debug.Log($"[{actorId}] Showing dialogue from node: {currentNode.nodeId}");
                 DialogueManager.Instance.ShowDialogue(currentNode.lines);
 
                 if (currentNode.next != null)
@@ -162,11 +180,13 @@ public class DialogueActor : MonoBehaviour, IInteractable, IEvidenceReceiver
         }
         else
         {
+            Debug.Log($"[{actorId}] Wrong evidence presented.");
             // Wrong evidence
             DialogueNode wrongNode = currentNode.ifEvidenceWrong ?? currentNode.ifNoEvidence;
 
             if (wrongNode != null)
             {
+                Debug.Log($"[{actorId}] Showing wrong evidence dialogue from node: {wrongNode.nodeId}");
                 DialogueManager.Instance.ShowDialogue(wrongNode.lines);
             }
             else
@@ -191,21 +211,25 @@ public class DialogueActor : MonoBehaviour, IInteractable, IEvidenceReceiver
         {
             // Already shown this before
             nodeToShow = reaction.onRepeat;
+            Debug.Log($"[{actorId}] Using REPEAT node: {nodeToShow.nodeId}");
         }
         else if (!hasSeenBefore && reaction.onFirstPresent != null)
         {
             // First time showing this
             nodeToShow = reaction.onFirstPresent;
+            Debug.Log($"[{actorId}] Using FIRST PRESENT node: {nodeToShow.nodeId}");
             presentedEvidenceIds.Add(item.name);
             SaveState();
         }
 
         if (nodeToShow != null && nodeToShow.lines != null && nodeToShow.lines.Length > 0)
         {
+            Debug.Log($"[{actorId}] Showing {nodeToShow.lines.Length} dialogue lines. First speaker: {nodeToShow.lines[0].speaker}");
             DialogueManager.Instance.ShowDialogue(nodeToShow.lines);
         }
         else
         {
+            Debug.LogWarning($"[{actorId}] Evidence reaction node is null or has no lines!");
             // Fallback
             string response = hasSeenBefore
                 ? "You already showed me that."

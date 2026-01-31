@@ -783,6 +783,8 @@ MonoBehaviour:
   - evidence: {fileID: 11400000, guid: 5fe0da5556606f34590d530f431ea70e, type: 2}
     onFirstPresent: {fileID: 11400000, guid: 926f5f8100b945146a8923944383a0de, type: 2}
     onRepeat: {fileID: 11400000, guid: a726d55a2f413fc4c8075db8583025c4, type: 2}
+  showDefaultResponse: 0
+  defaultResponseText: I don't think that's relevant right now.
 --- !u!1 &186882851
 GameObject:
   m_ObjectHideFlags: 0
@@ -1064,6 +1066,8 @@ MonoBehaviour:
   - evidence: {fileID: 11400000, guid: 5fe0da5556606f34590d530f431ea70e, type: 2}
     onFirstPresent: {fileID: 11400000, guid: 6c933c8984b8b004885d2d078764387e, type: 2}
     onRepeat: {fileID: 11400000, guid: 2c606c871b4c4324f9ca3871631f5477, type: 2}
+  showDefaultResponse: 0
+  defaultResponseText: I don't think that's relevant right now.
 --- !u!1 &201384734
 GameObject:
   m_ObjectHideFlags: 0
@@ -1674,9 +1678,9 @@ CapsuleCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
-  m_Height: 2
+  m_Height: 2.5
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0.7, z: 0}
 --- !u!114 &279328218
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1706,6 +1710,8 @@ MonoBehaviour:
   - evidence: {fileID: 11400000, guid: 5fe0da5556606f34590d530f431ea70e, type: 2}
     onFirstPresent: {fileID: 11400000, guid: 926f5f8100b945146a8923944383a0de, type: 2}
     onRepeat: {fileID: 11400000, guid: a726d55a2f413fc4c8075db8583025c4, type: 2}
+  showDefaultResponse: 0
+  defaultResponseText: I don't think that's relevant right now.
 --- !u!1 &284059903
 GameObject:
   m_ObjectHideFlags: 0
@@ -1885,6 +1891,8 @@ MonoBehaviour:
   - evidence: {fileID: 11400000, guid: 5fe0da5556606f34590d530f431ea70e, type: 2}
     onFirstPresent: {fileID: 11400000, guid: 64a3ae3996eb6d04b9e366acfee58b63, type: 2}
     onRepeat: {fileID: 11400000, guid: 74384f4a0f8fa714aaf71ed5a41abbf6, type: 2}
+  showDefaultResponse: 1
+  defaultResponseText: I don't think that's relevant right now.
 --- !u!136 &328195363
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2214,6 +2222,8 @@ MonoBehaviour:
   - evidence: {fileID: 11400000, guid: 5fe0da5556606f34590d530f431ea70e, type: 2}
     onFirstPresent: {fileID: 11400000, guid: 0ef1b65cad05bd143aed1dbccaa8904d, type: 2}
     onRepeat: {fileID: 11400000, guid: 67f8fdc4313a8404fbf70030f1e14ae7, type: 2}
+  showDefaultResponse: 0
+  defaultResponseText: I don't think that's relevant right now.
 --- !u!1001 &516978633
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3846,6 +3856,8 @@ MonoBehaviour:
   - evidence: {fileID: 11400000, guid: 5fe0da5556606f34590d530f431ea70e, type: 2}
     onFirstPresent: {fileID: 11400000, guid: 6c933c8984b8b004885d2d078764387e, type: 2}
     onRepeat: {fileID: 11400000, guid: 2c606c871b4c4324f9ca3871631f5477, type: 2}
+  showDefaultResponse: 0
+  defaultResponseText: I don't think that's relevant right now.
 --- !u!1 &828116263
 GameObject:
   m_ObjectHideFlags: 0
@@ -5861,6 +5873,8 @@ MonoBehaviour:
   - evidence: {fileID: 11400000, guid: 5fe0da5556606f34590d530f431ea70e, type: 2}
     onFirstPresent: {fileID: 11400000, guid: 0ef1b65cad05bd143aed1dbccaa8904d, type: 2}
     onRepeat: {fileID: 11400000, guid: 67f8fdc4313a8404fbf70030f1e14ae7, type: 2}
+  showDefaultResponse: 0
+  defaultResponseText: I don't think that's relevant right now.
 --- !u!136 &1114042376
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -8117,6 +8131,8 @@ MonoBehaviour:
   - evidence: {fileID: 11400000, guid: 5fe0da5556606f34590d530f431ea70e, type: 2}
     onFirstPresent: {fileID: 11400000, guid: 1675afa76d3e89348a657c89322881f2, type: 2}
     onRepeat: {fileID: 11400000, guid: 5682de98445be214db952ddc371a3e43, type: 2}
+  showDefaultResponse: 0
+  defaultResponseText: I don't think that's relevant right now.
 --- !u!1 &1675751538
 GameObject:
   m_ObjectHideFlags: 0
@@ -8404,6 +8420,8 @@ MonoBehaviour:
   - evidence: {fileID: 11400000, guid: 5fe0da5556606f34590d530f431ea70e, type: 2}
     onFirstPresent: {fileID: 11400000, guid: 64a3ae3996eb6d04b9e366acfee58b63, type: 2}
     onRepeat: {fileID: 11400000, guid: 74384f4a0f8fa714aaf71ed5a41abbf6, type: 2}
+  showDefaultResponse: 0
+  defaultResponseText: I don't think that's relevant right now.
 --- !u!1 &1807243316
 GameObject:
   m_ObjectHideFlags: 0
@@ -8969,6 +8987,8 @@ MonoBehaviour:
   - evidence: {fileID: 11400000, guid: 5fe0da5556606f34590d530f431ea70e, type: 2}
     onFirstPresent: {fileID: 11400000, guid: 1675afa76d3e89348a657c89322881f2, type: 2}
     onRepeat: {fileID: 11400000, guid: 5682de98445be214db952ddc371a3e43, type: 2}
+  showDefaultResponse: 0
+  defaultResponseText: I don't think that's relevant right now.
 --- !u!136 &1812291307
 CapsuleCollider:
   m_ObjectHideFlags: 0

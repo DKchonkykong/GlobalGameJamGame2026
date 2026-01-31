@@ -29,8 +29,8 @@ MonoBehaviour:
     text: 'Ah right almost forgot Detective.
 
       This should cover it.'
-  requiredEvidence: {fileID: 11400000, guid: 2066b12648b912b4e83af295a09ea957, type: 2}
-  ifEvidenceCorrect: {fileID: 11400000, guid: a6fe9066e7bf37944a89df9109b8b427, type: 2}
-  ifEvidenceWrong: {fileID: 11400000, guid: 63b4b4f7b4ffbed4088857bab7a93ad2, type: 2}
+  requiredEvidence: {fileID: 0}
+  ifEvidenceCorrect: {fileID: 0}
+  ifEvidenceWrong: {fileID: 0}
   ifNoEvidence: {fileID: 0}
-  next: {fileID: 11400000, guid: 3c9bf7467ca7c95449dc0cfda6dfeda2, type: 2}
+  next: {fileID: 0}
