@@ -49,7 +49,7 @@
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
                 },
                 {
                     "name": "EvidenceNext",
@@ -64,6 +64,15 @@
                     "name": "EvidencePrev",
                     "type": "Button",
                     "id": "cfa1ad3a-e5d3-46f2-b3c4-412f5a8ed5d2",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "PresentEvidence",
+                    "type": "Button",
+                    "id": "d6cb3463-58d0-46ce-8fa1-829f426648bf",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -213,6 +222,17 @@
                     "action": "EvidenceNext",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1a311217-d930-4547-84a4-f55996b9323c",
+                    "path": "<Keyboard>/f",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PresentEvidence",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },
@@ -221,8 +241,8 @@
             "id": "e23c2cc2-5f2d-4b18-81a8-43b02126b8c5",
             "actions": [
                 {
-                    "name": "Pointer",
-                    "type": "Value",
+                    "name": "Point",
+                    "type": "PassThrough",
                     "id": "7ef6a450-5012-4477-a289-ea925f7d5b4b",
                     "expectedControlType": "Vector2",
                     "processors": "",
@@ -230,35 +250,35 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "LeftClick",
-                    "type": "Button",
+                    "name": "Click",
+                    "type": "PassThrough",
                     "id": "f4c6aace-5b12-4de1-a8f1-6c45dc843903",
-                    "expectedControlType": "",
+                    "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
                 },
                 {
                     "name": "RightClick",
-                    "type": "Button",
+                    "type": "PassThrough",
                     "id": "9ef0f442-855f-4728-aa2f-3cf5506211d2",
-                    "expectedControlType": "",
+                    "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
                 },
                 {
                     "name": "MiddleClick",
-                    "type": "Button",
+                    "type": "PassThrough",
                     "id": "88375b91-baec-4e7a-a14d-58aa5d213bc0",
-                    "expectedControlType": "",
+                    "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
                 },
                 {
                     "name": "ScrollWheel",
-                    "type": "Value",
+                    "type": "PassThrough",
                     "id": "a2acd9d7-495e-494b-a854-b86271f1ac3d",
                     "expectedControlType": "Vector2",
                     "processors": "",
@@ -282,6 +302,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Navigate",
+                    "type": "PassThrough",
+                    "id": "69671053-622e-407d-a1a0-8386f4836192",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -292,18 +321,18 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Pointer",
+                    "action": "Point",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
                     "id": "95859dda-ba37-4b26-8855-6af362b1aaec",
-                    "path": "<Mouse>/leftButton",
+                    "path": "<Pointer>/press",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "LeftClick",
+                    "action": "Click",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -359,6 +388,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Cancel",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "140a1079-ec89-41b7-ad2d-7550ce06905c",
+                    "path": "2D Vector composite",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Navigate",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

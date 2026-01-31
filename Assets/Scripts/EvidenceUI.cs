@@ -48,7 +48,8 @@ public class EvidenceUI : MonoBehaviour
         if (prevButton != null) prevButton.onClick.AddListener(Prev);
         if (nextButton != null) nextButton.onClick.AddListener(Next);
         if (closeButton != null) closeButton.onClick.AddListener(Close);
-        if (presentButton != null) presentButton.onClick.AddListener(OnPresentPressed);
+        // REMOVED: presentButton.onClick.AddListener(OnPresentPressed);
+        // Now F key calls OnPresentPressed instead
 
         if (panel != null) panel.SetActive(false);
         isOpen = false;
@@ -125,7 +126,18 @@ public class EvidenceUI : MonoBehaviour
 
         EvidenceItem selected = list[index];
 
-        // Find a valid NPC target in front of the player
+        // First, check if we're already in an active conversation
+        if (ConversationContext.Instance != null && ConversationContext.Instance.ActiveReceiver != null)
+        {
+            Debug.Log($"Presenting to active conversation receiver: {selected.displayName}");
+            bool ok = ConversationContext.Instance.ActiveReceiver.ReceiveEvidence(selected);
+            
+            // Close evidence UI so dialogue can be seen
+            Close();
+            return;
+        }
+
+        // Find a nearby NPC to present to
         var target = FindPresentTarget();
         if (target == null)
         {
@@ -133,13 +145,19 @@ public class EvidenceUI : MonoBehaviour
             return;
         }
 
-        // use ReceiveEvidence (from IEvidenceReceiver) instead of OnEvidencePresented
-        bool ok = target.ReceiveEvidence(selected);
+        Debug.Log($"Presenting evidence to nearby NPC: {selected.displayName}");
+        
+        // Close the evidence UI first
+        Close();
 
-        ShowFeedback(ok
-            ? $"Presented: {selected.displayName}"
-            : "That didn't work.");
-        // Optional: Close();
+        // Set this NPC as the active receiver
+        if (ConversationContext.Instance != null)
+        {
+            ConversationContext.Instance.SetActiveReceiver(target);
+        }
+
+        // Present the evidence (this will trigger dialogue)
+        target.ReceiveEvidence(selected);
     }
 
     private void HandleEvidenceChanged()
@@ -162,7 +180,6 @@ public class EvidenceUI : MonoBehaviour
         if (list.Count == 0)
         {
             if (titleText) titleText.text = "No evidence";
-            if (descriptionText) descriptionText.text = "No evidence";
             if (descriptionText) descriptionText.text = "You haven't collected any evidence yet.";
             if (counterText) counterText.text = "0/0";
             if (iconImage) iconImage.sprite = null;
@@ -240,7 +257,7 @@ public class EvidenceUI : MonoBehaviour
         feedbackRoutine = null;
     }
 
-    private NPCDialogue FindPresentTarget()
+    private IEvidenceReceiver FindPresentTarget()
     {
         Transform cam = playerCamera != null
             ? playerCamera
@@ -254,24 +271,44 @@ public class EvidenceUI : MonoBehaviour
             npcLayerMask,
             QueryTriggerInteraction.Collide);
 
-        NPCDialogue best = null;
+        IEvidenceReceiver best = null;
         float bestDot = -1f;
 
         foreach (var h in hits)
         {
-            NPCDialogue npc = h.GetComponentInParent<NPCDialogue>();
-            if (npc == null) continue;
-
-            Vector3 toNpc = npc.transform.position - cam.position;
-            toNpc.y = 0;
-            Vector3 forward = cam.forward;
-            forward.y = 0;
-
-            float dot = Vector3.Dot(forward.normalized, toNpc.normalized);
-            if (dot >= facingDot && dot > bestDot)
+            // Try to find DialogueActor first (the new system)
+            DialogueActor actor = h.GetComponentInParent<DialogueActor>();
+            if (actor != null)
             {
-                bestDot = dot;
-                best = npc;
+                Vector3 toNpc = actor.transform.position - cam.position;
+                toNpc.y = 0;
+                Vector3 forward = cam.forward;
+                forward.y = 0;
+
+                float dot = Vector3.Dot(forward.normalized, toNpc.normalized);
+                if (dot >= facingDot && dot > bestDot)
+                {
+                    bestDot = dot;
+                    best = actor;
+                }
+                continue;
+            }
+
+            // Fallback to NPCDialogue (old system)
+            NPCDialogue npc = h.GetComponentInParent<NPCDialogue>();
+            if (npc != null)
+            {
+                Vector3 toNpc = npc.transform.position - cam.position;
+                toNpc.y = 0;
+                Vector3 forward = cam.forward;
+                forward.y = 0;
+
+                float dot = Vector3.Dot(forward.normalized, toNpc.normalized);
+                if (dot >= facingDot && dot > bestDot)
+                {
+                    bestDot = dot;
+                    best = npc;
+                }
             }
         }
 
