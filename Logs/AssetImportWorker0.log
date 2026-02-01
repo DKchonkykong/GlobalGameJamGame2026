@@ -1,11 +1,11 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-adria" at "2026-01-31T15:47:11.1663547Z"
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-ady" at "2026-02-01T09:40:23.5558276Z"
 Built from '6000.3/respin/6000.3.5f1-a1ec4b2f2d19' branch; Version is '6000.3.5f2 (3fa8bc678cb0) revision 4171964'; Using compiler version '194234433'; Build Type 'Release'
-OS: 'Windows 11  (10.0.26100) Core' Language: 'en' Physical Memory: 15554 MB
+OS: 'Windows 11  (10.0.26100) Core' Language: 'en' Physical Memory: 32654 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
 System  architecture: x64
 Process architecture: x64
-Date: 2026-01-31T15:47:11Z
+Date: 2026-02-01T09:40:23Z
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\6000.3.5f2\Editor\Unity.exe
@@ -15,13 +15,13 @@ C:\Program Files\Unity\Hub\Editor\6000.3.5f2\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/adria/Documents/GitHub/GlobalGameJamGame2026
+C:/Users/ady/Documents/GitHub/GlobalGameJamGame2026
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-49735
+53439
 -licensingIpc
-LicenseClient-adria
+LicenseClient-ady
 -job-worker-count
 7
 -background-job-worker-count
@@ -30,8 +30,8 @@ LicenseClient-adria
 1
 -name
 AssetImport
-Successfully changed project path to: C:/Users/adria/Documents/GitHub/GlobalGameJamGame2026
-C:/Users/adria/Documents/GitHub/GlobalGameJamGame2026
+Successfully changed project path to: C:/Users/ady/Documents/GitHub/GlobalGameJamGame2026
+C:/Users/ady/Documents/GitHub/GlobalGameJamGame2026
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
     "memorysetup-temp-allocator-size-audio-worker=65536"
@@ -67,12 +67,12 @@ C:/Users/adria/Documents/GitHub/GlobalGameJamGame2026
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
     "memorysetup-temp-allocator-size-cloud-worker=32768"
-Player connection [27552]  Target information:
+Player connection [25336]  Target information:
 
-Player connection [27552]  * "[IP] 10.227.205.116 [Port] 0 [Flags] 2 [Guid] 1148574295 [EditorId] 1148574295 [Version] 1048832 [Id] WindowsEditor(7,LenovoLaptop) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [25336]  * "[IP] 192.168.1.207 [Port] 0 [Flags] 2 [Guid] 2374148303 [EditorId] 2374148303 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-IAST724) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [27552] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [27552] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [25336] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [25336] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 7
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -84,69 +84,69 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 2.80 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 3.61 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.3.5f2 (3fa8bc678cb0)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.3.5f2/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/adria/Documents/GitHub/GlobalGameJamGame2026/Assets
+[Subsystems] Discovering subsystems at path C:/Users/ady/Documents/GitHub/GlobalGameJamGame2026/Assets
 GfxDevice: creating device client; kGfxThreadingModeNonThreaded
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 4060 Laptop GPU (ID=0x28e0)
+    Renderer: NVIDIA GeForce RTX 4070 (ID=0x2786)
     Vendor:   NVIDIA
-    VRAM:     7956 MB
-    Driver:   32.0.15.9159
+    VRAM:     12010 MB
+    Driver:   32.0.15.9174
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.3.5f2/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.3.5f2/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.3.5f2/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56448
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56332
 Begin MonoManager ReloadAssembly
-[Licensing::Client] Handshaking with LicensingClient:
-  Version:                 1.17.4+4293ba1
-  Session Id:              2b763fb7feb1426fa05badf34b2f89c0
-  Correlation Id:          beeb5997e4f7f449103d89c4b4a15f66
-  External correlation Id: 3557050406717415814
-  Machine Id:              iyY786v4z8S6BIwJ3OQffkFNCxA=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-adria" (connect: 0.00s, validation: 0.00s, handshake: 1.64s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-adria-notifications" at "2026-01-31T15:47:12.8133324Z"
-[Licensing::Module] Licensing Background thread has ended after 1.65s
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.5f2/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002132 seconds.
-- Loaded All Assemblies, in  0.715 seconds
+Registered in 0.003657 seconds.
+- Loaded All Assemblies, in  0.879 seconds
 Native extension for WindowsStandalone target not found
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.17.4+4293ba1
+  Session Id:              fd0bcc113e0c4a3e9e1425c4d4d196cd
+  Correlation Id:          b0728020bb441e6fd7a64fa846b4d1d1
+  External correlation Id: 5406212940629259755
+  Machine Id:              w74mvXlGn566yFKgA+XQ5jLQxKI=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-ady" (connect: 0.00s, validation: 0.00s, handshake: 2.92s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-ady-notifications" at "2026-02-01T09:40:26.4762918Z"
+[Licensing::Module] Licensing Background thread has ended after 2.92s
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.456 seconds
-Domain Reload Profiling: 1165ms
-	BeginReloadAssembly (399ms)
+- Finished resetting the current domain, in  0.889 seconds
+Domain Reload Profiling: 1737ms
+	BeginReloadAssembly (280ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (36ms)
-	RebuildNativeTypeToScriptingClass (15ms)
-	initialDomainReloadingComplete (51ms)
-	LoadAllAssembliesAndSetupDomain (209ms)
-		LoadAssemblies (389ms)
+	RebuildCommonClasses (101ms)
+	RebuildNativeTypeToScriptingClass (23ms)
+	initialDomainReloadingComplete (111ms)
+	LoadAllAssembliesAndSetupDomain (333ms)
+		LoadAssemblies (272ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (205ms)
-			TypeCache.Refresh (202ms)
-				TypeCache.ScanAssembly (185ms)
+		AnalyzeDomain (328ms)
+			TypeCache.Refresh (325ms)
+				TypeCache.ScanAssembly (284ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (456ms)
+	FinalizeReload (889ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (406ms)
+		SetupLoadedEditorAssemblies (822ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (47ms)
-			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (110ms)
-			ProcessInitializeOnLoadAttributes (179ms)
-			ProcessInitializeOnLoadMethodAttributes (66ms)
+			InitializePlatformSupportModulesInManaged (95ms)
+			SetLoadedEditorAssemblies (13ms)
+			BeforeProcessingInitializeOnLoad (252ms)
+			ProcessInitializeOnLoadAttributes (330ms)
+			ProcessInitializeOnLoadMethodAttributes (131ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -161,8 +161,8 @@ Begin MonoManager ReloadAssembly
   Product: Unity Personal
   Type: Assigned
   Expiration: Unlimited
-- Loaded All Assemblies, in  1.049 seconds
-Refreshing native plugins compatible for Editor in 1.11 ms, found 3 plugins.
+- Loaded All Assemblies, in  1.629 seconds
+Refreshing native plugins compatible for Editor in 1.52 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
@@ -170,689 +170,128 @@ Package Manager log level set to [2]
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.023 seconds
-Domain Reload Profiling: 2061ms
-	BeginReloadAssembly (231ms)
+- Finished resetting the current domain, in  1.568 seconds
+Domain Reload Profiling: 3179ms
+	BeginReloadAssembly (340ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (7ms)
+		DisableScriptedObjects (18ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (41ms)
-	RebuildCommonClasses (43ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (53ms)
-	LoadAllAssembliesAndSetupDomain (698ms)
-		LoadAssemblies (566ms)
+		CreateAndSetChildDomain (58ms)
+	RebuildCommonClasses (94ms)
+	RebuildNativeTypeToScriptingClass (21ms)
+	initialDomainReloadingComplete (71ms)
+	LoadAllAssembliesAndSetupDomain (1085ms)
+		LoadAssemblies (740ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (271ms)
-			TypeCache.Refresh (186ms)
-				TypeCache.ScanAssembly (169ms)
-			BuildScriptInfoCaches (70ms)
-			ResolveRequiredComponents (10ms)
-	FinalizeReload (1023ms)
+		AnalyzeDomain (529ms)
+			TypeCache.Refresh (382ms)
+				TypeCache.ScanAssembly (307ms)
+			BuildScriptInfoCaches (125ms)
+			ResolveRequiredComponents (16ms)
+	FinalizeReload (1568ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (726ms)
+		SetupLoadedEditorAssemblies (1204ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (2ms)
-			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (176ms)
-			ProcessInitializeOnLoadAttributes (459ms)
-			ProcessInitializeOnLoadMethodAttributes (75ms)
-			AfterProcessingInitializeOnLoad (10ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (21ms)
+			BeforeProcessingInitializeOnLoad (452ms)
+			ProcessInitializeOnLoadAttributes (612ms)
+			ProcessInitializeOnLoadMethodAttributes (104ms)
+			AfterProcessingInitializeOnLoad (13ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (11ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
-Refreshing native plugins compatible for Editor in 2.84 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.87 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 6276 unused Assets / (2.0 MB). Loaded Objects now: 7108.
-Memory consumption went from 151.6 MB to 149.6 MB.
-Total: 16.706700 ms (FindLiveObjects: 1.586000 ms CreateObjectMapping: 2.619200 ms MarkObjects: 9.166600 ms  DeleteObjects: 3.332000 ms)
+Memory consumption went from 153.2 MB to 151.2 MB.
+Total: 16.899900 ms (FindLiveObjects: 1.753000 ms CreateObjectMapping: 0.638600 ms MarkObjects: 11.428300 ms  DeleteObjects: 3.079300 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 157803.209864 seconds.
-  path: Assets/Scripts/MainMenu.cs
-  artifactKey: Guid(bec4474374c87734dbd4133ec5af2dce) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scripts/MainMenu.cs using Guid(bec4474374c87734dbd4133ec5af2dce) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '69701ab105cc748ea48f8b852138f484') in 0.1661504 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/MainAssets/UI/MainMenuGGJamNOTEXT.png
-  artifactKey: Guid(4d837691642b0964ab1dc0920d8660c1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MainAssets/UI/MainMenuGGJamNOTEXT.png using Guid(4d837691642b0964ab1dc0920d8660c1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2fe39c6bae2850d7d83d41863d8587a8') in 0.0946667 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-[Licensing::Client] Successfully resolved entitlement details
-- Loaded All Assemblies, in  0.672 seconds
-Refreshing native plugins compatible for Editor in 1.09 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.613 seconds
-Domain Reload Profiling: 1283ms
-	BeginReloadAssembly (200ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (5ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (51ms)
-	RebuildCommonClasses (32ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (27ms)
-	LoadAllAssembliesAndSetupDomain (400ms)
-		LoadAssemblies (323ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (162ms)
-			TypeCache.Refresh (5ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (142ms)
-			ResolveRequiredComponents (10ms)
-	FinalizeReload (613ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (466ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (1ms)
-			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (119ms)
-			ProcessInitializeOnLoadAttributes (283ms)
-			ProcessInitializeOnLoadMethodAttributes (52ms)
-			AfterProcessingInitializeOnLoad (6ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (15ms)
-Refreshing native plugins compatible for Editor in 1.28 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6274 unused Assets / (4.7 MB). Loaded Objects now: 7123.
-Memory consumption went from 157.2 MB to 152.5 MB.
-Total: 8.148200 ms (FindLiveObjects: 0.674000 ms CreateObjectMapping: 0.312900 ms MarkObjects: 4.862500 ms  DeleteObjects: 2.297100 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Import Request.
-  Time since last request: 403.460649 seconds.
-  path: Assets/MainAssets/MenusUI
-  artifactKey: Guid(64ef8c0865fbf7346bd140c7fbf592aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MainAssets/MenusUI using Guid(64ef8c0865fbf7346bd140c7fbf592aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f09ef8ec31a6bc08e54bb7ecd5df79f5') in 0.0185931 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.847001 seconds.
-  path: Assets/MainAssets/MenusUI
-  artifactKey: Guid(64ef8c0865fbf7346bd140c7fbf592aa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MainAssets/MenusUI using Guid(64ef8c0865fbf7346bd140c7fbf592aa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '13d250ffb3643a58bac6f2b5764b7284') in 0.0820582 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.240725 seconds.
-  path: Assets/MainAssets/UI/MenusUI
-  artifactKey: Guid(64ef8c0865fbf7346bd140c7fbf592aa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MainAssets/UI/MenusUI using Guid(64ef8c0865fbf7346bd140c7fbf592aa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a5da49645e4dd1c62e79f81804d5eaed') in 0.0207024 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.043308 seconds.
-  path: Assets/MainAssets/UI/MainMenuGGJamEXIT.png
-  artifactKey: Guid(0759007a24b868748b7509597ee88ffe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MainAssets/UI/MainMenuGGJamEXIT.png using Guid(0759007a24b868748b7509597ee88ffe) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ce6f9d59f9ea9fac07d104ab19d61216') in 0.095855 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/MainAssets/UI/MainMenuGGJamNOTITLE.png
-  artifactKey: Guid(fdfe60b7c6288264ab15c0eba9e4df06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MainAssets/UI/MainMenuGGJamNOTITLE.png using Guid(fdfe60b7c6288264ab15c0eba9e4df06) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '57b3882bd58e3cac95d6472664fdec54') in 0.0327151 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 18.533669 seconds.
-  path: Assets/MainAssets/UI/MenusUI/MainMenu.unity
-  artifactKey: Guid(7008bd410fa886142801840ce8d013fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MainAssets/UI/MenusUI/MainMenu.unity using Guid(7008bd410fa886142801840ce8d013fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0018bc6ce0433bbb6c9031c27f7f10c4') in 0.0012661 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.891468 seconds.
-  path: Assets/MainAssets/UI/MenusUI/MainMenu.unity
-  artifactKey: Guid(7008bd410fa886142801840ce8d013fd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MainAssets/UI/MenusUI/MainMenu.unity using Guid(7008bd410fa886142801840ce8d013fd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '62b9b28df4e9367021701a8bb12818a5') in 0.0257836 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 19.790079 seconds.
-  path: Assets/MainAssets/UI/MenusUI/MainMenu 1.unity
-  artifactKey: Guid(d76488b94f37aa545b339cd1e68e0bec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MainAssets/UI/MenusUI/MainMenu 1.unity using Guid(d76488b94f37aa545b339cd1e68e0bec) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '11a2c68e6eb46c4ce010020aa20cc852') in 0.0012459 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.904066 seconds.
-  path: Assets/MainAssets/UI/MenusUI/MainMenu 1.unity
-  artifactKey: Guid(d76488b94f37aa545b339cd1e68e0bec) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MainAssets/UI/MenusUI/MainMenu 1.unity using Guid(d76488b94f37aa545b339cd1e68e0bec) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '112fe9393abc1cb62ff43d84df22d9b3') in 0.020956 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 44.432405 seconds.
-  path: Assets/MainAssets/UI/MenusUI/Credits.unity
-  artifactKey: Guid(d76488b94f37aa545b339cd1e68e0bec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MainAssets/UI/MenusUI/Credits.unity using Guid(d76488b94f37aa545b339cd1e68e0bec) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '094a1dccb078dbede5a87dfa01d9a063') in 0.0013196 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.891057 seconds.
-  path: Assets/MainAssets/UI/MenusUI/Credits.unity
-  artifactKey: Guid(d76488b94f37aa545b339cd1e68e0bec) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MainAssets/UI/MenusUI/Credits.unity using Guid(d76488b94f37aa545b339cd1e68e0bec) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd2243f061a7fbee8c19647d98878dc01') in 0.0199741 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 16.314476 seconds.
-  path: Assets/MainAssets/UI/MenusUI/Controlls
-  artifactKey: Guid(a683c24b65dd812469bd0ad5323acbce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MainAssets/UI/MenusUI/Controlls using Guid(a683c24b65dd812469bd0ad5323acbce) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ffcf1de7599283d42016df0f530d41b0') in 0.0008931 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.906806 seconds.
-  path: Assets/MainAssets/UI/MenusUI/Controlls
-  artifactKey: Guid(a683c24b65dd812469bd0ad5323acbce) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MainAssets/UI/MenusUI/Controlls using Guid(a683c24b65dd812469bd0ad5323acbce) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd90a87623f1e85b699c736c185d36894') in 0.0219233 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 400.764984 seconds.
-  path: Assets/MainAssets/UI/MenusUI/Controls
-  artifactKey: Guid(a683c24b65dd812469bd0ad5323acbce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MainAssets/UI/MenusUI/Controls using Guid(a683c24b65dd812469bd0ad5323acbce) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5adf3fb014b9b2107ae792a4bca3a0bf') in 0.0008394 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/MainAssets/UI/MenusUI/Controls
-  artifactKey: Guid(a683c24b65dd812469bd0ad5323acbce) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MainAssets/UI/MenusUI/Controls using Guid(a683c24b65dd812469bd0ad5323acbce) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd70df1088a17d687dcfbabf619344150') in 0.0154358 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 28.321311 seconds.
-  path: Assets/MainAssets/UI/MenusUI/Controls.unity
-  artifactKey: Guid(3df6d720c1d2b6d4681075d11cb41526) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MainAssets/UI/MenusUI/Controls.unity using Guid(3df6d720c1d2b6d4681075d11cb41526) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2a57529975a845357ea570c774a5294a') in 0.0008991 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.926357 seconds.
-  path: Assets/MainAssets/UI/MenusUI/Controls.unity
-  artifactKey: Guid(3df6d720c1d2b6d4681075d11cb41526) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MainAssets/UI/MenusUI/Controls.unity using Guid(3df6d720c1d2b6d4681075d11cb41526) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '58f2fda70dc38a74487aa95b0bd538e5') in 0.0162983 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 89.692277 seconds.
-  path: Assets/MainAssets/UI/MenusUI/MainMenu.unity
-  artifactKey: Guid(7008bd410fa886142801840ce8d013fd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MainAssets/UI/MenusUI/MainMenu.unity using Guid(7008bd410fa886142801840ce8d013fd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ed16a78af2ead44bd798186038c6cea6') in 0.0315998 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 19.677077 seconds.
-  path: Assets/Scenes/BallRoomScene.unity
-  artifactKey: Guid(761019210e9a00046b0a53a4ae02a53c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/BallRoomScene.unity using Guid(761019210e9a00046b0a53a4ae02a53c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '74dbb516e94254b52c02a75fd3503912') in 0.0012917 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.550818 seconds.
-  path: Assets/Scenes/BallRoomScene
-  artifactKey: Guid(5f03d8bca912ee04288c9869fd14ee73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/BallRoomScene using Guid(5f03d8bca912ee04288c9869fd14ee73) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a3de7ad249b2fa11066cbdee63184c3f') in 0.0015558 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.043163 seconds.
-  path: Assets/Scenes/BallRoomScene/LightingData.asset
-  artifactKey: Guid(42d7db6539341554a952c202caf79c15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/BallRoomScene/LightingData.asset using Guid(42d7db6539341554a952c202caf79c15) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bf641c712931f18172f00ae6c9e26641') in 0.0066866 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.737318 seconds.
-  path: Assets/Scenes/GameScene.unity
-  artifactKey: Guid(f07477a4420df8040b1fbcab4e0e3949) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/GameScene.unity using Guid(f07477a4420df8040b1fbcab4e0e3949) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd5baf425fd6a13831c3d220fdcfc8f0b') in 0.0025832 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.762667 seconds.
-  path: Assets/MainAssets/UI/MenusUI/MainMenu.unity
-  artifactKey: Guid(7008bd410fa886142801840ce8d013fd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MainAssets/UI/MenusUI/MainMenu.unity using Guid(7008bd410fa886142801840ce8d013fd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '691187cc215711c658edc54670a9e0a3') in 0.0224372 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.577039 seconds.
-  path: Assets/MainAssets/UI/MenusUI/MainMenu.unity
-  artifactKey: Guid(7008bd410fa886142801840ce8d013fd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MainAssets/UI/MenusUI/MainMenu.unity using Guid(7008bd410fa886142801840ce8d013fd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7cfe3204c554a23a0d62e3fd900acfe0') in 0.0224622 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 65.238633 seconds.
-  path: Assets/MainAssets/UI/MenusUI/MainMenu.unity
-  artifactKey: Guid(7008bd410fa886142801840ce8d013fd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MainAssets/UI/MenusUI/MainMenu.unity using Guid(7008bd410fa886142801840ce8d013fd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'df89674e26686e803ed5c672e341d89c') in 0.0224941 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 224.675723 seconds.
-  path: Assets/TutorialInfo
-  artifactKey: Guid(ba062aa6c92b140379dbc06b43dd3b9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TutorialInfo using Guid(ba062aa6c92b140379dbc06b43dd3b9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bd0ce3b9fb2b0078fcd59af112aef3b6') in 0.0021374 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.505484 seconds.
-  path: Assets/TextMesh Pro
-  artifactKey: Guid(f54d1bd14bd3ca042bd867b519fee8cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro using Guid(f54d1bd14bd3ca042bd867b519fee8cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '441aa3e92cda27c68af8a1706ee847ab') in 0.0012972 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.103734 seconds.
-  path: Assets/Settings
-  artifactKey: Guid(709f11a7f3c4041caa4ef136ea32d874) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Settings using Guid(709f11a7f3c4041caa4ef136ea32d874) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c4b47d252bc4e8d77fd6334abcf5e3e8') in 0.0024527 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.094943 seconds.
-  path: Assets/Settings/Mobile_Renderer.asset
-  artifactKey: Guid(65bc7dbf4170f435aa868c779acfb082) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Settings/Mobile_Renderer.asset using Guid(65bc7dbf4170f435aa868c779acfb082) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd246be45d650b496251a8b2536b3002f') in 0.0104863 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Settings/PC_RPAsset.asset
-  artifactKey: Guid(4b83569d67af61e458304325a23e5dfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Settings/PC_RPAsset.asset using Guid(4b83569d67af61e458304325a23e5dfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1456ddb8e0d5ece8a62c24926bd7dff5') in 0.0014166 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000045 seconds.
-  path: Assets/Settings/SampleSceneProfile.asset
-  artifactKey: Guid(10fc4df2da32a41aaa32d77bc913491c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Settings/SampleSceneProfile.asset using Guid(10fc4df2da32a41aaa32d77bc913491c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b72c935079ba95563e246d02d57d535f') in 0.0043197 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Settings/PC_Renderer.asset
-  artifactKey: Guid(f288ae1f4751b564a96ac7587541f7a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Settings/PC_Renderer.asset using Guid(f288ae1f4751b564a96ac7587541f7a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'faab6cc3a0eb7141fe31e2e91fd81ee8') in 0.0040176 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 36.903574 seconds.
-  path: Assets/MainAssets/UI/MainMenuGGJamEXIT.png
-  artifactKey: Guid(0759007a24b868748b7509597ee88ffe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MainAssets/UI/MainMenuGGJamEXIT.png using Guid(0759007a24b868748b7509597ee88ffe) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd12df6f749b306f4937346e0c8f87e11') in 0.1499799 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Assets/MainAssets/UI/MainMenuGGJamNOTITLE.png
-  artifactKey: Guid(fdfe60b7c6288264ab15c0eba9e4df06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MainAssets/UI/MainMenuGGJamNOTITLE.png using Guid(fdfe60b7c6288264ab15c0eba9e4df06) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b0b88d132b4f76800c53979bf3845bf7') in 0.0376814 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.670541 seconds.
+  Time since last request: 150.948498 seconds.
   path: Assets/MainAssets/UI/MainMenuGGJamEXIT.png
   artifactKey: Guid(0759007a24b868748b7509597ee88ffe) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MainAssets/UI/MainMenuGGJamEXIT.png using Guid(0759007a24b868748b7509597ee88ffe) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2df6e627497e3e9e8ac4bbd944407fd1') in 0.2151453 seconds
+Start importing Assets/MainAssets/UI/MainMenuGGJamEXIT.png using Guid(0759007a24b868748b7509597ee88ffe) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '19ead501eaebcc6b2bb9a04a2154c057') in 0.2217725 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Scripts/MainMenu.cs
+  artifactKey: Guid(bec4474374c87734dbd4133ec5af2dce) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scripts/MainMenu.cs using Guid(bec4474374c87734dbd4133ec5af2dce) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2ffb1a60ce796107fa6e92948c93229d') in 0.0204978 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/MainAssets/UI/EB_Garamond/static/EBGaramond-Bold SDF.asset
+  artifactKey: Guid(d591dbf119d18594bbf1274da020c333) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/UI/EB_Garamond/static/EBGaramond-Bold SDF.asset using Guid(d591dbf119d18594bbf1274da020c333) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '62aba76869f4b0ab2b302d2d2c4c5fa8') in 0.0696681 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/MainAssets/UI/MainMenuGGJamNOTEXT.png
-  artifactKey: Guid(4d837691642b0964ab1dc0920d8660c1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MainAssets/UI/MainMenuGGJamNOTEXT.png using Guid(4d837691642b0964ab1dc0920d8660c1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '85ec8e09699a0302281c3f1448fa3fdd') in 0.0247689 seconds
+  Time since last request: 0.000020 seconds.
+  path: Assets/MainAssets/UI/MainMenuGGJamNOTITLE.png
+  artifactKey: Guid(fdfe60b7c6288264ab15c0eba9e4df06) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/UI/MainMenuGGJamNOTITLE.png using Guid(fdfe60b7c6288264ab15c0eba9e4df06) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '90378936702b6c783be2f5346643b6ef') in 0.0368811 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 165.190454 seconds.
-  path: Assets/MainAssets/UI/MainMenuGGJamBACKGROUND.png
-  artifactKey: Guid(c9ab59ceb54beca4fae27024933e737e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MainAssets/UI/MainMenuGGJamBACKGROUND.png using Guid(c9ab59ceb54beca4fae27024933e737e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fe46635afbe8dcdac6f977a508e4f675') in 0.0295457 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000023 seconds.
-  path: Assets/MainAssets/UI/MainMenuGGJamMAINBUTTON.png
-  artifactKey: Guid(a9f98b680a955a5458b177d4f4dd68cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MainAssets/UI/MainMenuGGJamMAINBUTTON.png using Guid(a9f98b680a955a5458b177d4f4dd68cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6418bb66d0bf4ee1f59d85100c0f010b') in 0.021446 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.780457 seconds.
-  path: Assets/MainAssets/UI/MainMenuGGJamMAINBUTTON.png
-  artifactKey: Guid(a9f98b680a955a5458b177d4f4dd68cc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MainAssets/UI/MainMenuGGJamMAINBUTTON.png using Guid(a9f98b680a955a5458b177d4f4dd68cc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2df513b5721ff97280dbfc8c5aa5e355') in 0.0193675 seconds
+  path: Assets/MainAssets/UI/MenusUI/MainMenu.unity
+  artifactKey: Guid(7008bd410fa886142801840ce8d013fd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MainAssets/UI/MenusUI/MainMenu.unity using Guid(7008bd410fa886142801840ce8d013fd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '161b2f4c49832ebd3f351d18166ad00e') in 0.0211581 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/MainAssets/UI/MainMenuGGJamBACKGROUND.png
-  artifactKey: Guid(c9ab59ceb54beca4fae27024933e737e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MainAssets/UI/MainMenuGGJamBACKGROUND.png using Guid(c9ab59ceb54beca4fae27024933e737e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '52a864e721c6385db9a6aa0bb67f4514') in 0.0183917 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 23.371186 seconds.
-  path: Assets/MainAssets/UI/MainMenuGGJamBACKGROUND.png
-  artifactKey: Guid(c9ab59ceb54beca4fae27024933e737e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MainAssets/UI/MainMenuGGJamBACKGROUND.png using Guid(c9ab59ceb54beca4fae27024933e737e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9549b97752b261a59ce735fc9e59dc65') in 0.0351686 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.880094 seconds.
-  path: Assets/MainAssets/UI/MainMenuGGJamBACKGROUND.png
-  artifactKey: Guid(c9ab59ceb54beca4fae27024933e737e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MainAssets/UI/MainMenuGGJamBACKGROUND.png using Guid(c9ab59ceb54beca4fae27024933e737e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '22845bd310ec11aedc69e01ea6177830') in 0.0357596 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.884404 seconds.
-  path: Assets/MainAssets/UI/MainMenuGGJamMAINBUTTON.png
-  artifactKey: Guid(a9f98b680a955a5458b177d4f4dd68cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MainAssets/UI/MainMenuGGJamMAINBUTTON.png using Guid(a9f98b680a955a5458b177d4f4dd68cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6be7efd8c33a981d100a58ef36127739') in 0.0356295 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.883447 seconds.
-  path: Assets/MainAssets/UI/MainMenuGGJamMAINBUTTON.png
-  artifactKey: Guid(a9f98b680a955a5458b177d4f4dd68cc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MainAssets/UI/MainMenuGGJamMAINBUTTON.png using Guid(a9f98b680a955a5458b177d4f4dd68cc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '59ea5ebe903f5968daefd9832ba8a152') in 0.0314144 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 414.697616 seconds.
-  path: Assets/MainAssets/UI/MainMenuGGJamEXITBUTTON.png
-  artifactKey: Guid(d0eb44c3a65093a4383bdbb8af523cc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MainAssets/UI/MainMenuGGJamEXITBUTTON.png using Guid(d0eb44c3a65093a4383bdbb8af523cc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '30b50a99a5957b0198e676c97c928092') in 0.0477891 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.742465 seconds.
+  Time since last request: 0.000029 seconds.
   path: Assets/MainAssets/UI/MainMenuGGJamEXITBUTTON.png
   artifactKey: Guid(d0eb44c3a65093a4383bdbb8af523cc0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MainAssets/UI/MainMenuGGJamEXITBUTTON.png using Guid(d0eb44c3a65093a4383bdbb8af523cc0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4e9d76c3991f6fcb45638e771867ddc9') in 0.0332179 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.945005 seconds.
-  path: Assets/MainAssets/UI/MainMenuGGJamEXITBUTTON.png
-  artifactKey: Guid(d0eb44c3a65093a4383bdbb8af523cc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MainAssets/UI/MainMenuGGJamEXITBUTTON.png using Guid(d0eb44c3a65093a4383bdbb8af523cc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a159e7494eca8255ed9233e8476a3793') in 0.0323452 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.883017 seconds.
-  path: Assets/MainAssets/UI/MainMenuGGJamEXITBUTTON.png
-  artifactKey: Guid(d0eb44c3a65093a4383bdbb8af523cc0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MainAssets/UI/MainMenuGGJamEXITBUTTON.png using Guid(d0eb44c3a65093a4383bdbb8af523cc0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4ef7e1012a866b16e8cd29b437545fa6') in 0.0244347 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.459824 seconds.
-  path: Assets/MainAssets/UI/MainMenuGGJamFULLBUTTON.png
-  artifactKey: Guid(9cfdcef03aac28b4e818c2be2ba81de6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MainAssets/UI/MainMenuGGJamFULLBUTTON.png using Guid(9cfdcef03aac28b4e818c2be2ba81de6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '544835cff5e4e4772c8525faa7452799') in 0.0373333 seconds
+Start importing Assets/MainAssets/UI/MainMenuGGJamEXITBUTTON.png using Guid(d0eb44c3a65093a4383bdbb8af523cc0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7c7805d08249c471b5540627ee77aa52') in 0.0239742 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.888798 seconds.
-  path: Assets/MainAssets/UI/MainMenuGGJamFULLBUTTON.png
-  artifactKey: Guid(9cfdcef03aac28b4e818c2be2ba81de6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MainAssets/UI/MainMenuGGJamFULLBUTTON.png using Guid(9cfdcef03aac28b4e818c2be2ba81de6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '791ccf8739fd11b60ab26456ced3607b') in 0.0269803 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.492771 seconds.
-  path: Assets/MainAssets/UI/MainMenuGGJamEXITBUTTON.png
-  artifactKey: Guid(d0eb44c3a65093a4383bdbb8af523cc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MainAssets/UI/MainMenuGGJamEXITBUTTON.png using Guid(d0eb44c3a65093a4383bdbb8af523cc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '520c5d0d6aa40e2c8e77cc9bfab56594') in 0.0340357 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.881083 seconds.
-  path: Assets/MainAssets/UI/MainMenuGGJamEXITBUTTON.png
-  artifactKey: Guid(d0eb44c3a65093a4383bdbb8af523cc0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MainAssets/UI/MainMenuGGJamEXITBUTTON.png using Guid(d0eb44c3a65093a4383bdbb8af523cc0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4d958c5155ccaa7ce079a4964a72e172') in 0.0316081 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 192.805986 seconds.
-  path: Assets/MainAssets/UI/MenusUI/MainMenu.unity
-  artifactKey: Guid(7008bd410fa886142801840ce8d013fd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MainAssets/UI/MenusUI/MainMenu.unity using Guid(7008bd410fa886142801840ce8d013fd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '69e043cd3d9b41db74441b17c737d2a8') in 0.077677 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 114.615034 seconds.
-  path: Assets/MainAssets/UI/MenusUI/MainMenu.unity
-  artifactKey: Guid(7008bd410fa886142801840ce8d013fd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MainAssets/UI/MenusUI/MainMenu.unity using Guid(7008bd410fa886142801840ce8d013fd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4b3966d9c89e7c30f515776381c562aa') in 0.0260076 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 33.740857 seconds.
-  path: Assets/MainAssets/UI/MenusUI/MainMenu.unity
-  artifactKey: Guid(7008bd410fa886142801840ce8d013fd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MainAssets/UI/MenusUI/MainMenu.unity using Guid(7008bd410fa886142801840ce8d013fd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'cab2bd89d101fcf651589d3a40e58446') in 0.0228415 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 13.260376 seconds.
-  path: Assets/MainAssets/UI/MenusUI/MainMenu.unity
-  artifactKey: Guid(7008bd410fa886142801840ce8d013fd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MainAssets/UI/MenusUI/MainMenu.unity using Guid(7008bd410fa886142801840ce8d013fd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f2b05754ce559c9f2830fac0502d4d08') in 0.0279991 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 180.343125 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Electronic Highway Sign SDF.asset
-  artifactKey: Guid(dc36b3fdc14f47ebb36fd484a67e268a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Electronic Highway Sign SDF.asset using Guid(dc36b3fdc14f47ebb36fd484a67e268a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bfe4af306ffe650d5e4b18e41d771ae6') in 0.4407721 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Oswald Bold SDF.asset
-  artifactKey: Guid(0161d805a3764c089bef00bfe00793f5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Oswald Bold SDF.asset using Guid(0161d805a3764c089bef00bfe00793f5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '267e683f9050a061098dd5c0a1358133') in 0.0574633 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.149015 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Electronic Highway Sign SDF.asset
-  artifactKey: Guid(dc36b3fdc14f47ebb36fd484a67e268a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Electronic Highway Sign SDF.asset using Guid(dc36b3fdc14f47ebb36fd484a67e268a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e50f23cca653758065b7f153edd1b9df') in 1.5775353 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000053 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Oswald Bold SDF.asset
-  artifactKey: Guid(0161d805a3764c089bef00bfe00793f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Oswald Bold SDF.asset using Guid(0161d805a3764c089bef00bfe00793f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'eef5dbbc93c0e1fc812d32a68553978b') in 0.0588268 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
-
-========================================================================
-Received Import Request.
-  Time since last request: 477.351540 seconds.
-  path: Assets/MainAssets/UI/MainMenuGGJamCREDITS.png
-  artifactKey: Guid(06ba98ce31931634d91be48014a93269) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MainAssets/UI/MainMenuGGJamCREDITS.png using Guid(06ba98ce31931634d91be48014a93269) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '105cc100b43b17376b1214658b906257') in 0.0634638 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000114 seconds.
-  path: Assets/MainAssets/UI/MainMenuGGJamSUMMARY.png
-  artifactKey: Guid(f0196a36f1eb2bd49aeb9aa32802cc1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MainAssets/UI/MainMenuGGJamSUMMARY.png using Guid(f0196a36f1eb2bd49aeb9aa32802cc1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'eae83d1eddeea55d9b18a54fbd8b1098') in 0.0294841 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000059 seconds.
-  path: Assets/MainAssets/UI/MainMenuGGJamExitButtonText.png
-  artifactKey: Guid(e337a6104950cd54ea351c87dfcd0944) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MainAssets/UI/MainMenuGGJamExitButtonText.png using Guid(e337a6104950cd54ea351c87dfcd0944) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a28009e0c5d8472e3a50dff3edd26cae') in 0.0319364 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.514289 seconds.
-  path: Assets/MainAssets/UI/MainMenuGGJamSUMMARY.png
-  artifactKey: Guid(f0196a36f1eb2bd49aeb9aa32802cc1b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MainAssets/UI/MainMenuGGJamSUMMARY.png using Guid(f0196a36f1eb2bd49aeb9aa32802cc1b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '21f40c49b8a1ef96d20e9b63c67f59f0') in 0.0326748 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000043 seconds.
-  path: Assets/MainAssets/UI/MainMenuGGJamSTART.png
-  artifactKey: Guid(8ccf09cdb041b224aadffd3a49f2c99e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MainAssets/UI/MainMenuGGJamSTART.png using Guid(8ccf09cdb041b224aadffd3a49f2c99e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8027f2a5de40ef704c4701ec95f2cad1') in 0.0345901 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000055 seconds.
-  path: Assets/MainAssets/UI/MainMenuGGJamCONTROLS.png
-  artifactKey: Guid(a12973f804b136e4c815d21b5ba6faae) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MainAssets/UI/MainMenuGGJamCONTROLS.png using Guid(a12973f804b136e4c815d21b5ba6faae) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'daffe8f10eba321a34800f384326164d') in 0.0377258 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.535322 seconds.
-  path: Assets/MainAssets/UI/MainMenuGGJamCREDITS.png
-  artifactKey: Guid(06ba98ce31931634d91be48014a93269) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MainAssets/UI/MainMenuGGJamCREDITS.png using Guid(06ba98ce31931634d91be48014a93269) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'eb1c825080fd523386a67a23824c5e1c') in 0.0436938 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.852109 seconds.
+  Time since last request: 0.000019 seconds.
   path: Assets/MainAssets/UI/MainMenuGGJamCREDITS.png
   artifactKey: Guid(06ba98ce31931634d91be48014a93269) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MainAssets/UI/MainMenuGGJamCREDITS.png using Guid(06ba98ce31931634d91be48014a93269) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '31bdd5373e28da5e87118e20224a16b6') in 0.0286386 seconds
+Start importing Assets/MainAssets/UI/MainMenuGGJamCREDITS.png using Guid(06ba98ce31931634d91be48014a93269) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c5aabdb0bce37ba8598eb17a084e9889') in 0.0140695 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 10.282296 seconds.
-  path: Assets/MainAssets/UI/MainMenuGGJamSTART.png
-  artifactKey: Guid(8ccf09cdb041b224aadffd3a49f2c99e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MainAssets/UI/MainMenuGGJamSTART.png using Guid(8ccf09cdb041b224aadffd3a49f2c99e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b1c32b545594bf3dd9003d1252215eb1') in 0.0338616 seconds
+  Time since last request: 31.071310 seconds.
+  path: Assets/MainAssets/UI/MainMenuGGJamCONTROLS.png
+  artifactKey: Guid(a12973f804b136e4c815d21b5ba6faae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/UI/MainMenuGGJamCONTROLS.png using Guid(a12973f804b136e4c815d21b5ba6faae) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '592021b8f651e60c6528fe6f1abb3c1f') in 0.1050553 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.875755 seconds.
-  path: Assets/MainAssets/UI/MainMenuGGJamSTART.png
-  artifactKey: Guid(8ccf09cdb041b224aadffd3a49f2c99e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MainAssets/UI/MainMenuGGJamSTART.png using Guid(8ccf09cdb041b224aadffd3a49f2c99e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '03ab5d4c29a85261bdad084cb2e46036') in 0.0282121 seconds
+  Time since last request: 0.000020 seconds.
+  path: Assets/MainAssets/UI/MainMenuGGJamEXITBUTTON.png
+  artifactKey: Guid(d0eb44c3a65093a4383bdbb8af523cc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/UI/MainMenuGGJamEXITBUTTON.png using Guid(d0eb44c3a65093a4383bdbb8af523cc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1dcc0c8e48f52b1f9927879310b7137f') in 0.0148737 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 238.825687 seconds.
-  path: Assets/MainAssets/UI/EB_Garamond/static/EBGaramond-Bold SDF.asset
-  artifactKey: Guid(d591dbf119d18594bbf1274da020c333) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MainAssets/UI/EB_Garamond/static/EBGaramond-Bold SDF.asset using Guid(d591dbf119d18594bbf1274da020c333) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8e23f2ad4206b457721b6e2620d53f6b') in 0.0524518 seconds
+  Time since last request: 0.000022 seconds.
+  path: Assets/MainAssets/UI/MainMenuGGJamSUMMARY.png
+  artifactKey: Guid(f0196a36f1eb2bd49aeb9aa32802cc1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAssets/UI/MainMenuGGJamSUMMARY.png using Guid(f0196a36f1eb2bd49aeb9aa32802cc1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6d1c24e82cc2b64156185e34d0d57efa') in 0.0137609 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF.asset
-  artifactKey: Guid(125cb55b44b24c4393181402bc6200e6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF.asset using Guid(125cb55b44b24c4393181402bc6200e6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9296641a344db639afa27e7a4a8acc38') in 0.0684158 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
-
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

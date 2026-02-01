@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
   nodeId: Electritian_AutopsyReport
   lines:
-  - speaker: Hans Sterling
+  - speaker: Johanne Sterling
     text: The autopsy report?
   - speaker: Detective
     text: Do you know anything about Elizabeth Winfred?
