@@ -10,17 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 47b606592c9bc9e4dbee052ee82597cb, type: 3}
-  m_Name: Police_Greeting
+  m_Name: Police_AllEvidence
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
-  nodeId: Police_greeting
+  nodeId: Police_AllEvidence
   lines:
   - speaker: Police
-    text: Ah, evening Detective!
+    text: Nice one Detective!
   - speaker: Police
-    text: Don't worry we managed to get everyone out of here safely.
+    text: We got all we need from this crime scene to arrest the killer.
   - speaker: Police
-    text: "We caught a few suspicious individuals. \nYour task is to help us figure
-      out who murdered Elizabeth Winfred."
+    text: 'You now need to talk to one of the suspects over there
+
+      and arrest
+      who you think is responsible.'
+  - speaker: Police
+    text: I still think the Electritian Joe done it...
   requiredEvidence: {fileID: 0}
   ifEvidenceCorrect: {fileID: 0}
   ifEvidenceWrong: {fileID: 0}

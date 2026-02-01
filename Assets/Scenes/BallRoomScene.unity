@@ -1972,38 +1972,19 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d09cd9c2e86ec3c46a6d8b729a634cb6, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 279328218}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d09cd9c2e86ec3c46a6d8b729a634cb6, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 279328217}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d09cd9c2e86ec3c46a6d8b729a634cb6, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 279328216}
+      addedObject: {fileID: 279328218}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d09cd9c2e86ec3c46a6d8b729a634cb6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 279328219}
   m_SourcePrefab: {fileID: 100100000, guid: d09cd9c2e86ec3c46a6d8b729a634cb6, type: 3}
 --- !u!1 &279328215 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: d09cd9c2e86ec3c46a6d8b729a634cb6, type: 3}
   m_PrefabInstance: {fileID: 279328214}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &279328216
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 279328215}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 776f0d3335b36584587049046287e6a9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EvidencePickup
-  evidence: {fileID: 11400000, guid: 04ad212b3fb37c541b50d3bc2fef74c0, type: 2}
-  prompt: Inspect
-  dialogueLinesOnPickup:
-  - Police here is Autopsy Report
-  - Detective Thanks!
-  - You Got Autopsy Report
-  disableAfterPickup: 1
 --- !u!136 &279328217
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2036,28 +2017,36 @@ MonoBehaviour:
   m_GameObject: {fileID: 279328215}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae3ab63aca67c3e49ae4fcf25706cca9, type: 3}
+  m_Script: {fileID: 11500000, guid: 026114e9431de0d4894e3ca1011783ab, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DialogueActor
-  actorId: Police
+  m_EditorClassIdentifier: Assembly-CSharp::PoliceInvestigator
   displayName: Police
-  startingNode: {fileID: 11400000, guid: ddefc4ed14ed5394188bca1d1899a082, type: 2}
-  afterEvidenceNode: {fileID: 11400000, guid: a726d55a2f413fc4c8075db8583025c4, type: 2}
-  evidenceReactions:
-  - evidence: {fileID: 11400000, guid: 04ad212b3fb37c541b50d3bc2fef74c0, type: 2}
-    onFirstPresent: {fileID: 11400000, guid: 6a52be3e2b5f7b647af1d31fb5d332dc, type: 2}
-    onRepeat: {fileID: 11400000, guid: a726d55a2f413fc4c8075db8583025c4, type: 2}
-  - evidence: {fileID: 11400000, guid: 1700de1b74cc362438e1a5346d5e6e46, type: 2}
-    onFirstPresent: {fileID: 11400000, guid: 1aed3401514207548b7271273d5d6c9e, type: 2}
-    onRepeat: {fileID: 11400000, guid: a726d55a2f413fc4c8075db8583025c4, type: 2}
-  - evidence: {fileID: 11400000, guid: 2066b12648b912b4e83af295a09ea957, type: 2}
-    onFirstPresent: {fileID: 11400000, guid: 82783391670a20e4d9eba1ac08f881ed, type: 2}
-    onRepeat: {fileID: 11400000, guid: a726d55a2f413fc4c8075db8583025c4, type: 2}
-  - evidence: {fileID: 11400000, guid: 5fe0da5556606f34590d530f431ea70e, type: 2}
-    onFirstPresent: {fileID: 11400000, guid: 926f5f8100b945146a8923944383a0de, type: 2}
-    onRepeat: {fileID: 11400000, guid: a726d55a2f413fc4c8075db8583025c4, type: 2}
-  showDefaultResponse: 0
+  detectiveBadge: {fileID: 11400000, guid: 2066b12648b912b4e83af295a09ea957, type: 2}
+  brokenSwitch: {fileID: 11400000, guid: 1700de1b74cc362438e1a5346d5e6e46, type: 2}
+  silverMask: {fileID: 11400000, guid: 5fe0da5556606f34590d530f431ea70e, type: 2}
+  autopsyReport: {fileID: 11400000, guid: 04ad212b3fb37c541b50d3bc2fef74c0, type: 2}
+  badgeResponseNode: {fileID: 11400000, guid: 82783391670a20e4d9eba1ac08f881ed, type: 2}
+  switchResponseNode: {fileID: 11400000, guid: 1aed3401514207548b7271273d5d6c9e, type: 2}
+  maskResponseNode: {fileID: 11400000, guid: 926f5f8100b945146a8923944383a0de, type: 2}
+  autopsyResponseNode: {fileID: 11400000, guid: 6a52be3e2b5f7b647af1d31fb5d332dc, type: 2}
+  greetingNode: {fileID: 11400000, guid: ddefc4ed14ed5394188bca1d1899a082, type: 2}
+  needMoreEvidenceNode: {fileID: 11400000, guid: 7b87ece9df23dca4994abf3ba0de90d9, type: 2}
+  allEvidenceReceivedNode: {fileID: 11400000, guid: 8c0046e9fd420f84288b4470c65fc946, type: 2}
   defaultResponseText: I don't think that's relevant right now.
+--- !u!114 &279328219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 279328215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10e14260b113ce64ab372aed0179dec9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PoliceEvidenceGiver
+  autopsyReport: {fileID: 11400000, guid: 04ad212b3fb37c541b50d3bc2fef74c0, type: 2}
+  autopsyDialogueNode: {fileID: 11400000, guid: 3b0e9b86281b52048be024c19682df03, type: 2}
 --- !u!1 &284059903
 GameObject:
   m_ObjectHideFlags: 0
