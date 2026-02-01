@@ -16,11 +16,11 @@ MonoBehaviour:
   lines:
   - speaker: Detective
     text: You're under arrest for killing Elizabeth Winfred!
-  - speaker: Electritian
+  - speaker: Electritian Joe
     text: Ah please Detective!!
-  - speaker: Johanne Sterling
+  - speaker: Electritian Joe
     text: I thought you believed that I didn't do it!
-  - speaker: Johanne Sterling
+  - speaker: Electritian Joe
     text: I don't want to be in the slammer...
   requiredEvidence: {fileID: 0}
   ifEvidenceCorrect: {fileID: 0}

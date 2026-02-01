@@ -5238,7 +5238,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 785004446}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ae3ab63aca67c3e49ae4fcf25706cca9, type: 3}
   m_Name: 
@@ -5275,8 +5275,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WitnessAccusation
   witnessName: Tony
-  endingSceneName: EndingTony
-  normalDialogueNode: {fileID: 11400000, guid: 2c606c871b4c4324f9ca3871631f5477, type: 2}
+  endingSceneName: MainAssets/UI/MenusUI/EndingTony
+  normalDialogueNode: {fileID: 0}
   accusationDialogueNode: {fileID: 11400000, guid: 6df36efc0fd175f4cbc92aa8de054bed, type: 2}
   dialogueActor: {fileID: 785004448}
 --- !u!1 &828116263
@@ -7857,7 +7857,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1114042374}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ae3ab63aca67c3e49ae4fcf25706cca9, type: 3}
   m_Name: 
@@ -7917,8 +7917,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WitnessAccusation
   witnessName: Electritian Joe
-  endingSceneName: EndingJoe
-  normalDialogueNode: {fileID: 11400000, guid: 01e790bc4e8a77345b1bc7ae704e848c, type: 2}
+  endingSceneName: MainAssets/UI/MenusUI/EndingJoe
+  normalDialogueNode: {fileID: 0}
   accusationDialogueNode: {fileID: 11400000, guid: 77368b84744a41c49a7a26297be71b53, type: 2}
   dialogueActor: {fileID: 1114042375}
 --- !u!1001 &1118404465
@@ -12318,7 +12318,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1812291305}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ae3ab63aca67c3e49ae4fcf25706cca9, type: 3}
   m_Name: 
@@ -12378,8 +12378,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WitnessAccusation
   witnessName: Johanne
-  endingSceneName: EndingJohanne
-  normalDialogueNode: {fileID: 11400000, guid: 5682de98445be214db952ddc371a3e43, type: 2}
+  endingSceneName: MainAssets/UI/MenusUI/EndingJohanne
+  normalDialogueNode: {fileID: 0}
   accusationDialogueNode: {fileID: 11400000, guid: 10d62640d31d7d543b77b3e7fae693ba, type: 2}
   dialogueActor: {fileID: 1812291306}
 --- !u!1 &1838631429 stripped
