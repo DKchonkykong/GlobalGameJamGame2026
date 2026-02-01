@@ -3,6 +3,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.InputSystem;
+using System;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -16,7 +17,7 @@ public class DialogueManager : MonoBehaviour
 
     [Header("Player Control")]
     public GameObject playerObject;
-    
+
     [Header("Input System")]
     public PlayerInput playerInput; // Reference to PlayerInput component
 
@@ -24,6 +25,12 @@ public class DialogueManager : MonoBehaviour
     private DialogueActor currentActor;
 
     public bool IsOpen => panel.activeSelf;
+
+    // Event that fires when dialogue closes
+    public event Action OnDialogueClosed;
+
+    // Event that fires when the LAST line is displayed (before closing)
+    public event Action OnLastLineDisplayed;
 
     void Awake()
     {
@@ -108,6 +115,13 @@ public class DialogueManager : MonoBehaviour
         var line = lines.Dequeue();
         speakerText.text = line.speaker;
         bodyText.text = line.text;
+
+        // Check if this was the last line
+        if (lines.Count == 0)
+        {
+            // Fire event BEFORE closing dialogue
+            OnLastLineDisplayed?.Invoke();
+        }
     }
 
     void CloseDialogue()
@@ -121,6 +135,9 @@ public class DialogueManager : MonoBehaviour
 
         currentActor = null;
         UnlockPlayer();
+
+        // Invoke the event after dialogue closes
+        OnDialogueClosed?.Invoke();
     }
 
     void LockPlayer()

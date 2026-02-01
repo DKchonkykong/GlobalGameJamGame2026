@@ -17,6 +17,7 @@ public class WitnessAccusation : MonoBehaviour, IInteractable
     public DialogueActor dialogueActor; // Reference to existing DialogueActor
 
     private bool isAccusationPhase = false;
+    private bool waitingForDialogueClose = false;
 
     public string PromptText
     {
@@ -44,11 +45,53 @@ public class WitnessAccusation : MonoBehaviour, IInteractable
             dialogueActor = GetComponent<DialogueActor>();
         }
 
-        // CRITICAL: Remove DialogueActor from being detected as IInteractable
-        // We do this by destroying the component and storing its data
         if (dialogueActor != null)
         {
             Debug.Log($"[WitnessAccusation] Found DialogueActor on {witnessName}");
+        }
+
+        // Subscribe to event in Start instead of OnEnable
+        SubscribeToEvents();
+    }
+
+    void OnDestroy()
+    {
+        // Unsubscribe when destroyed
+        UnsubscribeFromEvents();
+    }
+
+    void SubscribeToEvents()
+    {
+        if (DialogueManager.Instance != null)
+        {
+            DialogueManager.Instance.OnDialogueClosed += OnDialogueClosed;
+            Debug.Log($"[WitnessAccusation] {witnessName} subscribed to OnDialogueClosed event");
+        }
+        else
+        {
+            Debug.LogWarning($"[WitnessAccusation] {witnessName} could not subscribe - DialogueManager.Instance is null");
+        }
+    }
+
+    void UnsubscribeFromEvents()
+    {
+        if (DialogueManager.Instance != null)
+        {
+            DialogueManager.Instance.OnDialogueClosed -= OnDialogueClosed;
+            Debug.Log($"[WitnessAccusation] {witnessName} unsubscribed from OnDialogueClosed event");
+        }
+    }
+
+    void OnDialogueClosed()
+    {
+        Debug.Log($"[WitnessAccusation] OnDialogueClosed fired for {witnessName}. waitingForDialogueClose={waitingForDialogueClose}");
+        
+        // Only load ending scene if we're waiting for the accusation dialogue to close
+        if (waitingForDialogueClose)
+        {
+            waitingForDialogueClose = false;
+            Debug.Log($"[WitnessAccusation] Dialogue closed - loading ending scene now");
+            LoadEndingScene();
         }
     }
 
@@ -111,11 +154,13 @@ public class WitnessAccusation : MonoBehaviour, IInteractable
         if (accusationDialogueNode != null && accusationDialogueNode.lines != null && accusationDialogueNode.lines.Length > 0)
         {
             Debug.Log($"[WitnessAccusation] Showing accusation dialogue with {accusationDialogueNode.lines.Length} lines");
-            DialogueManager.Instance.ShowDialogue(accusationDialogueNode.lines);
             
-            // Load scene after dialogue finishes (estimate 3 seconds per line)
-            float dialogueLength = accusationDialogueNode.lines.Length * 3f;
-            Invoke(nameof(LoadEndingScene), dialogueLength);
+            // Set flag so we know to load the ending scene when dialogue closes
+            waitingForDialogueClose = true;
+            Debug.Log($"[WitnessAccusation] waitingForDialogueClose set to TRUE");
+            
+            // Show the dialogue
+            DialogueManager.Instance.ShowDialogue(accusationDialogueNode.lines);
         }
         else
         {
@@ -129,6 +174,8 @@ public class WitnessAccusation : MonoBehaviour, IInteractable
         if (!string.IsNullOrEmpty(endingSceneName))
         {
             Debug.Log($"[WitnessAccusation] ===== LOADING ENDING SCENE: {endingSceneName} =====");
+            
+            // Just load the scene - no player unlocking needed for UI scene
             SceneManager.LoadScene(endingSceneName);
         }
         else
