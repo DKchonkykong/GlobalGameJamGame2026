@@ -21,7 +21,14 @@ public class Interactor : MonoBehaviour
         Ray ray = new Ray(cam.transform.position, cam.transform.forward);
         if (Physics.Raycast(ray, out RaycastHit hit, range, interactMask))
         {
-            current = hit.collider.GetComponentInParent<IInteractable>();
+            // PRIORITY: Check for WitnessAccusation first (takes priority over DialogueActor)
+            current = hit.collider.GetComponentInParent<WitnessAccusation>();
+            
+            // If no WitnessAccusation, fall back to any IInteractable
+            if (current == null)
+            {
+                current = hit.collider.GetComponentInParent<IInteractable>();
+            }
 
             // Don't show prompt while dialogue is open
             if (current != null && (DialogueManager.Instance == null || !DialogueManager.Instance.IsOpen))

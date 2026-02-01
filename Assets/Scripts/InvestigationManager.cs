@@ -6,7 +6,6 @@ public class InvestigationManager : MonoBehaviour
 
     [Header("Investigation State")]
     private bool isAccusationPhaseActive = false;
-    private const string SAVE_KEY = "Investigation_AccusationActive";
 
     [Header("Police Reference")]
     public PoliceInvestigator policeInvestigator;
@@ -20,8 +19,6 @@ public class InvestigationManager : MonoBehaviour
         }
         Instance = this;
         DontDestroyOnLoad(gameObject);
-
-        LoadState();
     }
 
     void Update()
@@ -36,26 +33,12 @@ public class InvestigationManager : MonoBehaviour
         }
     }
 
-    void LoadState()
-    {
-        isAccusationPhaseActive = PlayerPrefs.GetInt(SAVE_KEY, 0) == 1;
-        Debug.Log($"[InvestigationManager] Loaded state - AccusationActive: {isAccusationPhaseActive}");
-    }
-
-    void SaveState()
-    {
-        PlayerPrefs.SetInt(SAVE_KEY, isAccusationPhaseActive ? 1 : 0);
-        PlayerPrefs.Save();
-        Debug.Log($"[InvestigationManager] Saved state - AccusationActive: {isAccusationPhaseActive}");
-    }
-
     void ActivateAccusationPhase()
     {
         if (isAccusationPhaseActive) return;
 
         Debug.Log("[InvestigationManager] ACCUSATION PHASE ACTIVATED - You can now accuse the suspects!");
         isAccusationPhaseActive = true;
-        SaveState();
 
         // Optional: Show a UI notification or message
         // UIManager.Instance.ShowNotification("All evidence collected! Now find the killer.");
@@ -63,6 +46,7 @@ public class InvestigationManager : MonoBehaviour
 
     public bool IsAccusationPhaseActive()
     {
+        Debug.Log($"[InvestigationManager] IsAccusationPhaseActive called - returning: {isAccusationPhaseActive}");
         return isAccusationPhaseActive;
     }
 
@@ -89,7 +73,6 @@ public class InvestigationManager : MonoBehaviour
     void ResetState()
     {
         isAccusationPhaseActive = false;
-        SaveState();
         Debug.Log("[InvestigationManager] Investigation state reset");
     }
 }
