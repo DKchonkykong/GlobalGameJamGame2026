@@ -38,10 +38,19 @@ public class PoliceInvestigator : MonoBehaviour, IInteractable, IEvidenceReceive
 
     void Awake()
     {
-        LoadState();
-        
-        // Get reference to evidence giver if it exists
+        // Get reference to evidence giver FIRST before loading state
         evidenceGiver = GetComponent<PoliceEvidenceGiver>();
+        
+        if (evidenceGiver == null)
+        {
+            Debug.LogWarning("[PoliceInvestigator] No PoliceEvidenceGiver component found on this GameObject!");
+        }
+        else
+        {
+            Debug.Log("[PoliceInvestigator] PoliceEvidenceGiver component found and referenced");
+        }
+        
+        LoadState();
     }
 
     void LoadState()
@@ -89,27 +98,55 @@ public class PoliceInvestigator : MonoBehaviour, IInteractable, IEvidenceReceive
 
     public void Interact()
     {
+        Debug.Log("[PoliceInvestigator] Interact() called");
+        
+        // PRIORITY 1: Check if we need to give autopsy report FIRST (before anything else)
+        if (evidenceGiver != null)
+        {
+            bool shouldGive = evidenceGiver.ShouldGiveAutopsy();
+            Debug.Log($"[PoliceInvestigator] Evidence giver exists. ShouldGiveAutopsy: {shouldGive}");
+            
+            if (shouldGive)
+            {
+                Debug.Log("[PoliceInvestigator] First interaction - giving autopsy report");
+                
+                // Set conversation context
+                if (ConversationContext.Instance != null)
+                {
+                    ConversationContext.Instance.SetActiveReceiver(this);
+                }
+                
+                // Show autopsy dialogue and give the report
+                DialogueNode autopsyDialogue = evidenceGiver.GetAutopsyDialogue();
+                if (autopsyDialogue != null && autopsyDialogue.lines != null && autopsyDialogue.lines.Length > 0)
+                {
+                    Debug.Log($"[PoliceInvestigator] Showing autopsy dialogue with {autopsyDialogue.lines.Length} lines");
+                    DialogueManager.Instance.ShowDialogue(autopsyDialogue.lines);
+                    
+                    // Give the autopsy report immediately
+                    evidenceGiver.GiveAutopsyReport();
+                }
+                else
+                {
+                    Debug.LogError("[PoliceInvestigator] Autopsy dialogue is null or has no lines!");
+                }
+                return;
+            }
+        }
+        else
+        {
+            Debug.LogWarning("[PoliceInvestigator] evidenceGiver is null during Interact()");
+        }
+
+        // PRIORITY 2: Normal interaction after autopsy has been given
+        Debug.Log("[PoliceInvestigator] Showing normal dialogue (autopsy already given or giver missing)");
+        
         if (ConversationContext.Instance != null)
         {
             ConversationContext.Instance.SetActiveReceiver(this);
         }
 
-        // Check if we should give autopsy report on first interaction
-        if (evidenceGiver != null && evidenceGiver.ShouldGiveAutopsy())
-        {
-            // Show autopsy dialogue, then give the report
-            DialogueNode autopsyDialogue = evidenceGiver.GetAutopsyDialogue();
-            if (autopsyDialogue != null && autopsyDialogue.lines != null && autopsyDialogue.lines.Length > 0)
-            {
-                DialogueManager.Instance.ShowDialogue(autopsyDialogue.lines);
-                
-                // Give the autopsy report after showing dialogue
-                evidenceGiver.GiveAutopsyReport();
-            }
-            return;
-        }
-
-        // Normal interaction - show dialogue based on evidence state
+        // Show appropriate dialogue based on evidence state
         DialogueNode nodeToShow = GetCurrentDialogueNode();
 
         if (nodeToShow != null && nodeToShow.lines != null && nodeToShow.lines.Length > 0)
@@ -317,6 +354,15 @@ public class PoliceInvestigator : MonoBehaviour, IInteractable, IEvidenceReceive
         foreach (string evidence in receivedEvidence)
         {
             Debug.Log($"  - {evidence}");
+        }
+        
+        if (evidenceGiver != null)
+        {
+            Debug.Log($"Evidence Giver - Should Give Autopsy: {evidenceGiver.ShouldGiveAutopsy()}");
+        }
+        else
+        {
+            Debug.LogWarning("Evidence Giver component is NULL!");
         }
     }
 }

@@ -32,7 +32,9 @@ public class PoliceEvidenceGiver : MonoBehaviour
     // Check if we should give the autopsy report on this interaction
     public bool ShouldGiveAutopsy()
     {
-        return !hasGivenAutopsy;
+        bool should = !hasGivenAutopsy;
+        Debug.Log($"[PoliceEvidenceGiver] ShouldGiveAutopsy check - hasGivenAutopsy: {hasGivenAutopsy}, returning: {should}");
+        return should;
     }
 
     // This gets called when the autopsy dialogue finishes
@@ -44,12 +46,17 @@ public class PoliceEvidenceGiver : MonoBehaviour
             return;
         }
 
-        Debug.Log($"[PoliceEvidenceGiver] Giving autopsy report");
+        Debug.Log($"[PoliceEvidenceGiver] Giving autopsy report to inventory");
         
         // Add evidence to player's inventory
         if (EvidenceManager.Instance != null && autopsyReport != null)
         {
             EvidenceManager.Instance.AddEvidence(autopsyReport);
+            Debug.Log($"[PoliceEvidenceGiver] Successfully added {autopsyReport.name} to evidence manager");
+        }
+        else
+        {
+            Debug.LogError($"[PoliceEvidenceGiver] Failed to add autopsy! EvidenceManager: {(EvidenceManager.Instance != null ? "EXISTS" : "NULL")}, AutopsyReport: {(autopsyReport != null ? autopsyReport.name : "NULL")}");
         }
         
         // Mark as given
@@ -69,5 +76,14 @@ public class PoliceEvidenceGiver : MonoBehaviour
         hasGivenAutopsy = false;
         SaveState();
         Debug.Log("[PoliceEvidenceGiver] State reset - autopsy can be given again");
+    }
+    
+    // New: Clear ALL PlayerPrefs for debugging
+    [ContextMenu("Clear ALL PlayerPrefs (WARNING: Deletes ALL save data)")]
+    void ClearAllPlayerPrefs()
+    {
+        PlayerPrefs.DeleteAll();
+        PlayerPrefs.Save();
+        Debug.LogWarning("[PoliceEvidenceGiver] ALL PlayerPrefs cleared! Reload the scene.");
     }
 }

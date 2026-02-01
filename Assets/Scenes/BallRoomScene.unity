@@ -2510,6 +2510,51 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 334446153}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &343433241
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 343433242}
+  - component: {fileID: 343433243}
+  m_Layer: 0
+  m_Name: InvestigationManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &343433242
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 343433241}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1005223377}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &343433243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 343433241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58be89465f7ca344683af8e15595b7b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InvestigationManager
+  policeInvestigator: {fileID: 279328218}
 --- !u!1001 &350272362
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5154,6 +5199,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ce90712c40ff88445a1ca630b5f4cd80, type: 3}
       insertIndex: -1
       addedObject: {fileID: 785004447}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ce90712c40ff88445a1ca630b5f4cd80, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 785004450}
   m_SourcePrefab: {fileID: 100100000, guid: ce90712c40ff88445a1ca630b5f4cd80, type: 3}
 --- !u!1 &785004446 stripped
 GameObject:
@@ -5214,6 +5262,23 @@ MonoBehaviour:
     onRepeat: {fileID: 11400000, guid: 2c606c871b4c4324f9ca3871631f5477, type: 2}
   showDefaultResponse: 0
   defaultResponseText: I don't think that's relevant right now.
+--- !u!114 &785004450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 785004446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5dcbecade8301343adfe0fdf125eb6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WitnessAccusation
+  witnessName: Tony
+  endingSceneName: EndingTony
+  normalDialogueNode: {fileID: 11400000, guid: 2c606c871b4c4324f9ca3871631f5477, type: 2}
+  accusationDialogueNode: {fileID: 11400000, guid: 6df36efc0fd175f4cbc92aa8de054bed, type: 2}
+  dialogueActor: {fileID: 785004448}
 --- !u!1 &828116263
 GameObject:
   m_ObjectHideFlags: 0
@@ -6701,6 +6766,7 @@ Transform:
   - {fileID: 1872956610}
   - {fileID: 33945830}
   - {fileID: 740877953}
+  - {fileID: 343433242}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1011355981
@@ -7775,6 +7841,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5568794eb2cde474d96ebdc1d2e2c9a4, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1114042375}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5568794eb2cde474d96ebdc1d2e2c9a4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1114042378}
   m_SourcePrefab: {fileID: 100100000, guid: 5568794eb2cde474d96ebdc1d2e2c9a4, type: 3}
 --- !u!1 &1114042374 stripped
 GameObject:
@@ -7835,6 +7904,23 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 1, z: 0.2}
+--- !u!114 &1114042378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1114042374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5dcbecade8301343adfe0fdf125eb6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WitnessAccusation
+  witnessName: Electritian Joe
+  endingSceneName: EndingJoe
+  normalDialogueNode: {fileID: 11400000, guid: 01e790bc4e8a77345b1bc7ae704e848c, type: 2}
+  accusationDialogueNode: {fileID: 11400000, guid: 77368b84744a41c49a7a26297be71b53, type: 2}
+  dialogueActor: {fileID: 1114042375}
 --- !u!1001 &1118404465
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12216,6 +12302,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fd977a82ee67dc94d95e0a935834a999, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1812291306}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fd977a82ee67dc94d95e0a935834a999, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1812291309}
   m_SourcePrefab: {fileID: 100100000, guid: fd977a82ee67dc94d95e0a935834a999, type: 3}
 --- !u!1 &1812291305 stripped
 GameObject:
@@ -12276,6 +12365,23 @@ CapsuleCollider:
   m_Height: 2.0538464
   m_Direction: 1
   m_Center: {x: 0, y: 0.8155427, z: 0}
+--- !u!114 &1812291309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1812291305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5dcbecade8301343adfe0fdf125eb6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WitnessAccusation
+  witnessName: Johanne
+  endingSceneName: EndingJohanne
+  normalDialogueNode: {fileID: 11400000, guid: 5682de98445be214db952ddc371a3e43, type: 2}
+  accusationDialogueNode: {fileID: 11400000, guid: 10d62640d31d7d543b77b3e7fae693ba, type: 2}
+  dialogueActor: {fileID: 1812291306}
 --- !u!1 &1838631429 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8ac4b47aeb863f843a71d548eb55bbf3, type: 3}
