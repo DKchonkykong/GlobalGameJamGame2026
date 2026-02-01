@@ -9,25 +9,6 @@ public class PoliceEvidenceGiver : MonoBehaviour
     public DialogueNode autopsyDialogueNode; // Dialogue about the autopsy report
     
     private bool hasGivenAutopsy = false;
-    private const string SAVE_KEY = "Police_HasGivenAutopsy";
-
-    void Awake()
-    {
-        LoadState();
-    }
-
-    void LoadState()
-    {
-        hasGivenAutopsy = PlayerPrefs.GetInt(SAVE_KEY, 0) == 1;
-        Debug.Log($"[PoliceEvidenceGiver] Loaded state - hasGivenAutopsy: {hasGivenAutopsy}");
-    }
-
-    void SaveState()
-    {
-        PlayerPrefs.SetInt(SAVE_KEY, hasGivenAutopsy ? 1 : 0);
-        PlayerPrefs.Save();
-        Debug.Log($"[PoliceEvidenceGiver] Saved state - hasGivenAutopsy: {hasGivenAutopsy}");
-    }
 
     // Check if we should give the autopsy report on this interaction
     public bool ShouldGiveAutopsy()
@@ -59,9 +40,9 @@ public class PoliceEvidenceGiver : MonoBehaviour
             Debug.LogError($"[PoliceEvidenceGiver] Failed to add autopsy! EvidenceManager: {(EvidenceManager.Instance != null ? "EXISTS" : "NULL")}, AutopsyReport: {(autopsyReport != null ? autopsyReport.name : "NULL")}");
         }
         
-        // Mark as given
+        // Mark as given (only persists for this play session)
         hasGivenAutopsy = true;
-        SaveState();
+        Debug.Log($"[PoliceEvidenceGiver] Autopsy marked as given for this session");
     }
 
     public DialogueNode GetAutopsyDialogue()
@@ -69,21 +50,11 @@ public class PoliceEvidenceGiver : MonoBehaviour
         return autopsyDialogueNode;
     }
 
-    // Debug method
+    // Debug method to manually reset during runtime
     [ContextMenu("Reset Autopsy Given State")]
     void ResetState()
     {
         hasGivenAutopsy = false;
-        SaveState();
         Debug.Log("[PoliceEvidenceGiver] State reset - autopsy can be given again");
-    }
-    
-    // New: Clear ALL PlayerPrefs for debugging
-    [ContextMenu("Clear ALL PlayerPrefs (WARNING: Deletes ALL save data)")]
-    void ClearAllPlayerPrefs()
-    {
-        PlayerPrefs.DeleteAll();
-        PlayerPrefs.Save();
-        Debug.LogWarning("[PoliceEvidenceGiver] ALL PlayerPrefs cleared! Reload the scene.");
     }
 }
